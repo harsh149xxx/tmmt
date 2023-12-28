@@ -71,8 +71,8 @@ export default function HomePage() {
 
       {/* --------------------------- OUR SERVICES START --------------------------- */}
       <section>
-        <h1 className="text-center text-4xl py-16">OUR SERVICES</h1>
-        <div className="grid grid-cols-3 gap-12 px-24 pb-16">
+        <h1 className="text-center text-4xl py-12 md:py-16">OUR SERVICES</h1>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-12 px-7 lg:px-24 pb-12 md:pb-16">
           {
             services.map((item,idx)=>(
               <ServiceCard title={item.title} content={item.content} img={item.img}/>
