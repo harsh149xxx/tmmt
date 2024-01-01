@@ -17,11 +17,10 @@ import Support from '@/public/assets/home/support.png'
 import Girl from '../public/assets/home/girl.png'
 import Affiliate from '@/public/assets/home/affiliate.jpg'
 import Advertiser from '@/public/assets/home/advertiser.png'
-import { useEffect, useState } from "react";
+import { Fragment, useEffect, useState } from "react";
 import React from "react";
 import { Accordion, AccordionItem } from "@nextui-org/react";
-
-
+import { NextUIProvider } from '@nextui-org/react';
 
 
 
@@ -178,9 +177,9 @@ export default function HomePage() {
   }, []);
 
   return (
-    <main>
+    <Fragment>
       {/* ------------------------ TOP SECTION HEADER START ------------------------ */}
-      <header className="h-fit md:h-screen  bg-gradient-to-r from-[#2f80ed] to-[#56ccf2] flex flex-col md:flex-row p-1 gap-5 pb-10">
+      <header className="h-fit md:h-screen  gradientBg flex flex-col md:flex-row p-1 gap-5 pb-10">
         <div className="w-full md:w-1/2  text-white gap-8 flex flex-col items-center md:justify-center">
           <h1 className="text-6xl text-center font-serif" style={{ "textShadow": "0px 0px 20px rgba(0,0,0,0.90)" }}>We Manage Your Brands in Multiple Channels</h1>
           <p className="text-xl text-center px-5 font-mono">Our motto is to build a communication bridge between advertisers, customers, and affiliates.</p>
@@ -214,7 +213,7 @@ export default function HomePage() {
       {/* --------------------------- OUR SERVICES END --------------------------- */}
 
       {/* ------------------------------ OUR ADD START ----------------------------- */}
-      <section className="flex px-6 flex-col gap-12 lg:gap-0 lg:flex-row h-fit  lg:px-36 bg-gradient-to-r from-[#2f80ed] to-[#56ccf2] py-12 md:py-16 lg:items-center">
+      <section className="flex px-6 flex-col gap-12 lg:gap-0 lg:flex-row h-fit  lg:px-36 gradientBg py-12 md:py-16 lg:items-center">
         <div className="text-2xl lg:w-[60%] text-white lg:pr-5">
           We are pioneer at managing your brands in multiple channels. Our motto is to build a communication bridge between advertisers, customers and Affiliates. Branding is perhaps an USP of any business organisation and if you want to make your products popular amongst customers then just opt for our services.
         </div>
@@ -269,7 +268,7 @@ export default function HomePage() {
                 <React.Fragment key={index}>
                   {
                     openTab == index &&
-                    <ServiceDetails title={item.title} content={item.content} img={item.img}/>
+                    <ServiceDetails title={item.title} content={item.content} img={item.img} />
                   }
                 </React.Fragment>
               ))
@@ -281,18 +280,21 @@ export default function HomePage() {
 
 
       {/* ------------------------------- FAQS START ------------------------------ */}
-      <section className="bg-gradient-to-r from-[#2f80ed] to-[#56ccf2] py-10 md:py-16">
+      <section className="gradientBg py-10 md:py-16">
         <h1 className="sectionTitle text-white">FAQS</h1>
-        <Accordion variant="splitted">
-          {
-            faqsData.map((item, idx) => (
-              <AccordionItem key={idx} aria-label={`{Accordian ${idx + 1}}`} title={`Q. ${item.question}`} className="accordian">
-                Ans: {item.answer}
-              </AccordionItem>
-            ))
-          }
+        <NextUIProvider>
+          <Accordion variant="splitted">
+            {
+              faqsData.map((item, idx) => (
+                <AccordionItem key={idx} aria-label={`{Accordian ${idx + 1}}`} title={`Q. ${item.question}`} className="accordian">
+                  Ans: {item.answer}
+                </AccordionItem>
+              ))
+            }
 
-        </Accordion>
+          </Accordion>
+        </NextUIProvider>
+
       </section >
       {/* ------------------------------- FAQS END ------------------------------ */}
 
@@ -311,7 +313,7 @@ export default function HomePage() {
 
 
       {/* -------------------------- REVEIW SECTION START -------------------------- */}
-      <section className="py-12 md:py-16 bg-gradient-to-r from-[#2f80ed] to-[#56ccf2]">
+      <section className="py-12 md:py-16 gradientBg">
         <h1 className="sectionTitle">What is everyone saying?</h1>
         <div className="h-fit px-5 bg-transparent lg:py-16">
           <Swiper
@@ -411,8 +413,8 @@ export default function HomePage() {
           >
             {
               clientImageFileNames.map((item, idx) => (
-                <SwiperSlide className="flex items-center justify-center" key={idx}>
-                  <Image priority={false} sizes='100vh'  src={`/clients/${item}`} alt="clients company's log" fill={true}/>
+                <SwiperSlide className="flex items-center justify-center">
+                  <Image src={`/clients/${item}`} alt="clients company's log" fill={true}/>
                 </SwiperSlide>
               ))
             }
@@ -423,12 +425,12 @@ export default function HomePage() {
       {/* ------------------------------- OUR CLIENT END ------------------------------ */}
 
 
-    </main>
+    </Fragment>
   )
 }
 
 
-export const ServiceDetails: React.FC<{ title: string, content: string, img:string }> = ({ title, content, img }) => {
+export const ServiceDetails: React.FC<{ title: string, content: string, img: string }> = ({ title, content, img }) => {
   return (
     <div className="card flex flex-col lg:flex-row gap-2 lg:gap-0">
       <div className="left w-full lg:w-1/2 aspect-video relative">

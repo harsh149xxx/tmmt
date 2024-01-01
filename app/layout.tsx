@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import './globals.css'
-import { NextUIProvider } from '@/app/NextImport'
+
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -15,11 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <main>
-          <NextUIProvider>
             {children}
-          </NextUIProvider>
-        </main>
       </body>
     </html>
   )
