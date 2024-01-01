@@ -195,7 +195,7 @@ export default function HomePage() {
           </div>
         </div>
         <div className=" w-full md:w-1/2 px-2 lg:px-16 aspect-w-9 aspect-h-16">
-          <Image src={header_mobile} alt="Header Mobile Image" className="h-full aspect-w-9 aspect-h-16" />
+          <Image priority={false} src={header_mobile} alt="Header Mobile Image" className="h-full aspect-w-9 aspect-h-16" placeholder='blur'/>
         </div>
       </header>
       {/* ------------------------ TOP SECTION HEADER START ------------------------ */}
@@ -206,7 +206,7 @@ export default function HomePage() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-12 px-7 lg:px-24">
           {
             services.map((item, idx) => (
-              <ServiceCard title={item.title} content={item.content} img={item.img} />
+              <ServiceCard title={item.title} content={item.content} img={item.img} key={idx}/>
             ))
           }
         </div>
@@ -219,7 +219,7 @@ export default function HomePage() {
           We are pioneer at managing your brands in multiple channels. Our motto is to build a communication bridge between advertisers, customers and Affiliates. Branding is perhaps an USP of any business organisation and if you want to make your products popular amongst customers then just opt for our services.
         </div>
         <div className="lg:w-[40%] flex lg:justify-end justify-center">
-          <Image src={Girl} alt="image of a girl" className="aspect-square w-[70%] lg:w-full " />
+          <Image priority={false} src={Girl} alt="image of a girl" className="aspect-square w-[70%] lg:w-full " />
         </div>
       </section>
       {/* ------------------------------- OUR ADD END ------------------------------ */}
@@ -234,7 +234,7 @@ export default function HomePage() {
           <Link href={"/advertiser"} className="btn-blue">SIGNUP</Link>
         </div>
         <div className="left flex mx-auto w-full md:w-[60%] lg:w-[40%]">
-          <Image src={Advertiser} alt="affilate image" />
+          <Image priority={false} src={Advertiser} alt="affilate image" />
         </div>
       </section>
       {/* ------------------------------- ADVERTISER END ------------------------------ */}
@@ -249,7 +249,7 @@ export default function HomePage() {
           <Link href={"/affiliate"} className="btn-blue">SIGNUP</Link>
         </div>
         <div className="flex mx-auto w-full md:w-[60%] lg:w-[40%]">
-          <Image src={Affiliate} alt="affilate image" className="blend-image" />
+          <Image priority={false} src={Affiliate} alt="affilate image" className="blend-image" />
         </div>
       </section>
       {/* ------------------------------- AFFILATE END ------------------------------ */}
@@ -333,7 +333,7 @@ export default function HomePage() {
           >
             {
               userReview.map((item, idx) => (
-                <SwiperSlide className="reviewSlider h-auto border border-black rounded-lg">
+                <SwiperSlide className="reviewSlider h-auto border border-black rounded-lg" key={idx}>
                   <div
                     className="flex flex-col gap-4 p-5 h-full"
                   >
@@ -357,7 +357,7 @@ export default function HomePage() {
       <section className="flex flex-col lg:flex-row bg-gray-100 py-12 md:py-16 gap-10 lg:gap-0">
         <div className="left lg:w-1/2 px-3 lg:px-20 h-fit flex justify-center">
           <div className="relative lg:w-full w-1/2 aspect-square ">
-            <Image src={header_mobile} alt="mobile" fill={true} />
+            <Image priority={false}  src={header_mobile} alt="mobile" fill={true} sizes="100vw"/>
           </div>
         </div>
         <div className="right lg:w-1/2 flex flex-col gap-10 px-10 lg:px-5">
@@ -411,8 +411,8 @@ export default function HomePage() {
           >
             {
               clientImageFileNames.map((item, idx) => (
-                <SwiperSlide className="flex items-center justify-center">
-                  <Image src={`/clients/${item}`} alt="clients company's log" fill={true}/>
+                <SwiperSlide className="flex items-center justify-center" key={idx}>
+                  <Image priority={false} sizes='100vh'  src={`/clients/${item}`} alt="clients company's log" fill={true}/>
                 </SwiperSlide>
               ))
             }
@@ -432,7 +432,7 @@ export const ServiceDetails: React.FC<{ title: string, content: string, img:stri
   return (
     <div className="card flex flex-col lg:flex-row gap-2 lg:gap-0">
       <div className="left w-full lg:w-1/2 aspect-video relative">
-        <Image src={`${img}`} alt="corporate image" fill={true} />
+        <Image sizes='100vw' priority={false}  src={`${img}`} alt="corporate image" fill={true} />
       </div>
       <div className="right flex flex-col gap-5 lg:w-1/2 justify-center lg:p-5 p-3 lg:pl-16">
         <span className="text-3xl md:text-5xl font-semibold" >{title}</span>
