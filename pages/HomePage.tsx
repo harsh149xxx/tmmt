@@ -34,7 +34,7 @@ export default function HomePage() {
       user: "Arpita - Mediaxpedia Technologies PVT. LTD."
     },
     {
-      review: "Xtreame Ad Media Solutions is a good company to work for.They connect with me from time to time and the performance they give is upto the mark.Specialized in every category they work on various models like CPL, CPS, CPA, CPR, CPI.The major vertical for them is Casino & Betting.Working with them is a great value for your ROI.Good work team Xtreame Ad Media Solutions Keep Rocking!",
+      review: "Xtreame Ad Media Solutions is a good company to work for.They connect with me from time to time and the performance they give is upto the mark.Specialized in every category",
       user: "Arpita - Mediaxpedia Technologies PVT. LTD."
     },
     {
@@ -42,7 +42,7 @@ export default function HomePage() {
       user: "Arpita - Mediaxpedia Technologies PVT. LTD."
     },
     {
-      review: "Xtreame Ad Media Solutions is a good company to work for.They connect with me from time to time and the performance they give is upto the mark.Specialized in every category they work on various models like CPL, CPS, CPA, CPR, CPI.The major vertical for them is Casino & Betting.Working with them is a great value for your ROI.Good work team Xtreame Ad Media Solutions Keep Rocking!",
+      review: "Xtreame Ad Media Solutions is a good company to work for.They connect with me from time to time and the performance they give is upto the mark.Specialized in every category",
       user: "Arpita - Mediaxpedia Technologies PVT. LTD."
     },
     {
@@ -50,17 +50,10 @@ export default function HomePage() {
       user: "Arpita - Mediaxpedia Technologies PVT. LTD."
     },
     {
-      review: "Xtreame Ad Media Solutions is a good company to work for.They connect with me from time to time and the performance they give is upto the mark.Specialized in every category they work on various models like CPL, CPS, CPA, CPR, CPI.The major vertical for them is Casino & Betting.Working with them is a great value for your ROI.Good work team Xtreame Ad Media Solutions Keep Rocking!",
-      user: "Arpita - Mediaxpedia Technologies PVT. LTD."
-    },
-    {
       review: "Xtreame Ad Media Solutions is a good company to work for.They connect with me from time to time and the performance they give is upto the mark.Specialized in every category",
       user: "Arpita - Mediaxpedia Technologies PVT. LTD."
     },
-    {
-      review: "Xtreame Ad Media Solutions is a good company to work for.They connect with me from time to time and the performance they give is upto the mark.Specialized in every category they work on various models like CPL, CPS, CPA, CPR, CPI.The major vertical for them is Casino & Betting.Working with them is a great value for your ROI.Good work team Xtreame Ad Media Solutions Keep Rocking!",
-      user: "Arpita - Mediaxpedia Technologies PVT. LTD."
-    },
+    
   ]
 
   const clientImageFileNames = [
@@ -77,6 +70,25 @@ export default function HomePage() {
     'client11.png',
     'client12.png',
     'client13.png',
+  ];
+  const clientImageFileNamesTest = [
+    'client1.png',
+    'client2.png',
+    'client3.png',
+    'client4.png',
+    'client5.png',
+    'client5.png',
+    'client5.png',
+    'client5.png',
+    'client5.png',
+    'client5.png',
+    'client5.png',
+    'client5.png',
+    'client5.png',
+    'client5.png',
+    'client5.png',
+    'client5.png',
+    'client5.png',
   ];
 
   const serviceDetails = [
@@ -178,12 +190,12 @@ export default function HomePage() {
     <Fragment>
 
       {/* ------------------------ TOP SECTION HEADER START ------------------------ */}
-      <header className="h-fit md:h-screen  bg-col3 flex flex-col md:flex-row p-1 gap-5 pb-10">
-        <div className="w-full md:w-1/2  text-white gap-8 flex flex-col items-center md:justify-center">
-          <h1 className="text-6xl titleColor text-center font-serif"
+      <header className="flex h-fit flex-col gap-5 bg-col3 px-7 pb-10 md:h-screen md:flex-row">
+        <div className="flex w-full flex-col items-center gap-8 text-white md:w-1/2 md:justify-center">
+          <h1 className="titleColor text-center font-serif text-6xl"
           // style={{ "textShadow": "0px 0px 5px #D9B29C" }}
           >We Manage Your Brands in Multiple Channels</h1>
-          <p className="text-xl titleColor text-center px-5 font-mono">Our motto is to build a communication bridge between advertisers, customers, and affiliates.</p>
+          <p className="titleColor px-5 text-center font-mono text-xl">Our motto is to build a communication bridge between advertisers, customers, and affiliates.</p>
           <div className="flex gap-5">
             <Link href="/advertiser" className="btn-header">
               Advertiser
@@ -194,16 +206,16 @@ export default function HomePage() {
 
           </div>
         </div>
-        <div className=" w-full md:w-1/2 px-2 lg:px-16 aspect-w-9 aspect-h-16">
-          <Image priority={false} src={header_mobile} alt="Header Mobile Image" className="h-full aspect-w-9 aspect-h-16" placeholder='blur' />
+        <div className="aspect-w-9 aspect-h-16 w-full px-2 md:w-1/2 lg:px-16">
+          <Image priority={false} src={header_mobile} alt="Header Mobile Image" className="aspect-w-9 aspect-h-16 h-full" placeholder='blur' />
         </div>
       </header>
       {/* ------------------------ TOP SECTION HEADER START ------------------------ */}
 
       {/* --------------------------- OUR SERVICES START --------------------------- */}
-      <section className="py-12 md:py-16 bg-sectionBg">
+      <section className="bg-sectionBg px-7 py-12 md:px-16 md:py-16 lg:px-32">
         <h1 className="sectionTitle"><span className='text-col5'>OUR</span> SERVICES</h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-12 px-7 lg:px-24">
+        <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3 lg:gap-12">
           {
             services.map((item, idx) => (
               <ServiceCard title={item.title} content={item.content} img={item.img} key={idx} />
@@ -214,56 +226,56 @@ export default function HomePage() {
       {/* --------------------------- OUR SERVICES END --------------------------- */}
 
       {/* ------------------------------ OUR ADD START ----------------------------- */}
-      <section className="flex px-6 flex-col gap-12 lg:gap-0 lg:flex-row h-fit  lg:px-36 bg-col3 py-12 md:py-16 lg:items-center">
-        <div className="text-2xl lg:w-[60%] text-black lg:pr-5 text-center lg:text-left">
+      <section className="flex h-fit flex-col gap-12 bg-col3 px-7 py-12 md:px-16 md:py-16 lg:flex-row lg:items-center lg:gap-0 lg:pl-32 lg:pr-20">
+        <div className="text-center text-2xl text-black lg:w-[60%] lg:pr-5 lg:text-left">
           We are pioneer at managing your brands in multiple channels. Our motto is to build a communication bridge between advertisers, customers and Affiliates. Branding is perhaps an USP of any business organisation and if you want to make your products popular amongst customers then just opt for our services.
         </div>
-        <div className="lg:w-[40%] flex lg:justify-end justify-center">
-          <Image priority={false} src={Girl} alt="image of a girl" className="aspect-square w-[70%] lg:w-full " />
+        <div className="flex justify-center lg:w-[40%] lg:justify-end">
+          <Image priority={false} src={Girl} alt="image of a girl" className="aspect-square w-[70%] lg:w-full" />
         </div>
       </section>
       {/* ------------------------------- OUR ADD END ------------------------------ */}
 
       {/* ------------------------------- ADVERTISER START ------------------------------ */}
-      <section className="flex py-10 gap-5 md:gap-0 flex-col-reverse bg-sectionBg lg:flex-row-reverse px-5 md:px-24 lg:p-12 ">
-        <div className="lg:w-[60%] flex flex-col gap-7 justify-center lg:px-16">
-          <h2 className="text-black text-3xl font-semibold">Advertiser</h2>
+      <section className="flex flex-col-reverse gap-5 bg-sectionBg px-7 py-10 md:gap-0 md:px-16 lg:flex-row-reverse lg:px-32">
+        <div className="flex flex-col justify-center gap-7 lg:w-[60%] lg:px-16">
+          <h2 className="text-3xl font-semibold text-black">Advertiser</h2>
           <p className='text-gray-700'>
             It is often found that some of the websites hold a first position in Google due to attractive advertisements. Well, you might be thinking about the ways to invite advertisers on your webpage. Mediaxpedia have gain immense success in inciting the advertisers to visit a company's webpage. We can assure you that our proven formula will create significant effect on your website. You will find that advertisers are getting attracted to your website. We are quite efficient in establishing a platform for meeting our clients with their prospective advertisers by the following:
           </p>
           <Link href={"/advertiser"} className="btn-header">SIGNUP</Link>
         </div>
-        <div className="left flex mx-auto w-full md:w-[60%] lg:w-[40%]">
+        <div className="left mx-auto flex w-full md:w-[60%] lg:w-[40%]">
           <Image priority={false} src={Advertiser} alt="affilate image" />
         </div>
       </section>
       {/* ------------------------------- ADVERTISER END ------------------------------ */}
 
       {/* ------------------------------- AFFILATE START ------------------------------ */}
-      <section className="flex py-10 gap-5 flex-col-reverse bg-sectionBg lg:flex-row md:px-24 px-5">
-        <div className="left lg:w-[60%] flex flex-col gap-7 justify-center lg:px-16">
+      <section className="flex flex-col-reverse gap-5 bg-sectionBg px-7 py-10 md:px-16 lg:flex-row lg:px-32">
+        <div className="left flex flex-col justify-center gap-7 lg:w-[60%]">
           <h2 className="text-3xl font-semibold text-black">Affiliate</h2>
           <p className='text-gray-700'>
             Affiliates can be regarded as one of the main catalyst behind your marketing campaign. Your online performance is largely dependent upon the delivery of your services or products at right context, place and time. In the absence of a Affiliate you are never going to reach to your advertisers. Affiliates can open avenues for your website reach to the potential advertiser. It can well be discerned that Affiliate can both give a boost to your business and at the same time degrade it too.
           </p>
           <Link href={"/affiliate"} className="btn-header">SIGNUP</Link>
         </div>
-        <div className="flex mx-auto w-full md:w-[60%] lg:w-[40%]">
+        <div className="mx-auto flex w-full md:w-[60%] lg:w-[40%]">
           <Image priority={false} src={Affiliate} alt="affilate image" className="blend-image" />
         </div>
       </section>
       {/* ------------------------------- AFFILATE END ------------------------------ */}
 
       {/* ------------------------------- SERVICES START ------------------------------ */}
-      <section className="px-2 lg:px-24 pb-12 md:pb-16 bg-sectionBg">
-        <h1 className="sectionTitle "><span className='text-col5'>SER</span>VICES</h1>
+      <section className="bg-sectionBg px-7 pb-12 md:px-16 md:pb-16 lg:px-32">
+        <h1 className="sectionTitle"><span className='text-col5'>SER</span>VICES</h1>
         <div className="">
-          <div className="text-sm md:text-xl grid-cols-2 md:grid-cols-3 grid w-fit">
-            <button className={"py-3 rounded-t-lg px-2 md:px-5 font-semibold " + `${openTab == 0 ? 'bg-col3 text-col5' : "text-black"}`} onClick={(e) => { e.preventDefault(); setOpenTab(0) }}>INTEGRATION HELP</button>
-            <button className={"py-3 rounded-t-lg px-2 md:px-5 font-semibold " + `${openTab == 1 ? 'bg-col3 text-col5' : "text-black"}`} onClick={(e) => { e.preventDefault(); setOpenTab(1) }}>CAMPAIGN MIGRATION</button>
-            <button className={"py-3 rounded-t-lg px-2 md:px-5 font-semibold " + `${openTab == 2 ? 'bg-col3 text-col5' : "text-black"}`} onClick={(e) => { e.preventDefault(); setOpenTab(2) }}>MULTI CHANEL</button>
+          <div className="grid w-fit grid-cols-2 text-sm md:grid-cols-3 md:text-xl">
+            <button className={"rounded-t-lg px-2 py-3 font-semibold md:px-5" + `${openTab == 0 ? 'bg-col3 text-col5' : "text-black"}`} onClick={(e) => { e.preventDefault(); setOpenTab(0) }}>INTEGRATION HELP</button>
+            <button className={"rounded-t-lg px-2 py-3 font-semibold md:px-5" + `${openTab == 1 ? 'bg-col3 text-col5' : "text-black"}`} onClick={(e) => { e.preventDefault(); setOpenTab(1) }}>CAMPAIGN MIGRATION</button>
+            <button className={"rounded-t-lg px-2 py-3 font-semibold md:px-5" + `${openTab == 2 ? 'bg-col3 text-col5' : "text-black"}`} onClick={(e) => { e.preventDefault(); setOpenTab(2) }}>MULTI CHANEL</button>
           </div>
-          <div className="border-2 border-col3 rounded-b-lg lg:rounded-e-lg flex bg-col3">
+          <div className="flex rounded-b-lg border-2 border-col3 bg-col3 lg:rounded-e-lg">
             {
               serviceDetails.map((item, index) => (
                 <React.Fragment key={index}>
@@ -281,12 +293,12 @@ export default function HomePage() {
 
 
       {/* ------------------------------- FAQS START ------------------------------ */}
-      <section className="bg-col3 px-2 lg:px-24 py-10 md:py-16">
+      <section className="bg-col3 px-7 py-10 md:px-16 md:py-16 lg:px-32">
         <h1 className="sectionTitle text-col5">FAQS</h1>
         <Accordion variant="splitted">
           {
             faqsData.map((item, idx) => (
-              <AccordionItem key={idx} aria-label={`{Accordian ${idx + 1}}`} title={<span className='text-col5 font-semibold'>Q. {item.question}</span>} className="accordian">
+              <AccordionItem key={idx} aria-label={`{Accordian ${idx + 1}}`} title={<span className='font-semibold text-col5'>Q. {item.question}</span>} className="accordian">
                 Ans: {item.answer}
               </AccordionItem>
             ))
@@ -298,23 +310,23 @@ export default function HomePage() {
       {/* ------------------------------- FAQS END ------------------------------ */}
 
       {/* ------------------------------- WHT TO CHOSE START ------------------------------ */}
-      <section className="flex flex-col gap-5 items-center bg-gray-100 py-16 md:py-12 px-2 md:px-5">
-        <h1 className="text-4xl text-center font-semibold">Why it's worth to choose <span className='text-col5'>XtremeAd?</span></h1>
-        <p className="text-xl lg:w-1/2 w-[80%] text-center">With XtremeAd Media Solutions you will remain at a complete ease as we can take complete responsibility of your branding...</p>
-        <div className="grid md:grid-cols-2 grid-cols-1 gap-5 text-2xl font-semibold px-5 md:px-0">
-          <div className="px-24 rounded-xl cursor-pointer py-8 bg-col4 text-black transform transition-transform duration-300 hover:scale-[1.05] flex justify-center">SAFETY</div>
-          <div className="px-24 rounded-xl cursor-pointer py-8 bg-col4 text-black transform transition-transform duration-300 hover:scale-[1.05] flex justify-center">STABILITY</div>
-          <div className="px-24 rounded-xl cursor-pointer py-8 bg-col4 text-black transform transition-transform duration-300 hover:scale-[1.05] flex justify-center">TECHNICAL SUPPORT</div>
-          <div className="px-24 rounded-xl cursor-pointer py-8 bg-col4 text-black transform transition-transform duration-300 hover:scale-[1.05] flex justify-center">COMPLETE SOLUTIONS</div>
+      <section className="flex flex-col items-center gap-5 bg-gray-100 px-7 py-16 md:px-16 md:py-12 lg:px-32">
+        <h1 className="text-center text-4xl font-semibold">Why it's worth to choose <span className='text-col5'>XtremeAd?</span></h1>
+        <p className="w-[80%] text-center text-xl lg:w-1/2">With XtremeAd Media Solutions you will remain at a complete ease as we can take complete responsibility of your branding...</p>
+        <div className="grid grid-cols-1 gap-5 px-5 text-2xl font-semibold md:grid-cols-2 md:px-0">
+          <div className="flex transform cursor-pointer justify-center rounded-xl bg-col4 px-16 py-8 text-black transition-transform duration-300 hover:scale-[1.05]">SAFETY</div>
+          <div className="flex transform cursor-pointer justify-center rounded-xl bg-col4 px-16 py-8 text-black transition-transform duration-300 hover:scale-[1.05]">STABILITY</div>
+          <div className="flex transform cursor-pointer justify-center rounded-xl bg-col4 px-16 py-8 text-black transition-transform duration-300 hover:scale-[1.05]">TECHNICAL SUPPORT</div>
+          <div className="flex transform cursor-pointer justify-center rounded-xl bg-col4 px-16 py-8 text-black transition-transform duration-300 hover:scale-[1.05]">COMPLETE SOLUTIONS</div>
         </div>
       </section>
       {/* ------------------------------- WHT TO CHOSE END ------------------------------ */}
 
 
       {/* -------------------------- REVEIW SECTION START -------------------------- */}
-      <section className="px-2 py-12 md:py-16 bg-col3">
+      <section className="bg-col3 px-7 py-12 md:px-16 md:py-16 lg:px-32">
         <h1 className="sectionTitle">What is everyone saying?</h1>
-        <div className="h-fit px-2 md:px-5 bg-transparent">
+        <div className="h-fit bg-transparent">
           <Swiper
             loop={true}
             slidesPerView={windowWidth < 641 ? 1 : (windowWidth < 770 ? 2 : 3)}
@@ -334,15 +346,15 @@ export default function HomePage() {
           >
             {
               userReview.map((item, idx) => (
-                <SwiperSlide className="reviewSlider h-auto border border-black rounded-lg" key={idx}>
+                <SwiperSlide className="reviewSlider h-auto rounded-lg border border-black" key={idx}>
                   <div
-                    className="flex flex-col gap-4 p-5 h-full"
+                    className="flex h-full flex-col gap-4 p-5"
                   >
                     <p>
                       {item.review}
                     </p>
                     <span
-                      className="font-semibold mt-auto text-col5"
+                      className="mt-auto font-semibold text-col5"
                     >{item.user}</span>
                   </div>
                 </SwiperSlide>
@@ -355,48 +367,109 @@ export default function HomePage() {
 
 
       {/* ------------------------------- STATISTICS START ------------------------------ */}
-      <section className="flex flex-col lg:flex-row bg-gray-100 py-12 md:py-16 gap-10 lg:gap-0">
-        <div className="left lg:w-1/2 px-3 lg:px-20 h-fit flex justify-center">
-          <div className="relative lg:w-full w-1/2 aspect-square ">
+      <section className="flex flex-col gap-10 bg-gray-100 px-7 py-12 md:px-16 md:py-16 lg:flex-row lg:gap-10 lg:px-32">
+        <div className="left flex h-fit justify-center lg:w-1/2">
+          <div className="relative aspect-square w-1/2 lg:w-full">
             <Image priority={false} src={header_mobile} alt="mobile" fill={true} sizes="100vw" />
           </div>
         </div>
-        <div className="right lg:w-1/2 flex flex-col gap-10 px-10 lg:px-5">
-          <div className="cardhandler grid grid-cols-2 md:grid-cols-3  gap-5">
-            <div className="card bg-white flex flex-col items-center justify-center py-10 gap-3 shadow-[0px_2px_5px_0px_#1a202c]">
-              <span className="font-semibold text-2xl"> 500+</span>
+        <div className="right flex flex-col gap-10 lg:w-1/2">
+          <div className="cardhandler grid grid-cols-2 gap-5 md:grid-cols-3">
+            <div className="card flex flex-col items-center justify-center gap-3 bg-white py-10 shadow-[0px_2px_5px_0px_#1a202c]">
+              <span className="text-2xl font-semibold"> 500+</span>
               <span className='text-center'>Affiliates</span>
             </div>
-            <div className="card bg-white flex flex-col items-center justify-center py-10 gap-3 shadow-[0px_2px_5px_0px_#1a202c]">
-              <span className="font-semibold text-2xl">150+</span>
+            <div className="card flex flex-col items-center justify-center gap-3 bg-white py-10 shadow-[0px_2px_5px_0px_#1a202c]">
+              <span className="text-2xl font-semibold">150+</span>
               <span className='text-center'>Clients</span>
             </div>
-            <div className="card bg-white flex flex-col items-center justify-center py-10 gap-3 shadow-[0px_2px_5px_0px_#1a202c]">
-              <span className="font-semibold text-2xl">300000+</span>
+            <div className="card flex flex-col items-center justify-center gap-3 bg-white py-10 shadow-[0px_2px_5px_0px_#1a202c]">
+              <span className="text-2xl font-semibold">300000+</span>
               <span className='text-center'>Monthly Conversion</span>
             </div>
           </div>
           <p className="text-lg">
             With XtremeAd you will remain at a complete ease as we can take complete responsibility of your branding. Nowadays, with an increased competition in the market, one needs to generate new ideas that could create long lasting impact on the customers.
           </p>
-          <div className="buttonhandler gap-5 flex flex-col">
+          <div className="buttonhandler flex flex-col gap-5">
             <Link href={"/affiliate"} className="btn-header rounded-full px-12 py-3">Affilate</Link>
             <Link href={"/affiliate"} className="btn-header rounded-full px-12 py-3">Advertiser</Link>
           </div>
         </div>
+        {/* <Swiper
+          slidesPerView={3}
+          grid={{
+            rows: 2
+          }}
+          spaceBetween={15}
+          pagination={{
+            clickable: true,
+          }}
+          modules={[Grid, Pagination]}
+          className="mySwiper"
+        >
+          <SwiperSlide>
+            <div className="test bg-red-300">good</div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="test bg-red-300">good</div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="test bg-red-300">good</div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="test bg-red-300">good</div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="test bg-red-300">good</div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="test bg-red-300">good</div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="test bg-red-300">good</div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="test bg-red-300">good</div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="test bg-red-300">good</div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="test bg-red-300">good</div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="test bg-red-300">good</div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="test bg-red-300">good</div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="test bg-red-300">good</div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="test bg-red-300">good</div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="test bg-red-300">good</div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="test bg-red-300">good</div>
+          </SwiperSlide>
+        </Swiper> */}
       </section>
       {/* ------------------------------- STATISTICS END ------------------------------ */}
 
 
 
       {/* ------------------------------- OUR CLIENT START ------------------------------ */}
-      <section className="pb-12 bg-sectionBg py-12 md:py-16">
+      <section className="bg-sectionBg px-7 py-12 pb-12 md:px-16 md:py-16 lg:px-32">
         <h1 className="sectionTitle"><span className='text-col5'>OUR</span> CLIENTS</h1>
-        <div className="imageSlider h-[40vh] lg:h-[50vh] lg:px-2">
+        <div className="imageSlider">
           <Swiper
             navigation={true} 
-            loop={true}
-            slidesPerView={windowWidth < 641 ? 2 : (windowWidth < 769 ? 3 : 3)}
+            // slidesPerView={windowWidth < 641 ? 2 : (windowWidth < 769 ? 3 : 3)}
+            slidesPerView={ 3}
             autoplay={{
               delay: 1000,
               disableOnInteraction: false,
@@ -404,7 +477,7 @@ export default function HomePage() {
             grid={{
               rows: 2,
             }}
-            spaceBetween={15}
+            spaceBetween={10}
             pagination={{
               clickable: true,
             }}
@@ -413,8 +486,10 @@ export default function HomePage() {
           >
             {
               clientImageFileNames.map((item, idx) => (
-                <SwiperSlide className="flex items-center justify-center">
-                  <Image src={`/clients/${item}`} alt="clients company's log" fill={true} />
+                <SwiperSlide className="">
+                  <div className='aspect-[5/3]'>
+                   <Image src={`/clients/${item}`} alt="clients company's log" fill={true} />
+                  </div>
                 </SwiperSlide>
               ))
             }
@@ -432,12 +507,12 @@ export default function HomePage() {
 
 export const ServiceDetails: React.FC<{ title: string, content: string, img: string }> = ({ title, content, img }) => {
   return (
-    <div className="card flex flex-col lg:flex-row gap-2 lg:gap-0">
-      <div className="left w-full lg:w-1/2 aspect-video relative">
+    <div className="card flex flex-col gap-2 lg:flex-row lg:gap-0">
+      <div className="left relative aspect-video w-full lg:w-1/2">
         <Image sizes='100vw' priority={false} src={`${img}`} alt="corporate image" fill={true} />
       </div>
-      <div className="right flex flex-col gap-5 lg:w-1/2 justify-center lg:p-5 p-3 lg:pl-16">
-        <span className="text-3xl md:text-5xl font-semibold text-col5" >{title}</span>
+      <div className="right flex flex-col justify-center gap-5 p-3 lg:w-1/2 lg:p-5 lg:pl-16">
+        <span className="text-3xl font-semibold text-col5 md:text-5xl" >{title}</span>
         <p className="text-lg text-col5">{content}</p>
       </div>
     </div>
