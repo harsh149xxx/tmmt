@@ -3,18 +3,23 @@
 @tailwind utilities;
 
 @layer components {
-  .btn-white {
-    @apply bg-white hover:bg-gray-200 text-black w-fit h-fit px-8 py-3 rounded-full font-semibold shadow-[0px_0px_10px_1px_#1a202c] hover:shadow-[0px_0px_5px_1px_#1a202c] active:scale-90;
+  .btn-header {
+    @apply bg-col5 text-white hover:bg-[#b73c36] w-fit h-fit px-8 py-3 rounded-full font-semibold  active:scale-90;
   }
   .btn-blue {
     @apply bg-blue-600 hover:bg-blue-800 w-fit h-fit px-4 py-2 rounded-lg text-white font-semibold active:scale-90;
   }
   .sectionTitle {
-    @apply text-center lg:text-5xl text-3xl font-bold pb-12 md:pb-16;
+    @apply text-black text-center lg:text-5xl text-3xl font-bold pb-12 md:pb-16;
   }
   .gradientBg {
     @apply bg-gradient-to-r from-[#2f80ed] to-[#56ccf2];
   }
+  .titleColor{@apply text-col5}
+}
+
+body{
+  background: #F1CF54;
 }
 
 
