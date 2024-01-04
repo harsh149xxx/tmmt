@@ -7,10 +7,10 @@
     @apply bg-col5 text-white hover:bg-[#b73c36] w-fit h-fit px-8 py-3 rounded-full font-semibold  active:scale-90;
   }
   .btn-blue {
-    @apply bg-blue-600 hover:bg-blue-800 w-fit h-fit px-4 py-2 rounded-lg text-white font-semibold active:scale-90;
+    @apply h-fit w-fit rounded-lg bg-blue-600 px-4 py-2 font-semibold text-white hover:bg-blue-800 active:scale-90;
   }
   .sectionTitle {
-    @apply text-black text-center lg:text-5xl text-3xl font-bold pb-12 md:pb-16;
+    @apply pb-12 text-center text-3xl font-bold text-black md:pb-16 lg:text-5xl;
   }
   .gradientBg {
     @apply bg-gradient-to-r from-[#2f80ed] to-[#56ccf2];
@@ -40,7 +40,7 @@ body{
 }
 
 /* ------------------------------ swiper js css ----------------------------- */
-.swiper {
+/* .swiper {
   width: 100%;
   height: 100%;
   margin-left: auto;
@@ -56,11 +56,37 @@ body{
   height: calc((100% - 30px) / 2) !important;
 
   /* Center slide text vertically */
-  display: flex;
+  /* display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .reviewSlider{
   height: initial !important;
+} */
+
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  margin-top: 0 !important;
+
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  height: calc((100% - 30px) / 2) !important;
+
+  /* Center slide text vertically */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+.swiper-grid-column > .swiper-wrapper {
+  /* gap: 15px; */
+    flex-wrap: nowrap;
+    flex-direction: row !important;
 }
