@@ -41,7 +41,7 @@ const NavbarComp = () => {
 
 
   return (
-    <Navbar isMenuOpen={isMenuOpen} onMenuOpenChange={setIsMenuOpen} shouldHideOnScroll className="rounded-full">
+    <Navbar isMenuOpen={isMenuOpen} onMenuOpenChange={setIsMenuOpen}>
         
         {/* brand information */}
         <NavbarContent>
