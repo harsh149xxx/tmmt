@@ -10,7 +10,7 @@ const FooterComp = () => {
     const pathname = usePathname();
 
     return (
-        <div className="bg-white">
+        <div className={` ${(pathname == '/advertiser' || pathname == '/affiliate') ? "bg-col5" : "bg-white"}`}>
             <footer className="grid grid-cols-1 gap-4 rounded-t-3xl bg-col3 px-7 py-12 text-black md:grid-cols-3 md:flex-row md:gap-0 md:px-16 lg:grid-cols-4 lg:px-32">
 
                 <div className="left flex flex-col gap-5 md:order-1 lg:order-1">
