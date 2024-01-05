@@ -53,7 +53,7 @@ export default function HomePage() {
       review: "Xtreame Ad Media Solutions is a good company to work for.They connect with me from time to time and the performance they give is upto the mark.Specialized in every category",
       user: "Arpita - Mediaxpedia Technologies PVT. LTD."
     },
-    
+
   ]
 
   const clientImageFileNames = [
@@ -71,40 +71,21 @@ export default function HomePage() {
     'client12.png',
     'client13.png',
   ];
-  const clientImageFileNamesTest = [
-    'client1.png',
-    'client2.png',
-    'client3.png',
-    'client4.png',
-    'client5.png',
-    'client5.png',
-    'client5.png',
-    'client5.png',
-    'client5.png',
-    'client5.png',
-    'client5.png',
-    'client5.png',
-    'client5.png',
-    'client5.png',
-    'client5.png',
-    'client5.png',
-    'client5.png',
-  ];
 
   const serviceDetails = [
     {
       title: "Integration Help",
-      content: "<p>New users don’t need to wait to understand the functionality of the dashboard to launch their first campaigns, the team helps them to on-board and integrate their advertisers, affiliates and campaigns on their system without caring about privacy.</p>",
+      content: "New users don’t need to wait to understand the functionality of the dashboard to launch their first campaigns, the team helps them to on-board and integrate their advertisers, affiliates and campaigns on their system without caring about privacy.",
       img: "https://images.unsplash.com/photo-1590650046871-92c887180603"
     },
     {
       title: "Campaign Migration",
-      content: "<p>The fundamental issue is offer migration, which serves as an excuse to put platform migration on hold. Fortunately, we provide an easy way to migrate campaigns directly from your existing platform.</p><p>A well documented migration guide book and personal migration assistance is also available to make the migration process smooth and hectic free.</p><p>Technical support team is always available to help you.</p>",
+      content: "The fundamental issue is offer migration, which serves as an excuse to put platform migration on hold. Fortunately, we provide an easy way to migrate campaigns directly from your existing platform.A well documented migration guide book and personal migration assistance is also available to make the migration process smooth and hectic free.Technical support team is always available to help you.",
       img: "https://images.unsplash.com/photo-1573164574472-797cdf4a583a"
     },
     {
-      title: "Multi Chanel",
-      content: "<p>At XtremeAd, we offer support services through multiple channels, ensuring that users can derive maximum benefit based on their convenience. We understand the importance of providing flexible options to our customers, allowing them to engage with us through various channels for assistance and support.</p><p>A dedicated support team always remains available 24X7 to help you. Our support team first hears users' queries properly and then acts accordingly.</p>",
+      title: "Multi Channel",
+      content: "At XtremeAd, we offer support services through multiple channels, ensuring that users can derive maximum benefit based on their convenience. We understand the importance of providing flexible options to our customers, allowing them to engage with us through various channels for assistance and support.<p>A dedicated support team always remains available 24X7 to help you. Our support team first hears users' queries properly and then acts accordingly.",
       img: "https://images.unsplash.com/photo-1665686308827-eb62e4f6604d"
     },
   ]
@@ -197,13 +178,18 @@ export default function HomePage() {
           >We Manage Your Brands in Multiple Channels</h1>
           <p className="titleColor px-5 text-center font-mono text-xl">Our motto is to build a communication bridge between advertisers, customers, and affiliates.</p>
           <div className="flex gap-5">
-            <Link href="/advertiser" className="btn-header">
+            {
+            process.env.NEXT_PUBLIC_ADVERTISER_LINK 
+            &&
+            <Link href={process.env.NEXT_PUBLIC_ADVERTISER_LINK} className="btn-header">
               Advertiser
-            </Link>
-            <Link href="/affilate" className="btn-header">
-              Affilate
-            </Link>
-
+            </Link>}
+            {
+            process.env.NEXT_PUBLIC_AFFILIATE_LINK 
+            &&
+            <Link href={process.env.NEXT_PUBLIC_AFFILIATE_LINK} className="btn-header">
+              Affiliate
+            </Link>}
           </div>
         </div>
         <div className="aspect-w-9 aspect-h-16 w-full px-2 md:w-1/2 lg:px-16">
@@ -243,7 +229,12 @@ export default function HomePage() {
           <p className='text-gray-700'>
             It is often found that some of the websites hold a first position in Google due to attractive advertisements. Well, you might be thinking about the ways to invite advertisers on your webpage. Mediaxpedia have gain immense success in inciting the advertisers to visit a company's webpage. We can assure you that our proven formula will create significant effect on your website. You will find that advertisers are getting attracted to your website. We are quite efficient in establishing a platform for meeting our clients with their prospective advertisers by the following:
           </p>
-          <Link href={"/advertiser"} className="btn-header">SIGNUP</Link>
+          {
+            process.env.NEXT_PUBLIC_ADVERTISER_LINK
+            &&
+            <Link href={process.env.NEXT_PUBLIC_ADVERTISER_LINK} className="btn-header">
+                SIGNUP
+            </Link>}
         </div>
         <div className="left mx-auto flex w-full md:w-[60%] lg:w-[40%]">
           <Image priority={false} src={Advertiser} alt="affilate image" />
@@ -258,7 +249,12 @@ export default function HomePage() {
           <p className='text-gray-700'>
             Affiliates can be regarded as one of the main catalyst behind your marketing campaign. Your online performance is largely dependent upon the delivery of your services or products at right context, place and time. In the absence of a Affiliate you are never going to reach to your advertisers. Affiliates can open avenues for your website reach to the potential advertiser. It can well be discerned that Affiliate can both give a boost to your business and at the same time degrade it too.
           </p>
-          <Link href={"/affiliate"} className="btn-header">SIGNUP</Link>
+          {
+            process.env.NEXT_PUBLIC_AFFILIATE_LINK
+            &&
+            <Link href={process.env.NEXT_PUBLIC_AFFILIATE_LINK} className="btn-header">
+                SIGNUP
+            </Link>}
         </div>
         <div className="mx-auto flex w-full md:w-[60%] lg:w-[40%]">
           <Image priority={false} src={Affiliate} alt="affilate image" className="blend-image" />
@@ -271,9 +267,9 @@ export default function HomePage() {
         <h1 className="sectionTitle"><span className='text-col5'>SER</span>VICES</h1>
         <div className="">
           <div className="grid w-fit grid-cols-2 text-sm md:grid-cols-3 md:text-xl">
-            <button className={"rounded-t-lg px-2 py-3 font-semibold md:px-5" + `${openTab == 0 ? 'bg-col3 text-col5' : "text-black"}`} onClick={(e) => { e.preventDefault(); setOpenTab(0) }}>INTEGRATION HELP</button>
-            <button className={"rounded-t-lg px-2 py-3 font-semibold md:px-5" + `${openTab == 1 ? 'bg-col3 text-col5' : "text-black"}`} onClick={(e) => { e.preventDefault(); setOpenTab(1) }}>CAMPAIGN MIGRATION</button>
-            <button className={"rounded-t-lg px-2 py-3 font-semibold md:px-5" + `${openTab == 2 ? 'bg-col3 text-col5' : "text-black"}`} onClick={(e) => { e.preventDefault(); setOpenTab(2) }}>MULTI CHANEL</button>
+            <button className={`rounded-t-lg px-2 py-3 font-semibold md:px-5 ${openTab == 0 ? "bg-col3 text-col5" : "text-black"}`} onClick={(e) => { e.preventDefault(); setOpenTab(0) }}>INTEGRATION HELP</button>
+            <button className={`rounded-t-lg px-2 py-3 font-semibold md:px-5 ${openTab == 1 ? "bg-col3 text-col5" : "text-black"}`} onClick={(e) => { e.preventDefault(); setOpenTab(1) }}>CAMPAIGN MIGRATION</button>
+            <button className={`rounded-t-lg px-2 py-3 font-semibold md:px-5 ${openTab == 2 ? "bg-col3 text-col5" : "text-black"}`} onClick={(e) => { e.preventDefault(); setOpenTab(2) }}>MULTI CHANEL</button>
           </div>
           <div className="flex rounded-b-lg border-2 border-col3 bg-col3 lg:rounded-e-lg">
             {
@@ -313,11 +309,11 @@ export default function HomePage() {
       <section className="flex flex-col items-center gap-5 bg-gray-100 px-7 py-16 md:px-16 md:py-12 lg:px-32">
         <h1 className="text-center text-4xl font-semibold">Why it's worth to choose <span className='text-col5'>XtremeAd?</span></h1>
         <p className="w-[80%] text-center text-xl lg:w-1/2">With XtremeAd Media Solutions you will remain at a complete ease as we can take complete responsibility of your branding...</p>
-        <div className="grid grid-cols-1 gap-5 px-5 text-2xl font-semibold md:grid-cols-2 md:px-0">
-          <div className="flex transform cursor-pointer justify-center rounded-xl bg-col4 px-16 py-8 text-black transition-transform duration-300 hover:scale-[1.05]">SAFETY</div>
-          <div className="flex transform cursor-pointer justify-center rounded-xl bg-col4 px-16 py-8 text-black transition-transform duration-300 hover:scale-[1.05]">STABILITY</div>
-          <div className="flex transform cursor-pointer justify-center rounded-xl bg-col4 px-16 py-8 text-black transition-transform duration-300 hover:scale-[1.05]">TECHNICAL SUPPORT</div>
-          <div className="flex transform cursor-pointer justify-center rounded-xl bg-col4 px-16 py-8 text-black transition-transform duration-300 hover:scale-[1.05]">COMPLETE SOLUTIONS</div>
+        <div className="grid w-full grid-cols-1 gap-5 text-xl font-semibold md:grid-cols-2 md:text-2xl">
+          <div className="flex w-full transform cursor-pointer justify-center rounded-xl bg-col4 py-8 text-black transition-transform duration-300 hover:scale-[1.05]">SAFETY</div>
+          <div className="flex w-full transform cursor-pointer justify-center rounded-xl bg-col4 py-8 text-black transition-transform duration-300 hover:scale-[1.05]">STABILITY</div>
+          <div className="flex w-full transform cursor-pointer justify-center rounded-xl bg-col4 py-8 text-black transition-transform duration-300 hover:scale-[1.05]">TECHNICAL SUPPORT</div>
+          <div className="flex w-full transform cursor-pointer justify-center rounded-xl bg-col4 py-8 text-black transition-transform duration-300 hover:scale-[1.05]">COMPLETE SOLUTIONS</div>
         </div>
       </section>
       {/* ------------------------------- WHT TO CHOSE END ------------------------------ */}
@@ -392,71 +388,22 @@ export default function HomePage() {
             With XtremeAd you will remain at a complete ease as we can take complete responsibility of your branding. Nowadays, with an increased competition in the market, one needs to generate new ideas that could create long lasting impact on the customers.
           </p>
           <div className="buttonhandler flex flex-col gap-5">
-            <Link href={"/affiliate"} className="btn-header rounded-full px-12 py-3">Affilate</Link>
-            <Link href={"/affiliate"} className="btn-header rounded-full px-12 py-3">Advertiser</Link>
+            {
+              process.env.NEXT_PUBLIC_AFFILIATE_LINK
+              &&
+              <Link href={process.env.NEXT_PUBLIC_AFFILIATE_LINK} className="btn-header rounded-full px-12 py-3">
+                Affiliate
+              </Link>}
+              
+            {
+              process.env.NEXT_PUBLIC_ADVERTISER_LINK
+              &&
+              <Link href={process.env.NEXT_PUBLIC_ADVERTISER_LINK} className="btn-header rounded-full px-12 py-3">
+                  Advertiser
+              </Link>}
+
           </div>
         </div>
-        {/* <Swiper
-          slidesPerView={3}
-          grid={{
-            rows: 2
-          }}
-          spaceBetween={15}
-          pagination={{
-            clickable: true,
-          }}
-          modules={[Grid, Pagination]}
-          className="mySwiper"
-        >
-          <SwiperSlide>
-            <div className="test bg-red-300">good</div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="test bg-red-300">good</div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="test bg-red-300">good</div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="test bg-red-300">good</div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="test bg-red-300">good</div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="test bg-red-300">good</div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="test bg-red-300">good</div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="test bg-red-300">good</div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="test bg-red-300">good</div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="test bg-red-300">good</div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="test bg-red-300">good</div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="test bg-red-300">good</div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="test bg-red-300">good</div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="test bg-red-300">good</div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="test bg-red-300">good</div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="test bg-red-300">good</div>
-          </SwiperSlide>
-        </Swiper> */}
       </section>
       {/* ------------------------------- STATISTICS END ------------------------------ */}
 
@@ -467,9 +414,9 @@ export default function HomePage() {
         <h1 className="sectionTitle"><span className='text-col5'>OUR</span> CLIENTS</h1>
         <div className="imageSlider">
           <Swiper
-            navigation={true} 
+            navigation={true}
             // slidesPerView={windowWidth < 641 ? 2 : (windowWidth < 769 ? 3 : 3)}
-            slidesPerView={ 3}
+            slidesPerView={3}
             autoplay={{
               delay: 1000,
               disableOnInteraction: false,
@@ -487,8 +434,8 @@ export default function HomePage() {
             {
               clientImageFileNames.map((item, idx) => (
                 <SwiperSlide className="">
-                  <div className='aspect-[5/3]'>
-                   <Image src={`/clients/${item}`} alt="clients company's log" fill={true} />
+                  <div className='aspect-[5/3] border border-black'>
+                    <Image src={`/clients/${item}`} alt="clients company's log" fill={true} />
                   </div>
                 </SwiperSlide>
               ))
