@@ -2,8 +2,9 @@
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { menuItems } from "./NavbarComp";
 import { usePathname, useRouter } from "next/navigation";
-import Logo from "@/public/assets/logo.jpg"
+import Logo from "@/public/assets/logo.png"
 import Image from "next/image";
+import Link from "next/link";
 
 const FooterComp = () => {
     const router = useRouter();
@@ -17,7 +18,7 @@ const FooterComp = () => {
                     <div className="relative aspect-square w-1/2">
                         <Image src={Logo} fill alt="company logo" />
                     </div>
-                    <span className="text-4xl font-semibold">Xremead</span>
+                    <span className="text-4xl font-semibold">Xtremead</span>
                 </div>
 
                 <div className="right flex flex-col gap-3 md:order-3 lg:order-2">
@@ -50,8 +51,14 @@ const FooterComp = () => {
                         <FaLinkedin className="cursor-pointer hover:text-col5" />
                     </div>
                     <div className="bttn flex flex-wrap gap-5 py-5">
-                        <button className="rounded-xl border-2 border-col5 bg-col5 px-8 py-2 text-base font-semibold text-black hover:bg-transparent md:text-xl">Signup</button>
-                        <button className="rounded-xl border-2 border-col5 px-8 py-2 text-base font-semibold hover:bg-col5 md:text-xl">Login</button>
+                        {
+                            process.env.NEXT_PUBLIC_SIGNUP_LINK
+                            &&
+                            <Link href={process.env.NEXT_PUBLIC_SIGNUP_LINK} className="rounded-xl border-2 border-col5 bg-col5 px-8 py-2 text-base font-semibold text-black hover:bg-transparent md:text-xl">Signup</Link>}
+                        {
+                            process.env.NEXT_PUBLIC_LOGIN_LINK
+                            &&
+                            <Link href={process.env.NEXT_PUBLIC_LOGIN_LINK} className="rounded-xl border-2 border-col5 px-8 py-2 text-base font-semibold hover:bg-col5 md:text-xl">Login</Link>}
                     </div>
                 </div>
 
