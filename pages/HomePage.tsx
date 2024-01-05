@@ -325,7 +325,7 @@ export default function HomePage() {
 
       {/* -------------------------- REVEIW SECTION START -------------------------- */}
       <section className="bg-col3 px-7 py-12 md:px-16 md:py-16 lg:px-32">
-        <h1 className="sectionTitle">What is everyone saying?</h1>
+        <h1 className="sectionTitle text-col5">What is everyone saying?</h1>
         <div className="h-fit bg-transparent">
           <Swiper
             loop={true}
