@@ -7,6 +7,7 @@ import Target from '@/public/assets/advertiser/target.png'
 import Cover from '@/public/assets/advertiser/cover.png'
 import RTI from '@/public/assets/advertiser/rti.png'
 import Campaign from '@/public/assets/advertiser/campaign.png'
+import Link from "next/link"
 
 const data = [
     {
@@ -105,8 +106,9 @@ export const BottomPart =()=>{
             </section>
 
             <div className="flex flex-col items-center justify-between gap-5 bg-col5 px-7 py-5 md:px-16 lg:flex-row lg:gap-0 lg:px-32">
-                <h1 className="w-full text-4xl text-gray-300 md:text-5xl lg:w-10/12">Build your successful business with us. Want to know how to do this?</h1>
-                <button className="h-fit w-fit rounded-full bg-white px-5 py-2 font-semibold text-col5 hover:bg-gray-200">Sign Up</button>
+                <h1 className="w-full text-4xl text-gray-200 md:text-5xl lg:w-10/12">Build your successful business with us. Want to know how to do this?</h1>
+                {process.env.NEXT_PUBLIC_SIGNUP_LINK &&
+                    <Link href={process.env.NEXT_PUBLIC_SIGNUP_LINK} className="h-fit w-fit rounded-full bg-white px-5 py-2 font-semibold text-col5 hover:bg-gray-200">Sign Up</Link>}
             </div>
             </>
     )
