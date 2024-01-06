@@ -18,14 +18,14 @@ const FooterComp = () => {
                     <div className="relative aspect-square w-1/2">
                         <Image src={Logo} fill alt="company logo" />
                     </div>
-                    <span className="text-4xl font-semibold">Xtremead</span>
+                    <span className="text-4xl font-semibold">Velocity Click</span>
                 </div>
 
                 <div className="right flex flex-col gap-3 md:order-3 lg:order-2">
                     <h1 className="text-2xl font-semibold">Contact Us</h1>
                     <span>177D, Picnic Garden Road,</span>
                     <span> West Bengal, Kolkata - 700039</span>
-                    <span>Email: <a href="mailto:support@xtremead.in" className="text-blue-700 underline">support@xtremead.in</a> </span>
+                    <span>Email: <a href="mailto:mhvelocityclick@gmail.com" className="text-blue-700 underline">mhvelocityclick@gmail.com</a> </span>
                 </div>
 
                 <div className="middle flex flex-col gap-2 md:order-2 lg:order-3">
@@ -33,10 +33,10 @@ const FooterComp = () => {
                         // <button className={`w-fit font-semibold hover:text-col5` + `${(pathname == `/${item.slug}` || pathname == `${item.slug}`) ? "text-col5" : "text-black"}`} onClick={() => { router.push(item.slug, { scroll: true }) }} >
                         //     {item.title}
                         // </button>
-                        <button 
-                        className={`w-fit font-semibold hover:text-col5 ${(pathname == `/${item.slug}` || pathname == `${item.slug}`) ? "text-col5" : "text-black"}`} 
-                        // className={`w-fit font-semibold hover:text-col5`} 
-                        onClick={() => { router.push(item.slug, { scroll: true }) }} >
+                        <button
+                            className={`w-fit font-semibold hover:text-col5 ${(pathname == `/${item.slug}` || pathname == `${item.slug}`) ? "text-col5" : "text-black"}`}
+                            // className={`w-fit font-semibold hover:text-col5`} 
+                            onClick={() => { router.push(item.slug, { scroll: true }) }} >
                             {item.title}
                         </button>
                     ))}
@@ -51,14 +51,8 @@ const FooterComp = () => {
                         <FaLinkedin className="cursor-pointer hover:text-col5" />
                     </div>
                     <div className="bttn flex flex-wrap gap-5 py-5">
-                        {
-                            process.env.NEXT_PUBLIC_SIGNUP_LINK
-                            &&
-                            <Link href={process.env.NEXT_PUBLIC_SIGNUP_LINK} className="rounded-xl border-2 border-col5 bg-col5 px-8 py-2 text-base font-semibold text-black hover:bg-transparent md:text-xl">Signup</Link>}
-                        {
-                            process.env.NEXT_PUBLIC_LOGIN_LINK
-                            &&
-                            <Link href={process.env.NEXT_PUBLIC_LOGIN_LINK} className="rounded-xl border-2 border-col5 px-8 py-2 text-base font-semibold hover:bg-col5 md:text-xl">Login</Link>}
+                        <Link href="https://xtreameadsmediasolutions10389562.offer18.com/m/signup_self_adv?r=&am=" className="rounded-xl border-2 border-col5 bg-col5 px-8 py-2 text-base font-semibold text-black hover:bg-transparent md:text-xl">Signup</Link>
+                        <Link href="https://xtreameadsmediasolutions10389562.offer18.com/m/login" className="rounded-xl border-2 border-col5 px-8 py-2 text-base font-semibold hover:bg-col5 md:text-xl">Login</Link>
                     </div>
                 </div>
 

@@ -10,7 +10,7 @@ const ServicesPage = () => {
         <div>
             <HeaderBox title="Sevices" />
 
-            <section className='flex flex-col-reverse gap-12 bg-sectionBg px-7 py-10 md:px-16 lg:flex-row lg:px-32'>
+            <section className='mx-2 my-2 flex flex-col-reverse gap-12 rounded-xl bg-sectionBg p-5 md:mx-16 md:p-10 lg:mx-32 lg:flex-row'>
                 <div className='w-full lg:w-1/2'>
                     <h1 className='text-3xl font-semibold'>Mobile Marketing</h1>
                     <p className='text-justify text-xl'>
@@ -24,7 +24,7 @@ const ServicesPage = () => {
                 </div>
             </section>
 
-            <section className='flex flex-col-reverse gap-12 bg-gray-200 px-7 py-10 md:px-16 lg:flex-row-reverse lg:px-32'>
+            <section className='mx-2 my-8 flex flex-col-reverse gap-12 rounded-xl bg-gray-200 p-5 md:mx-16 md:p-10 lg:mx-32 lg:flex-row-reverse'>
                 <div className='w-full lg:w-1/2'>
                     <h1 className='text-3xl font-semibold'>Lead Generation</h1>
                     <p className='text-justify text-xl'>
@@ -38,7 +38,7 @@ const ServicesPage = () => {
                 </div>
             </section>
 
-            <section className='flex flex-col-reverse gap-12 bg-sectionBg px-7 py-10 md:px-16 lg:flex-row lg:px-32'>
+            <section className='mx-2 my-8 flex flex-col-reverse gap-12 rounded-xl bg-sectionBg p-5 md:mx-16 md:p-10 lg:mx-32 lg:flex-row'>
                 <div className='w-full lg:w-1/2 lg:pr-8'>
                     <h1 className='text-3xl font-semibold'>Branding</h1>
                     <p className='text-justify text-xl'>
@@ -52,7 +52,7 @@ const ServicesPage = () => {
                 </div>
             </section>
 
-            <section className='flex flex-col-reverse bg-white px-7 py-10 md:gap-12 md:px-16 lg:flex-row-reverse lg:px-32'>
+            <section className='mx-2 my-8 flex flex-col-reverse gap-12 rounded-xl bg-gray-200 p-5 md:mx-16 md:p-10 lg:mx-32 lg:flex-row-reverse'>
                 <div className='w-full lg:w-1/2'>
                     <h1 className='text-3xl font-semibold'>Affiliate Marketting</h1>
                     <p className='text-justify text-xl'>

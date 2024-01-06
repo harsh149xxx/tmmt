@@ -51,7 +51,7 @@ const NavbarComp = () => {
           <Link className="logoHolder relative aspect-square w-16 cursor-pointer" href="/">
             <Image src={Logo} alt="company logo" fill />
           </Link>
-          <Link href="/" className="font-bold text-inherit">Xtreamead</Link>
+          <Link href="/" className="font-bold text-inherit">Velocity Click</Link>
         </NavbarBrand>
         <NavbarMenuToggle aria-label={isMenuOpen ? "Close menu" : "Open menu"} className="lg:hidden" />
       </NavbarContent>

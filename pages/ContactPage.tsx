@@ -25,7 +25,7 @@ const ContactPage = () => {
                         <label htmlFor="message" className="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-lg text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:start-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:font-medium peer-focus:text-blue-600 rtl:peer-focus:translate-x-1/4 peer-focus:dark:text-blue-500">Message</label>
                     </div>
                     
-                    <button type="submit" className="w-full rounded-lg bg-blue-700 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 sm:w-auto">Submit</button>
+                    <button type="submit" className="w-full rounded-lg bg-col5 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-[#b73c36] focus:outline-none focus:ring-4 focus:ring-blue-300 sm:w-auto">Submit</button>
                 </form>
             </section>
 

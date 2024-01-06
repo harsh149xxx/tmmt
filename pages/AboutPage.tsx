@@ -59,7 +59,7 @@ const AboutPage = () => {
 
 
 
-            <section className="flex flex-col gap-5 bg-sectionBg px-7 py-12 md:px-16 md:py-16 lg:flex-row lg:gap-6 lg:px-32">
+            <section className="mx-2 my-2 flex flex-col gap-5 rounded-xl bg-sectionBg p-5 md:mx-16 md:p-10 lg:mx-32 lg:flex-row lg:gap-6">
                 <div className="left flex w-full justify-center lg:w-1/2">
                     <div className="imageHolder relative aspect-video w-full transform cursor-pointer rounded-xl transition-transform duration-500 hover:scale-[1.05]">
                         <Image src={"/assets/about/inovation.jpg"} alt="image of innovation" fill={true} style={{ objectFit: 'cover' }} className="blend-image rounded-xl" />
@@ -73,7 +73,7 @@ const AboutPage = () => {
                 </div>
             </section>
 
-            <section className="mf:py-16 grid grid-cols-1 gap-5 bg-col3 px-7 py-12 md:grid-cols-2 md:px-16 lg:grid-cols-3 lg:px-32">
+            <section className="mx-2 my-8 grid grid-cols-1 gap-5 rounded-xl bg-col3 p-5 md:mx-16 md:grid-cols-2 md:p-10 lg:mx-32 lg:grid-cols-3">
                 {
                     data?.map((item, index) => (
                         <Card title={item.title} content={item.content} imageurl={item.imageurl} key={index} />
@@ -81,7 +81,7 @@ const AboutPage = () => {
                 }
             </section>
 
-            <section className="flex flex-col gap-5 bg-sectionBg px-7 py-12 md:px-16 md:py-16 lg:px-32">
+            <section className="mx-2 my-8 flex flex-col gap-5 rounded-xl bg-sectionBg p-5 md:mx-16 md:p-10 lg:mx-32">
                 <h1 className="text-center text-2xl lg:text-3xl">Affiliate marketing follows a simple step-by-step process:</h1>
                 <div className="flex flex-col gap-5">
                     {
@@ -99,7 +99,7 @@ const AboutPage = () => {
                 </div>
 
 
-                <h1 className="text-2xl text-col5 lg:text-3xl">Along with creating earning opportunities for affiliates, affiliate marketing also creates a win-win situation for both brands and consumers.</h1>
+                <h1 className="text-lg font-medium text-col5 md:text-xl">Along with creating earning opportunities for affiliates, affiliate marketing also creates a win-win situation for both brands and consumers.</h1>
             </section>
 
         </section>
