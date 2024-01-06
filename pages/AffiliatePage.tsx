@@ -29,8 +29,8 @@ const AffiliatePage = () => {
         <div>
             <HeaderBox title="Affiliate" />
 
-            <section className="flex flex-col-reverse gap-16 bg-sectionBg px-7 py-12 md:px-16 md:py-16 lg:flex-row lg:gap-0 lg:px-32">
-                <div className="flex flex-col gap-10 lg:w-9/12">
+            <section className="mx-2 my-8 flex flex-col-reverse rounded-xl bg-sectionBg p-5 md:mx-16 md:p-10 lg:mx-32 lg:flex-row">
+                <div className="flex flex-col gap-10 lg:w-7/12">
                     {
                         data.map((item, index) => (
 
@@ -38,7 +38,7 @@ const AffiliatePage = () => {
                         ))
                     }
                 </div>
-                <div className="my-auto lg:w-3/12">
+                <div className="my-auto lg:w-5/12">
                     <div className="iamgeHolder relative mx-auto aspect-square w-full md:w-1/2 lg:w-full">
                         {/* fff */}
                         <Image src={Top} alt="image" fill={true} />

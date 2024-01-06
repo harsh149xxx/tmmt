@@ -15,7 +15,8 @@ import Analytics from '@/public/assets/home/analytics.png'
 import Migration from '@/public/assets/home/migration.png'
 import Integration from '@/public/assets/home/integration.png'
 import Support from '@/public/assets/home/support.png'
-import Girl from '../public/assets/home/girl.png'
+import Girl from '@/public/assets/home/girl.png'
+import AnalyticsHeader from '@/public/assets/home/header_analytics.png'
 import Affiliate from '@/public/assets/home/affiliate.jpg'
 import Advertiser from '@/public/assets/home/advertiser.png'
 import { Fragment, useEffect, useState } from "react";
@@ -53,7 +54,7 @@ export default function HomePage() {
       review: "Xtreame Ad Media Solutions is a good company to work for.They connect with me from time to time and the performance they give is upto the mark.Specialized in every category",
       user: "Arpita - Mediaxpedia Technologies PVT. LTD."
     },
-    
+
   ]
 
   const clientImageFileNames = [
@@ -71,40 +72,21 @@ export default function HomePage() {
     'client12.png',
     'client13.png',
   ];
-  const clientImageFileNamesTest = [
-    'client1.png',
-    'client2.png',
-    'client3.png',
-    'client4.png',
-    'client5.png',
-    'client5.png',
-    'client5.png',
-    'client5.png',
-    'client5.png',
-    'client5.png',
-    'client5.png',
-    'client5.png',
-    'client5.png',
-    'client5.png',
-    'client5.png',
-    'client5.png',
-    'client5.png',
-  ];
 
   const serviceDetails = [
     {
       title: "Integration Help",
-      content: "<p>New users don’t need to wait to understand the functionality of the dashboard to launch their first campaigns, the team helps them to on-board and integrate their advertisers, affiliates and campaigns on their system without caring about privacy.</p>",
+      content: "New users don’t need to wait to understand the functionality of the dashboard to launch their first campaigns, the team helps them to on-board and integrate their advertisers, affiliates and campaigns on their system without caring about privacy.",
       img: "https://images.unsplash.com/photo-1590650046871-92c887180603"
     },
     {
       title: "Campaign Migration",
-      content: "<p>The fundamental issue is offer migration, which serves as an excuse to put platform migration on hold. Fortunately, we provide an easy way to migrate campaigns directly from your existing platform.</p><p>A well documented migration guide book and personal migration assistance is also available to make the migration process smooth and hectic free.</p><p>Technical support team is always available to help you.</p>",
+      content: "The fundamental issue is offer migration, which serves as an excuse to put platform migration on hold. Fortunately, we provide an easy way to migrate campaigns directly from your existing platform.A well documented migration guide book and personal migration assistance is also available to make the migration process smooth and hectic free.Technical support team is always available to help you.",
       img: "https://images.unsplash.com/photo-1573164574472-797cdf4a583a"
     },
     {
-      title: "Multi Chanel",
-      content: "<p>At XtremeAd, we offer support services through multiple channels, ensuring that users can derive maximum benefit based on their convenience. We understand the importance of providing flexible options to our customers, allowing them to engage with us through various channels for assistance and support.</p><p>A dedicated support team always remains available 24X7 to help you. Our support team first hears users' queries properly and then acts accordingly.</p>",
+      title: "Multi Channel",
+      content: "At XtremeAd, we offer support services through multiple channels, ensuring that users can derive maximum benefit based on their convenience. We understand the importance of providing flexible options to our customers, allowing them to engage with us through various channels for assistance and support.<p>A dedicated support team always remains available 24X7 to help you. Our support team first hears users' queries properly and then acts accordingly.",
       img: "https://images.unsplash.com/photo-1665686308827-eb62e4f6604d"
     },
   ]
@@ -190,30 +172,34 @@ export default function HomePage() {
     <Fragment>
 
       {/* ------------------------ TOP SECTION HEADER START ------------------------ */}
-      <header className="flex h-fit flex-col gap-5 bg-col3 px-7 pb-10 md:h-screen md:flex-row">
-        <div className="flex w-full flex-col items-center gap-8 text-white md:w-1/2 md:justify-center">
+      <header className="mx-2 my-5 flex h-fit flex-col gap-16 rounded-xl bg-col3 p-10 md:mx-16 lg:mx-32">
+        <div className="flex w-full flex-col items-center gap-8 text-white md:justify-center">
           <h1 className="titleColor text-center font-serif text-6xl"
           // style={{ "textShadow": "0px 0px 5px #D9B29C" }}
           >We Manage Your Brands in Multiple Channels</h1>
-          <p className="titleColor px-5 text-center font-mono text-xl">Our motto is to build a communication bridge between advertisers, customers, and affiliates.</p>
-          <div className="flex gap-5">
-            <Link href="/advertiser" className="btn-header">
+          <p className="titleColor text-center font-mono text-xl md:px-5">Our motto is to build a communication bridge between advertisers, customers, and affiliates.</p>
+          <div className="flex flex-wrap justify-center gap-5">
+            <Link href={"https://xtreameadsmediasolutions10389562.offer18.com/m/signup_self_adv?r=&am="} className="btn-header">
               Advertiser
             </Link>
-            <Link href="/affilate" className="btn-header">
-              Affilate
+            <Link href={"https://xtreameadsmediasolutions10389562.offer18.com/m/signup_self_aff?r=&am="} className="btn-header">
+              Affiliate
             </Link>
-
           </div>
         </div>
-        <div className="aspect-w-9 aspect-h-16 w-full px-2 md:w-1/2 lg:px-16">
-          <Image priority={false} src={header_mobile} alt="Header Mobile Image" className="aspect-w-9 aspect-h-16 h-full" placeholder='blur' />
+        <div className='flex'>
+          <div className="aspect-w-9 aspect-h-16 px-2 md:w-1/2 lg:px-16">
+            <Image priority={false} src={header_mobile} alt="Header Mobile Image" className="aspect-w-9 aspect-h-16 h-full" />
+          </div>
+          <div className="aspect-w-9 aspect-h-16 px-2 md:w-1/2 lg:px-16">
+            <Image priority={false} src={AnalyticsHeader} alt="Header Mobile Image" className="aspect-w-9 aspect-h-16 blend h-full" />
+          </div>
         </div>
       </header>
       {/* ------------------------ TOP SECTION HEADER START ------------------------ */}
 
       {/* --------------------------- OUR SERVICES START --------------------------- */}
-      <section className="bg-sectionBg px-7 py-12 md:px-16 md:py-16 lg:px-32">
+      <section className="mx-2 my-8 rounded-xl bg-sectionBg p-5 md:mx-16 md:p-10 lg:mx-32">
         <h1 className="sectionTitle"><span className='text-col5'>OUR</span> SERVICES</h1>
         <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3 lg:gap-12">
           {
@@ -226,24 +212,27 @@ export default function HomePage() {
       {/* --------------------------- OUR SERVICES END --------------------------- */}
 
       {/* ------------------------------ OUR ADD START ----------------------------- */}
-      <section className="flex h-fit flex-col gap-12 bg-col3 px-7 py-12 md:px-16 md:py-16 lg:flex-row lg:items-center lg:gap-0 lg:pl-32 lg:pr-20">
+      <section className="mx-2 my-8 flex h-fit flex-col gap-12 rounded-xl bg-col3 p-5 md:mx-16 md:p-10 lg:mx-32 lg:flex-row lg:items-center lg:gap-0">
         <div className="text-center text-2xl text-black lg:w-[60%] lg:pr-5 lg:text-left">
           We are pioneer at managing your brands in multiple channels. Our motto is to build a communication bridge between advertisers, customers and Affiliates. Branding is perhaps an USP of any business organisation and if you want to make your products popular amongst customers then just opt for our services.
         </div>
         <div className="flex justify-center lg:w-[40%] lg:justify-end">
-          <Image priority={false} src={Girl} alt="image of a girl" className="aspect-square w-[70%] lg:w-full" />
+          <Image priority={false} src={Girl} alt="image of a girl" className="aspect-square w-[80%] lg:w-full" />
         </div>
       </section>
       {/* ------------------------------- OUR ADD END ------------------------------ */}
 
       {/* ------------------------------- ADVERTISER START ------------------------------ */}
-      <section className="flex flex-col-reverse gap-5 bg-sectionBg px-7 py-10 md:gap-0 md:px-16 lg:flex-row-reverse lg:px-32">
-        <div className="flex flex-col justify-center gap-7 lg:w-[60%] lg:px-16">
+      <section className="mx-2 my-8 flex flex-col-reverse gap-5 rounded-xl bg-sectionBg p-5 md:mx-16 md:gap-0 md:p-10 lg:mx-32 lg:flex-row">
+        <div className="flex flex-col justify-center gap-7 lg:w-[60%]">
           <h2 className="text-3xl font-semibold text-black">Advertiser</h2>
           <p className='text-gray-700'>
             It is often found that some of the websites hold a first position in Google due to attractive advertisements. Well, you might be thinking about the ways to invite advertisers on your webpage. Mediaxpedia have gain immense success in inciting the advertisers to visit a company's webpage. We can assure you that our proven formula will create significant effect on your website. You will find that advertisers are getting attracted to your website. We are quite efficient in establishing a platform for meeting our clients with their prospective advertisers by the following:
           </p>
-          <Link href={"/advertiser"} className="btn-header">SIGNUP</Link>
+          
+          <Link href={"https://xtreameadsmediasolutions10389562.offer18.com/m/signup_self_adv?r=&am="} className="btn-header">
+              SIGNUP
+            </Link>
         </div>
         <div className="left mx-auto flex w-full md:w-[60%] lg:w-[40%]">
           <Image priority={false} src={Advertiser} alt="affilate image" />
@@ -252,13 +241,15 @@ export default function HomePage() {
       {/* ------------------------------- ADVERTISER END ------------------------------ */}
 
       {/* ------------------------------- AFFILATE START ------------------------------ */}
-      <section className="flex flex-col-reverse gap-5 bg-sectionBg px-7 py-10 md:px-16 lg:flex-row lg:px-32">
+      <section className="mx-2 my-8 flex flex-col-reverse gap-5 rounded-xl bg-sectionBg p-5 md:mx-16 md:p-10 lg:mx-32 lg:flex-row">
         <div className="left flex flex-col justify-center gap-7 lg:w-[60%]">
           <h2 className="text-3xl font-semibold text-black">Affiliate</h2>
           <p className='text-gray-700'>
             Affiliates can be regarded as one of the main catalyst behind your marketing campaign. Your online performance is largely dependent upon the delivery of your services or products at right context, place and time. In the absence of a Affiliate you are never going to reach to your advertisers. Affiliates can open avenues for your website reach to the potential advertiser. It can well be discerned that Affiliate can both give a boost to your business and at the same time degrade it too.
           </p>
-          <Link href={"/affiliate"} className="btn-header">SIGNUP</Link>
+          <Link href={"https://xtreameadsmediasolutions10389562.offer18.com/m/signup_self_aff?r=&am="} className="btn-header">
+              SIGNUP
+            </Link>
         </div>
         <div className="mx-auto flex w-full md:w-[60%] lg:w-[40%]">
           <Image priority={false} src={Affiliate} alt="affilate image" className="blend-image" />
@@ -267,13 +258,13 @@ export default function HomePage() {
       {/* ------------------------------- AFFILATE END ------------------------------ */}
 
       {/* ------------------------------- SERVICES START ------------------------------ */}
-      <section className="bg-sectionBg px-7 pb-12 md:px-16 md:pb-16 lg:px-32">
+      <section className="px-5 pb-12 md:px-16 lg:px-32">
         <h1 className="sectionTitle"><span className='text-col5'>SER</span>VICES</h1>
         <div className="">
           <div className="grid w-fit grid-cols-2 text-sm md:grid-cols-3 md:text-xl">
-            <button className={"rounded-t-lg px-2 py-3 font-semibold md:px-5" + `${openTab == 0 ? 'bg-col3 text-col5' : "text-black"}`} onClick={(e) => { e.preventDefault(); setOpenTab(0) }}>INTEGRATION HELP</button>
-            <button className={"rounded-t-lg px-2 py-3 font-semibold md:px-5" + `${openTab == 1 ? 'bg-col3 text-col5' : "text-black"}`} onClick={(e) => { e.preventDefault(); setOpenTab(1) }}>CAMPAIGN MIGRATION</button>
-            <button className={"rounded-t-lg px-2 py-3 font-semibold md:px-5" + `${openTab == 2 ? 'bg-col3 text-col5' : "text-black"}`} onClick={(e) => { e.preventDefault(); setOpenTab(2) }}>MULTI CHANEL</button>
+            <button className={`rounded-t-lg px-2 py-3 font-semibold md:px-5 ${openTab == 0 ? "bg-col3 text-col5" : "text-black"}`} onClick={(e) => { e.preventDefault(); setOpenTab(0) }}>INTEGRATION HELP</button>
+            <button className={`rounded-t-lg px-2 py-3 font-semibold md:px-5 ${openTab == 1 ? "bg-col3 text-col5" : "text-black"}`} onClick={(e) => { e.preventDefault(); setOpenTab(1) }}>CAMPAIGN MIGRATION</button>
+            <button className={`rounded-t-lg px-2 py-3 font-semibold md:px-5 ${openTab == 2 ? "bg-col3 text-col5" : "text-black"}`} onClick={(e) => { e.preventDefault(); setOpenTab(2) }}>MULTI CHANEL</button>
           </div>
           <div className="flex rounded-b-lg border-2 border-col3 bg-col3 lg:rounded-e-lg">
             {
@@ -293,7 +284,7 @@ export default function HomePage() {
 
 
       {/* ------------------------------- FAQS START ------------------------------ */}
-      <section className="bg-col3 px-7 py-10 md:px-16 md:py-16 lg:px-32">
+      <section className="mx-2 my-8 rounded-xl bg-col3 p-3 md:mx-16 md:p-10 lg:mx-32">
         <h1 className="sectionTitle text-col5">FAQS</h1>
         <Accordion variant="splitted">
           {
@@ -310,21 +301,21 @@ export default function HomePage() {
       {/* ------------------------------- FAQS END ------------------------------ */}
 
       {/* ------------------------------- WHT TO CHOSE START ------------------------------ */}
-      <section className="flex flex-col items-center gap-5 bg-gray-100 px-7 py-16 md:px-16 md:py-12 lg:px-32">
+      <section className="mx-2 my-8 flex flex-col items-center gap-5 rounded-xl bg-gray-100 p-5 md:mx-16 md:p-10 lg:mx-32">
         <h1 className="text-center text-4xl font-semibold">Why it's worth to choose <span className='text-col5'>XtremeAd?</span></h1>
         <p className="w-[80%] text-center text-xl lg:w-1/2">With XtremeAd Media Solutions you will remain at a complete ease as we can take complete responsibility of your branding...</p>
-        <div className="grid grid-cols-1 gap-5 px-5 text-2xl font-semibold md:grid-cols-2 md:px-0">
-          <div className="flex transform cursor-pointer justify-center rounded-xl bg-col4 px-16 py-8 text-black transition-transform duration-300 hover:scale-[1.05]">SAFETY</div>
-          <div className="flex transform cursor-pointer justify-center rounded-xl bg-col4 px-16 py-8 text-black transition-transform duration-300 hover:scale-[1.05]">STABILITY</div>
-          <div className="flex transform cursor-pointer justify-center rounded-xl bg-col4 px-16 py-8 text-black transition-transform duration-300 hover:scale-[1.05]">TECHNICAL SUPPORT</div>
-          <div className="flex transform cursor-pointer justify-center rounded-xl bg-col4 px-16 py-8 text-black transition-transform duration-300 hover:scale-[1.05]">COMPLETE SOLUTIONS</div>
+        <div className="grid w-full grid-cols-1 gap-5 text-xl font-semibold md:grid-cols-2 md:text-2xl">
+          <div className="flex w-full transform cursor-pointer justify-center rounded-xl bg-col4 py-8 text-black transition-transform duration-300 hover:scale-[1.05]">SAFETY</div>
+          <div className="flex w-full transform cursor-pointer justify-center rounded-xl bg-col4 py-8 text-black transition-transform duration-300 hover:scale-[1.05]">STABILITY</div>
+          <div className="flex w-full transform cursor-pointer justify-center rounded-xl bg-col4 py-8 text-black transition-transform duration-300 hover:scale-[1.05]">TECHNICAL SUPPORT</div>
+          <div className="flex w-full transform cursor-pointer justify-center rounded-xl bg-col4 py-8 text-black transition-transform duration-300 hover:scale-[1.05]">COMPLETE SOLUTIONS</div>
         </div>
       </section>
       {/* ------------------------------- WHT TO CHOSE END ------------------------------ */}
 
 
       {/* -------------------------- REVEIW SECTION START -------------------------- */}
-      <section className="bg-col3 px-7 py-12 md:px-16 md:py-16 lg:px-32">
+      <section className="mx-2 my-8 rounded-xl bg-col3 p-5 md:mx-16 md:p-10 lg:mx-32">
         <h1 className="sectionTitle text-col5">What is everyone saying?</h1>
         <div className="h-fit bg-transparent">
           <Swiper
@@ -367,109 +358,51 @@ export default function HomePage() {
 
 
       {/* ------------------------------- STATISTICS START ------------------------------ */}
-      <section className="flex flex-col gap-10 bg-gray-100 px-7 py-12 md:px-16 md:py-16 lg:flex-row lg:gap-10 lg:px-32">
-        <div className="left flex h-fit justify-center lg:w-1/2">
-          <div className="relative aspect-square w-1/2 lg:w-full">
-            <Image priority={false} src={header_mobile} alt="mobile" fill={true} sizes="100vw" />
-          </div>
-        </div>
-        <div className="right flex flex-col gap-10 lg:w-1/2">
-          <div className="cardhandler grid grid-cols-2 gap-5 md:grid-cols-3">
-            <div className="card flex flex-col items-center justify-center gap-3 bg-white py-10 shadow-[0px_2px_5px_0px_#1a202c]">
-              <span className="text-2xl font-semibold"> 500+</span>
-              <span className='text-center'>Affiliates</span>
-            </div>
-            <div className="card flex flex-col items-center justify-center gap-3 bg-white py-10 shadow-[0px_2px_5px_0px_#1a202c]">
-              <span className="text-2xl font-semibold">150+</span>
-              <span className='text-center'>Clients</span>
-            </div>
-            <div className="card flex flex-col items-center justify-center gap-3 bg-white py-10 shadow-[0px_2px_5px_0px_#1a202c]">
-              <span className="text-2xl font-semibold">300000+</span>
-              <span className='text-center'>Monthly Conversion</span>
-            </div>
-          </div>
+      <section className="mx-2 my-8 flex flex-col-reverse gap-10 rounded-xl bg-gray-100 p-5 md:mx-16 md:p-10 lg:mx-32 lg:flex-row lg:gap-10">
+        <div className="left flex flex-col justify-center gap-5 lg:w-1/2">
           <p className="text-lg">
             With XtremeAd you will remain at a complete ease as we can take complete responsibility of your branding. Nowadays, with an increased competition in the market, one needs to generate new ideas that could create long lasting impact on the customers.
           </p>
-          <div className="buttonhandler flex flex-col gap-5">
-            <Link href={"/affiliate"} className="btn-header rounded-full px-12 py-3">Affilate</Link>
-            <Link href={"/affiliate"} className="btn-header rounded-full px-12 py-3">Advertiser</Link>
+          <div className="buttonhandler flex flex-col justify-center gap-5 md:flex-row">
+            <Link href={"https://xtreameadsmediasolutions10389562.offer18.com/m/signup_self_aff?r=&am="} className="btn-header rounded-full px-12 py-3">
+                Affiliate
+              </Link>
+            <Link href={"https://xtreameadsmediasolutions10389562.offer18.com/m/signup_self_aff?r=&am="} className="btn-header rounded-full px-12 py-3">
+                Advertiser
+              </Link>
+
           </div>
         </div>
-        {/* <Swiper
-          slidesPerView={3}
-          grid={{
-            rows: 2
-          }}
-          spaceBetween={15}
-          pagination={{
-            clickable: true,
-          }}
-          modules={[Grid, Pagination]}
-          className="mySwiper"
-        >
-          <SwiperSlide>
-            <div className="test bg-red-300">good</div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="test bg-red-300">good</div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="test bg-red-300">good</div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="test bg-red-300">good</div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="test bg-red-300">good</div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="test bg-red-300">good</div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="test bg-red-300">good</div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="test bg-red-300">good</div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="test bg-red-300">good</div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="test bg-red-300">good</div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="test bg-red-300">good</div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="test bg-red-300">good</div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="test bg-red-300">good</div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="test bg-red-300">good</div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="test bg-red-300">good</div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="test bg-red-300">good</div>
-          </SwiperSlide>
-        </Swiper> */}
+        <div className="right flex flex-col gap-10 lg:w-1/2">
+          <div className="cardhandler flex flex-col gap-5">
+            <div className="card flex cursor-pointer items-center justify-center gap-3 rounded-2xl border-2 border-white bg-white py-10 font-medium shadow-lg hover:border-gray-400 hover:bg-slate-100">
+              <span className="text-2xl font-semibold text-col5"> 500+</span>
+              <span className='text-center'>Affiliates</span>
+            </div>
+            <div className="card flex cursor-pointer items-center justify-center gap-3 rounded-2xl border-2 border-white bg-white py-10 font-medium shadow-lg hover:border-gray-400 hover:bg-slate-100">
+              <span className="text-2xl font-semibold text-col5">150+</span>
+              <span className='text-center'>Clients</span>
+            </div>
+            <div className="card flex cursor-pointer items-center justify-center gap-3 rounded-2xl border-2 border-white bg-white py-10 font-medium shadow-lg hover:border-gray-400 hover:bg-slate-100">
+              <span className="text-2xl font-semibold text-col5">300000+</span>
+              <span className='text-center'>Monthly Conversion</span>
+            </div>
+          </div>
+
+        </div>
       </section>
       {/* ------------------------------- STATISTICS END ------------------------------ */}
 
 
 
       {/* ------------------------------- OUR CLIENT START ------------------------------ */}
-      <section className="bg-sectionBg px-7 py-12 pb-12 md:px-16 md:py-16 lg:px-32">
+      <section className="mx-2 my-8 rounded-xl bg-sectionBg p-5 md:mx-16 md:p-10 lg:mx-32">
         <h1 className="sectionTitle"><span className='text-col5'>OUR</span> CLIENTS</h1>
         <div className="imageSlider">
           <Swiper
-            navigation={true} 
-            // slidesPerView={windowWidth < 641 ? 2 : (windowWidth < 769 ? 3 : 3)}
-            slidesPerView={ 3}
+            navigation={true}
+            slidesPerView={windowWidth < 641 ? 2 : (windowWidth < 769 ? 3 : 5)}
+            // slidesPerView={3}
             autoplay={{
               delay: 1000,
               disableOnInteraction: false,
@@ -487,8 +420,8 @@ export default function HomePage() {
             {
               clientImageFileNames.map((item, idx) => (
                 <SwiperSlide className="">
-                  <div className='aspect-[5/3]'>
-                   <Image src={`/clients/${item}`} alt="clients company's log" fill={true} />
+                  <div className='aspect-[5/3] border border-black'>
+                    <Image src={`/clients/${item}`} alt="clients company's log" fill={true} />
                   </div>
                 </SwiperSlide>
               ))

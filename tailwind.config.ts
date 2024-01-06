@@ -29,7 +29,7 @@ const config: Config = {
         ],
       },
       colors: {
-        sectionBg: "#f1f5f9",
+        sectionBg: "#dfe8f1",
         col3: "#F1CF54",
         col4: "#D9B29C",
         col5: "#E54C44",

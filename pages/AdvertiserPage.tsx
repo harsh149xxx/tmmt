@@ -7,6 +7,7 @@ import Target from '@/public/assets/advertiser/target.png'
 import Cover from '@/public/assets/advertiser/cover.png'
 import RTI from '@/public/assets/advertiser/rti.png'
 import Campaign from '@/public/assets/advertiser/campaign.png'
+import Link from "next/link"
 
 const data = [
     {
@@ -28,8 +29,8 @@ const AdvertiserPage = () => {
         <div>
             <HeaderBox title="Advertiser" />
 
-            <section className="flex flex-col-reverse bg-sectionBg px-7 py-12 md:px-16 md:py-16 lg:flex-row lg:px-32">
-                <div className="flex flex-col gap-10 lg:w-9/12">
+            <section className="mx-2 my-8 flex flex-col-reverse rounded-xl bg-sectionBg p-5 md:mx-16 md:p-10 lg:mx-32 lg:flex-row">
+                <div className="flex flex-col gap-10 lg:w-7/12">
                     {
                         data.map((item, index) => (
 
@@ -37,7 +38,7 @@ const AdvertiserPage = () => {
                         ))
                     }
                 </div>
-                <div className="lg:w-3/12">
+                <div className="lg:w-5/12">
                     <div className="iamgeHolder relative mx-auto aspect-square w-full md:w-1/2 lg:w-full">
                         {/* fff */}
                         <Image src={Top} alt="image" fill={true} />
@@ -104,9 +105,10 @@ export const BottomPart =()=>{
                 </div>
             </section>
 
-            <div className="flex flex-col items-center justify-between gap-5 bg-col5 px-7 py-5 md:px-16 lg:flex-row lg:gap-0 lg:px-32">
-                <h1 className="w-full text-4xl text-gray-300 md:text-5xl lg:w-10/12">Build your successful business with us. Want to know how to do this?</h1>
-                <button className="h-fit w-fit rounded-full bg-white px-5 py-2 font-semibold text-col5 hover:bg-gray-200">Sign Up</button>
+            <div className="flex flex-col items-center justify-between gap-5 rounded-t-xl border border-col5 bg-col5 px-7 py-5 md:px-16 lg:flex-row lg:gap-0 lg:px-32">
+                <h1 className="w-full text-4xl text-gray-200 md:text-5xl lg:w-10/12">Build your successful business with us. Want to know how to do this?</h1>
+                {process.env.NEXT_PUBLIC_SIGNUP_LINK &&
+                    <Link href={process.env.NEXT_PUBLIC_SIGNUP_LINK} className="h-fit w-fit rounded-full bg-white px-5 py-2 font-semibold text-col5 hover:bg-gray-200">Sign Up</Link>}
             </div>
             </>
     )
