@@ -15,7 +15,7 @@ const FooterComp = () => {
             <footer className="grid grid-cols-1 gap-4 rounded-t-3xl bg-col3 px-7 py-12 text-black md:grid-cols-3 md:flex-row md:gap-0 md:px-16 lg:grid-cols-4 lg:px-32">
 
                 <div className="left flex flex-col gap-5 md:order-1 lg:order-1">
-                    <div className="relative aspect-square w-1/2">
+                    <div className="relative aspect-square w-1/4 md:w-1/2">
                         <Image src={Logo} fill alt="company logo" />
                     </div>
                     <span className="text-4xl font-semibold">Velocity Click</span>

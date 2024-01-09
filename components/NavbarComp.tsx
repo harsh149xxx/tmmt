@@ -48,10 +48,10 @@ const NavbarComp = () => {
       {/* brand information */}
       <NavbarContent>
         <NavbarBrand>
-          <Link className="logoHolder relative aspect-square w-16 cursor-pointer" href="/">
+          <Link className="logoHolder relative aspect-square w-8 cursor-pointer md:w-12 lg:w-16" href="/">
             <Image src={Logo} alt="company logo" fill />
           </Link>
-          <Link href="/" className="font-bold text-inherit">Velocity Click</Link>
+          <Link href="/" className="font-semobild font-Meriaweather text-xl text-black md:text-3xl lg:text-4xl">Velocity Click</Link>
         </NavbarBrand>
         <NavbarMenuToggle aria-label={isMenuOpen ? "Close menu" : "Open menu"} className="lg:hidden" />
       </NavbarContent>
