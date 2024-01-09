@@ -11,6 +11,7 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
+        Meriaweather: ["var(--font-meriaweather)"],
         sans: [
           "your-sans-serif-font",
           "system-ui",

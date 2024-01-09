@@ -22,9 +22,12 @@ import Advertiser from '@/public/assets/home/advertiser.png'
 import { Fragment, useEffect, useState } from "react";
 import React from "react";
 import { Accordion, AccordionItem } from "@nextui-org/react";
+import Slider from "react-slick";
 
 
 export default function HomePage() {
+
+  
   const [windowWidth, setWindowWidth] = useState<number>(typeof window !== 'undefined' ? window.innerWidth : 0);
   const [openTab, setOpenTab] = useState(0)
 
@@ -71,7 +74,18 @@ export default function HomePage() {
     'client11.png',
     'client12.png',
     'client13.png',
+    'client13.png',
   ];
+  const clientImageFileNamesTest = [
+    'client1.png',
+    'client2.png',
+    'client3.png',
+    'client4.png',
+    'client5.png',
+    'client6.png',
+  ];
+
+
 
   const serviceDetails = [
     {
@@ -86,7 +100,7 @@ export default function HomePage() {
     },
     {
       title: "Multi Channel",
-      content: "At XtremeAd, we offer support services through multiple channels, ensuring that users can derive maximum benefit based on their convenience. We understand the importance of providing flexible options to our customers, allowing them to engage with us through various channels for assistance and support.<p>A dedicated support team always remains available 24X7 to help you. Our support team first hears users' queries properly and then acts accordingly.",
+      content: "At XtremeAd, we offer support services through multiple channels, ensuring that users can derive maximum benefit based on their convenience. We understand the importance of providing flexible options to our customers, allowing them to engage with us through various channels for assistance and support. A dedicated support team always remains available 24X7 to help you. Our support team first hears users' queries properly and then acts accordingly.",
       img: "https://images.unsplash.com/photo-1665686308827-eb62e4f6604d"
     },
   ]
@@ -187,12 +201,9 @@ export default function HomePage() {
             </Link>
           </div>
         </div>
-        <div className='flex'>
+        <div className='flex justify-center'>
           <div className="aspect-w-9 aspect-h-16 px-2 md:w-1/2 lg:px-16">
             <Image priority={false} src={header_mobile} alt="Header Mobile Image" className="aspect-w-9 aspect-h-16 h-full" />
-          </div>
-          <div className="aspect-w-9 aspect-h-16 px-2 md:w-1/2 lg:px-16">
-            <Image priority={false} src={AnalyticsHeader} alt="Header Mobile Image" className="aspect-w-9 aspect-h-16 blend h-full" />
           </div>
         </div>
       </header>
@@ -223,16 +234,16 @@ export default function HomePage() {
       {/* ------------------------------- OUR ADD END ------------------------------ */}
 
       {/* ------------------------------- ADVERTISER START ------------------------------ */}
-      <section className="mx-2 my-8 flex flex-col-reverse gap-5 rounded-xl bg-sectionBg p-5 md:mx-16 md:gap-0 md:p-10 lg:mx-32 lg:flex-row">
+      <section className="mx-2 my-8 flex flex-col-reverse gap-5 rounded-xl bg-sectionBg p-5 md:mx-16 md:gap-0 md:p-10 lg:mx-32 lg:flex-row-reverse">
         <div className="flex flex-col justify-center gap-7 lg:w-[60%]">
           <h2 className="text-3xl font-semibold text-black">Advertiser</h2>
           <p className='text-gray-700'>
             It is often found that some of the websites hold a first position in Google due to attractive advertisements. Well, you might be thinking about the ways to invite advertisers on your webpage. Mediaxpedia have gain immense success in inciting the advertisers to visit a company's webpage. We can assure you that our proven formula will create significant effect on your website. You will find that advertisers are getting attracted to your website. We are quite efficient in establishing a platform for meeting our clients with their prospective advertisers by the following:
           </p>
-          
+
           <Link href={"https://xtreameadsmediasolutions10389562.offer18.com/m/signup_self_adv?r=&am="} className="btn-header">
-              SIGNUP
-            </Link>
+            SIGNUP
+          </Link>
         </div>
         <div className="left mx-auto flex w-full md:w-[60%] lg:w-[40%]">
           <Image priority={false} src={Advertiser} alt="affilate image" />
@@ -248,8 +259,8 @@ export default function HomePage() {
             Affiliates can be regarded as one of the main catalyst behind your marketing campaign. Your online performance is largely dependent upon the delivery of your services or products at right context, place and time. In the absence of a Affiliate you are never going to reach to your advertisers. Affiliates can open avenues for your website reach to the potential advertiser. It can well be discerned that Affiliate can both give a boost to your business and at the same time degrade it too.
           </p>
           <Link href={"https://xtreameadsmediasolutions10389562.offer18.com/m/signup_self_aff?r=&am="} className="btn-header">
-              SIGNUP
-            </Link>
+            SIGNUP
+          </Link>
         </div>
         <div className="mx-auto flex w-full md:w-[60%] lg:w-[40%]">
           <Image priority={false} src={Affiliate} alt="affilate image" className="blend-image" />
@@ -365,11 +376,11 @@ export default function HomePage() {
           </p>
           <div className="buttonhandler flex flex-col justify-center gap-5 md:flex-row">
             <Link href={"https://xtreameadsmediasolutions10389562.offer18.com/m/signup_self_aff?r=&am="} className="btn-header rounded-full px-12 py-3">
-                Affiliate
-              </Link>
+              Affiliate
+            </Link>
             <Link href={"https://xtreameadsmediasolutions10389562.offer18.com/m/signup_self_aff?r=&am="} className="btn-header rounded-full px-12 py-3">
-                Advertiser
-              </Link>
+              Advertiser
+            </Link>
 
           </div>
         </div>
@@ -402,7 +413,6 @@ export default function HomePage() {
           <Swiper
             navigation={true}
             slidesPerView={windowWidth < 641 ? 2 : (windowWidth < 769 ? 3 : 5)}
-            // slidesPerView={3}
             autoplay={{
               delay: 1000,
               disableOnInteraction: false,
@@ -420,7 +430,7 @@ export default function HomePage() {
             {
               clientImageFileNames.map((item, idx) => (
                 <SwiperSlide className="">
-                  <div className='aspect-[5/3] border border-black'>
+                  <div className='relative h-full w-full border border-black'>
                     <Image src={`/clients/${item}`} alt="clients company's log" fill={true} />
                   </div>
                 </SwiperSlide>

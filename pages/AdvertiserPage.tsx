@@ -24,6 +24,39 @@ const data = [
     },
 ]
 
+const gridData = [
+    {
+
+        "title": "Positive ROI Driven",
+        icon: RTI
+    },
+
+    {
+        "title": "Multi Channel Traffic",
+        icon: Multi
+    },
+    {
+
+        "title": "Target the Right Audience",
+        icon: Target
+    },
+    {
+
+        "title": "Dedicated Account Manager",
+        icon: User
+    },
+
+    {
+        "title": "We Got all the verticals covered",
+        icon: Cover
+    },
+    {
+        "title": "Realtime Campaign Insights",
+        icon: Campaign
+    }
+
+]
+
 const AdvertiserPage = () => {
     return (
         <div>
@@ -45,9 +78,9 @@ const AdvertiserPage = () => {
                     </div>
                 </div>
             </section>
-            
-            <BottomPart/>
-            
+
+            <BottomPart gridData={gridData}/>
+
         </div>
     )
 }
@@ -70,19 +103,19 @@ export const Card = ({ title, content }: { title: string, content: string }) => 
     )
 }
 
-export const BoxCard = ({ title,icon }: { title: string, icon: StaticImageData }) => {
+export const BoxCard = ({ title, icon }: { title: string, icon: StaticImageData }) => {
     return (
         <div className="flex transform cursor-pointer flex-col items-center justify-center gap-3 rounded-xl bg-white p-5 shadow-[0px_0px_5px_0px_#1a202c] transition-transform duration-300 hover:scale-[1.02]">
             <div className="iconHodler relative aspect-square w-3/12">
-                <Image src={icon} alt="user icon" fill/>
+                <Image src={icon} alt="user icon" fill />
             </div>
             <span className="text-xl">{title}</span>
         </div>
     )
 }
 
-export const BottomPart =()=>{
-    return(
+export const BottomPart = ({ gridData }: { gridData: { title: string; icon: StaticImageData; }[]; }) => {
+    return (
         <>
             <section className="bg-white px-7 py-12 md:px-16 md:py-16 lg:px-32">
                 <div className="flex flex-col items-center gap-5">
@@ -96,12 +129,11 @@ export const BottomPart =()=>{
                 </div>
 
                 <div className="cardHolder my-5 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-                    <BoxCard title="Positive ROI Driven" icon={RTI} />
-                    <BoxCard title="Multi Channel Traffic" icon={Multi} />
-                    <BoxCard title="Target the Right Audience" icon={Target} />
-                    <BoxCard title="Dedicated Account Manager" icon={User} />
-                    <BoxCard title="We Got all the verticals covered" icon={Cover} />
-                    <BoxCard title="Realtime Campaign Insights" icon={Campaign} />
+                    {
+                        gridData?.map((item,idx)=>(
+                            <BoxCard title={item.title} icon={item.icon} />
+                        ))
+                    }
                 </div>
             </section>
 
@@ -110,6 +142,6 @@ export const BottomPart =()=>{
                 {process.env.NEXT_PUBLIC_SIGNUP_LINK &&
                     <Link href={process.env.NEXT_PUBLIC_SIGNUP_LINK} className="h-fit w-fit rounded-full bg-white px-5 py-2 font-semibold text-col5 hover:bg-gray-200">Sign Up</Link>}
             </div>
-            </>
+        </>
     )
 }

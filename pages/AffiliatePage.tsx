@@ -24,6 +24,39 @@ const data = [
     },
 ]
 
+const gridData = [
+    {
+
+        "title": "Maximum Revenue",
+        icon: RTI
+    },
+
+    {
+        "title": "Transparent",
+        icon: Multi
+    },
+    {
+
+        "title": "Flexible Payment terms",
+        icon: Target
+    },
+    {
+
+        "title": "Dedicated Account Manager",
+        icon: User
+    },
+
+    {
+        "title": "Realtime Campaign Insights",
+        icon: Cover
+    },
+    {
+        "title": "Customer Support",
+        icon: Campaign
+    }
+
+]
+
 const AffiliatePage = () => {
     return (
         <div>
@@ -46,7 +79,7 @@ const AffiliatePage = () => {
                 </div>
             </section>
 
-            <BottomPart/>
+            <BottomPart gridData={gridData }/>
         </div>
     )
 }
