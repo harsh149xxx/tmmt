@@ -19,24 +19,26 @@ export default function RootLayout({
       <head>
 
         {/* <!-- Standard favicon --> */}
-        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" href="/image/favicon.ico" sizes="any" />
 
         {/* <!-- Apple Touch Icon (at least 200x200px) --> */}
-        <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon.png" />
+        <link rel="apple-touch-icon" sizes="120x120" href="/image/apple-touch-icon.png" />
 
         {/* <!-- Android Chrome Icon --> */}
-        <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png" />
-        <link rel="icon" type="image/png" sizes="384x384" href="/android-chrome-384x384.png" />
+        <link rel="icon" type="image/png" sizes="192x192" href="/image/android-chrome-192x192.png" />
+        <link rel="icon" type="image/png" sizes="384x384" href="/image/android-chrome-384x384.png" />
 
         {/* <!-- Recommended favicon size for general browser display --> */}
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/image/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/image/favicon-16x16.png" />
 
         {/* <!-- The Web App Manifest --> */}
-        <link rel="manifest" href="/site.webmanifest" />
+        <link rel="manifest" href="/image/site.webmanifest" />
 
         {/* <!-- Safari Icon --> */}
-        {/* <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"> */}
+        <link rel="mask-icon" href="/image/safari-pinned-tab.svg" color="#5bbad5" />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff" />
 
       </head>
       <body>
