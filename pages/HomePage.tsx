@@ -34,28 +34,44 @@ export default function HomePage() {
 
   const userReview = [
     {
-      review: "Xtreame Ad Media Solutions is a good company to work for.They connect with me from time to time and the performance they give is upto the mark.Specialized in every category",
+      review: "They have been very impressive, they are a good team, they respond to questions promptly, and they respect your time. The ideas they provide are very practical and they provide good ideas. Consequently, they provide you with valuable insights and suggestions that you may not have otherwise considered.",
+      user: "Shekh Aman - Founder & Ceo Affilienet Digital Media Private Limited"
+    },
+    {
+      review: "Hi Team, Here is my experience so far working with you. They have been Great partner in terms of Handling the delivery. They are well aware of the campaigns requirements and ROI that every client looks up to. Treating every campaign with utmost transparency and regular hygiene check ups are number one priority for them and this quality always makes you incline towards working with them month on month. My Best wishes to the team.",
+      user: "Neha Sharma - Adsflourish"
+    },
+    {
+      review: "Velocity Click Ad Media Solutions is a good company to work for. They connect with me from time to time and the performance they give is upto the mark. Specialized in every category they work on various models like CPL, CPS, CPA, CPR, CPI. The major vertical for them is Casino & Betting. Working with them is a great value for your ROI. Good work team Velocity Click Ad Media Solutions Keep Rocking!",
       user: "Arpita - Mediaxpedia Technologies PVT. LTD."
     },
     {
-      review: "Xtreame Ad Media Solutions is a good company to work for.They connect with me from time to time and the performance they give is upto the mark.Specialized in every category",
+      review: "I've been working with Velocity Click Media Solutions for a few months now, as for me they're the best. Our account manager is available 24x7 and suggests us with best offers to help scale our earnings. And of course, they pay right on time. I highly recommend working with them.",
+      user: "Srinivas - CEO Of PrimeROI"
+    },
+    {
+      review: "Highly recommend our affiliate for their outstanding performance in our casino campaign. Their expertise led to a remarkable 30% conversion rate, and an impressive 60% of customers made repeat deposits. Their dedication and results have been instrumental in our success.",
+      user: "Navya - Head of affilates indibe"
+    },
+    {
+      review: "They have been very impressive, they are a good team, they respond to questions promptly, and they respect your time. The ideas they provide are very practical and they provide good ideas. Consequently, they provide you with valuable insights and suggestions that you may not have otherwise considered.",
+      user: "Shekh Aman - Founder & Ceo Affilienet Digital Media Private Limited"
+    },
+    {
+      review: "Hi Team, Here is my experience so far working with you. They have been Great partner in terms of Handling the delivery. They are well aware of the campaigns requirements and ROI that every client looks up to. Treating every campaign with utmost transparency and regular hygiene check ups are number one priority for them and this quality always makes you incline towards working with them month on month. My Best wishes to the team.",
+      user: "Neha Sharma - Adsflourish"
+    },
+    {
+      review: "Velocity Click Ad Media Solutions is a good company to work for. They connect with me from time to time and the performance they give is upto the mark. Specialized in every category they work on various models like CPL, CPS, CPA, CPR, CPI. The major vertical for them is Casino & Betting. Working with them is a great value for your ROI. Good work team Velocity Click Ad Media Solutions Keep Rocking!",
       user: "Arpita - Mediaxpedia Technologies PVT. LTD."
     },
     {
-      review: "Xtreame Ad Media Solutions is a good company to work for.They connect with me from time to time and the performance they give is upto the mark.Specialized in every category",
-      user: "Arpita - Mediaxpedia Technologies PVT. LTD."
+      review: "I've been working with Velocity Click Media Solutions for a few months now, as for me they're the best. Our account manager is available 24x7 and suggests us with best offers to help scale our earnings. And of course, they pay right on time. I highly recommend working with them.",
+      user: "Srinivas - CEO Of PrimeROI"
     },
     {
-      review: "Xtreame Ad Media Solutions is a good company to work for.They connect with me from time to time and the performance they give is upto the mark.Specialized in every category",
-      user: "Arpita - Mediaxpedia Technologies PVT. LTD."
-    },
-    {
-      review: "Xtreame Ad Media Solutions is a good company to work for.They connect with me from time to time and the performance they give is upto the mark.Specialized in every category",
-      user: "Arpita - Mediaxpedia Technologies PVT. LTD."
-    },
-    {
-      review: "Xtreame Ad Media Solutions is a good company to work for.They connect with me from time to time and the performance they give is upto the mark.Specialized in every category",
-      user: "Arpita - Mediaxpedia Technologies PVT. LTD."
+      review: "Highly recommend our affiliate for their outstanding performance in our casino campaign. Their expertise led to a remarkable 30% conversion rate, and an impressive 60% of customers made repeat deposits. Their dedication and results have been instrumental in our success.",
+      user: "Navya - Head of affilates indibe"
     },
 
   ]
@@ -76,14 +92,6 @@ export default function HomePage() {
     'client13.png',
     'client13.png',
   ];
-  const clientImageFileNamesTest = [
-    'client1.png',
-    'client2.png',
-    'client3.png',
-    'client4.png',
-    'client5.png',
-    'client6.png',
-  ];
 
 
 
@@ -100,7 +108,7 @@ export default function HomePage() {
     },
     {
       title: "Multi Channel",
-      content: "At XtremeAd, we offer support services through multiple channels, ensuring that users can derive maximum benefit based on their convenience. We understand the importance of providing flexible options to our customers, allowing them to engage with us through various channels for assistance and support. A dedicated support team always remains available 24X7 to help you. Our support team first hears users' queries properly and then acts accordingly.",
+      content: "At Velocity Click, we offer support services through multiple channels, ensuring that users can derive maximum benefit based on their convenience. We understand the importance of providing flexible options to our customers, allowing them to engage with us through various channels for assistance and support. A dedicated support team always remains available 24X7 to help you. Our support team first hears users' queries properly and then acts accordingly.",
       img: "https://images.unsplash.com/photo-1665686308827-eb62e4f6604d"
     },
   ]
@@ -108,40 +116,40 @@ export default function HomePage() {
   const services = [
     {
       title: "Automation",
-      content: "At XtremeAd, we understand the significance of automation and continuously strive to enhance our automated capabilities.By leveraging automation, we enable businesses to increase productivity while simultaneously reducing costs.We are committed to developing innovative automated solutions that drive efficiency and optimize operations.",
+      content: "At Velocity Click, we understand the significance of automation and continuously strive to enhance our automated capabilities.By leveraging automation, we enable businesses to increase productivity while simultaneously reducing costs.We are committed to developing innovative automated solutions that drive efficiency and optimize operations.",
       img: Automation
     },
     {
       title: "Anti-Fraud Mechanism",
-      content: "At XtremeAd, our anti-fraud mechanism goes beyond merely detecting fraudulent traffic. We take proactive measures to prevent such traffic from affecting your campaigns. With our robust in-house fraud detection feature, we ensure that no malicious traffic goes unnoticed, providing you with a secure and trustworthy advertising environment.",
+      content: "At Velocity Click, our anti-fraud mechanism goes beyond merely detecting fraudulent traffic. We take proactive measures to prevent such traffic from affecting your campaigns. With our robust in-house fraud detection feature, we ensure that no malicious traffic goes unnoticed, providing you with a secure and trustworthy advertising environment.",
       img: Antifraud
     },
     {
       title: "Tracking & Analytics",
-      content: "Take your tracking and analytics capabilities to the next level by expanding beyond geographical data. At XtremeAd, we enable you to delve deeper into vital metrics such as carriers, languages, and effectively delivering campaigns to the right audience.",
+      content: "Take your tracking and analytics capabilities to the next level by expanding beyond geographical data. At Velocity Click, we enable you to delve deeper into vital metrics such as carriers, languages, and effectively delivering campaigns to the right audience.",
       img: Analytics
     },
     {
       title: "Instant Migration",
-      content: "Experience seamless and stress-free migration with XtremeAd, where you gain access to a wide array of tools and features. Our goal is to make the migration process effortless, ensuring a smooth transition for your business.",
+      content: "Experience seamless and stress-free migration with Velocity Click, where you gain access to a wide array of tools and features. Our goal is to make the migration process effortless, ensuring a smooth transition for your business.",
       img: Migration
     },
     {
       title: "Integration",
-      content: "At XtremeAd, we foster continuous collaboration with new partners, prioritizing the development of integrations. By doing so, we actively contribute to the success of our mutual clients.",
+      content: "At Velocity Click, we foster continuous collaboration with new partners, prioritizing the development of integrations. By doing so, we actively contribute to the success of our mutual clients.",
       img: Integration
     },
     {
       title: "Customer Support",
-      content: "XtremeAd has been widely acknowledged as a frontrunner in providing exceptional customer support services. Numerous organizations have consistently identified XtremeAd as a leading force in the realm of customer support.",
+      content: "Velocity Click has been widely acknowledged as a frontrunner in providing exceptional customer support services. Numerous organizations have consistently identified Velocity Click as a leading force in the realm of customer support.",
       img: Support
     }
   ]
 
   const faqsData = [
     {
-      question: "What Xteme Media Solutions do?",
-      answer: "XtremeAd Media Solutions is a highly regarded and reliable platform specializing in Performance Marketing. Our primary objective is to assist our clients in reaching their marketing objectives by providing unparalleled and outcome-focused solutions. Our mission is centered around delivering exceptional results and helping our clients succeed in their marketing endeavors."
+      question: "What Velocity Click Media Solutions do?",
+      answer: "Velocity Click Media Solutions is a highly regarded and reliable platform specializing in Performance Marketing. Our primary objective is to assist our clients in reaching their marketing objectives by providing unparalleled and outcome-focused solutions. Our mission is centered around delivering exceptional results and helping our clients succeed in their marketing endeavors."
     },
     {
       question: "What is an advertiser?",
@@ -193,10 +201,10 @@ export default function HomePage() {
           >We Manage Your Brands in Multiple Channels</h1>
           <p className="titleColor text-center font-mono text-xl md:px-5">Our motto is to build a communication bridge between advertisers, customers, and affiliates.</p>
           <div className="flex flex-wrap justify-center gap-5">
-            <Link href={"https://xtreameadsmediasolutions10389562.offer18.com/m/signup_self_adv?r=&am="} className="btn-header">
+            <Link href={"https://Velocity Clickadsmediasolutions10389562.offer18.com/m/signup_self_adv?r=&am="} className="btn-header">
               Advertiser
             </Link>
-            <Link href={"https://xtreameadsmediasolutions10389562.offer18.com/m/signup_self_aff?r=&am="} className="btn-header">
+            <Link href={"https://Velocity Clickadsmediasolutions10389562.offer18.com/m/signup_self_aff?r=&am="} className="btn-header">
               Affiliate
             </Link>
           </div>
@@ -241,7 +249,7 @@ export default function HomePage() {
             It is often found that some of the websites hold a first position in Google due to attractive advertisements. Well, you might be thinking about the ways to invite advertisers on your webpage. Mediaxpedia have gain immense success in inciting the advertisers to visit a company's webpage. We can assure you that our proven formula will create significant effect on your website. You will find that advertisers are getting attracted to your website. We are quite efficient in establishing a platform for meeting our clients with their prospective advertisers by the following:
           </p>
 
-          <Link href={"https://xtreameadsmediasolutions10389562.offer18.com/m/signup_self_adv?r=&am="} className="btn-header">
+          <Link href={"https://Velocity Clickadsmediasolutions10389562.offer18.com/m/signup_self_adv?r=&am="} className="btn-header">
             SIGNUP
           </Link>
         </div>
@@ -258,7 +266,7 @@ export default function HomePage() {
           <p className='text-gray-700'>
             Affiliates can be regarded as one of the main catalyst behind your marketing campaign. Your online performance is largely dependent upon the delivery of your services or products at right context, place and time. In the absence of a Affiliate you are never going to reach to your advertisers. Affiliates can open avenues for your website reach to the potential advertiser. It can well be discerned that Affiliate can both give a boost to your business and at the same time degrade it too.
           </p>
-          <Link href={"https://xtreameadsmediasolutions10389562.offer18.com/m/signup_self_aff?r=&am="} className="btn-header">
+          <Link href={"https://Velocity Clickadsmediasolutions10389562.offer18.com/m/signup_self_aff?r=&am="} className="btn-header">
             SIGNUP
           </Link>
         </div>
@@ -313,8 +321,8 @@ export default function HomePage() {
 
       {/* ------------------------------- WHT TO CHOSE START ------------------------------ */}
       <section className="mx-2 my-8 flex flex-col items-center gap-5 rounded-xl bg-gray-100 p-5 md:mx-16 md:p-10 lg:mx-32">
-        <h1 className="text-center text-4xl font-semibold">Why it's worth to choose <span className='text-col5'>XtremeAd?</span></h1>
-        <p className="w-[80%] text-center text-xl lg:w-1/2">With XtremeAd Media Solutions you will remain at a complete ease as we can take complete responsibility of your branding...</p>
+        <h1 className="text-center text-4xl font-semibold">Why it's worth to choose <span className='text-col5'>Velocity Click?</span></h1>
+        <p className="w-[80%] text-center text-xl lg:w-1/2">With Velocity Click Media Solutions you will remain at a complete ease as we can take complete responsibility of your branding...</p>
         <div className="grid w-full grid-cols-1 gap-5 text-xl font-semibold md:grid-cols-2 md:text-2xl">
           <div className="flex w-full transform cursor-pointer justify-center rounded-xl bg-col4 py-8 text-black transition-transform duration-300 hover:scale-[1.05]">SAFETY</div>
           <div className="flex w-full transform cursor-pointer justify-center rounded-xl bg-col4 py-8 text-black transition-transform duration-300 hover:scale-[1.05]">STABILITY</div>
@@ -348,7 +356,7 @@ export default function HomePage() {
           >
             {
               userReview.map((item, idx) => (
-                <SwiperSlide className="reviewSlider h-auto rounded-lg border border-black" key={idx}>
+                <SwiperSlide className="reviewSlider rounded-lg border border-black" key={idx}>
                   <div
                     className="flex h-full flex-col gap-4 p-5"
                   >
@@ -371,14 +379,15 @@ export default function HomePage() {
       {/* ------------------------------- STATISTICS START ------------------------------ */}
       <section className="mx-2 my-8 flex flex-col-reverse gap-10 rounded-xl bg-gray-100 p-5 md:mx-16 md:p-10 lg:mx-32 lg:flex-row lg:gap-10">
         <div className="left flex flex-col justify-center gap-5 lg:w-1/2">
+          <h1 className='sectionTitle'>Your <span className='text-col5'>Profitability</span> is what <span className='text-amber-500'>matters</span> to us</h1>
           <p className="text-lg">
-            With XtremeAd you will remain at a complete ease as we can take complete responsibility of your branding. Nowadays, with an increased competition in the market, one needs to generate new ideas that could create long lasting impact on the customers.
+            With Velocity Click you will remain at a complete ease as we can take complete responsibility of your branding. Nowadays, with an increased competition in the market, one needs to generate new ideas that could create long lasting impact on the customers.
           </p>
           <div className="buttonhandler flex flex-col justify-center gap-5 md:flex-row">
-            <Link href={"https://xtreameadsmediasolutions10389562.offer18.com/m/signup_self_aff?r=&am="} className="btn-header rounded-full px-12 py-3">
+            <Link href={"https://Velocity Clickadsmediasolutions10389562.offer18.com/m/signup_self_aff?r=&am="} className="btn-header rounded-full px-12 py-3">
               Affiliate
             </Link>
-            <Link href={"https://xtreameadsmediasolutions10389562.offer18.com/m/signup_self_aff?r=&am="} className="btn-header rounded-full px-12 py-3">
+            <Link href={"https://Velocity Clickadsmediasolutions10389562.offer18.com/m/signup_self_aff?r=&am="} className="btn-header rounded-full px-12 py-3">
               Advertiser
             </Link>
 
@@ -414,7 +423,7 @@ export default function HomePage() {
             navigation={true}
             slidesPerView={windowWidth < 641 ? 2 : (windowWidth < 769 ? 3 : 5)}
             autoplay={{
-              delay: 1000,
+              delay: 5000,
               disableOnInteraction: false,
             }}
             grid={{

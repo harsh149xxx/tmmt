@@ -1,4 +1,11 @@
 import ContactPage from "@/pages/ContactPage"
+import { Metadata } from 'next'
+
+
+export const metadata: Metadata = {
+  title: "Contact Us",
+  description: 'Contact Us for Result-Driven Performance Marketing Solutions | Velocity Click',
+}
 
 const Contact = () => {
   return (
