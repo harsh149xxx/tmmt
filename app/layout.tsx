@@ -57,6 +57,7 @@ export default function RootLayout({
         <meta name="robots" content="index, follow"/>
 
         {/* <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn --> */}
+        <meta property="og:site_name" content="Velocity Click" /> <!-- website name -->
         <meta property="og:site" content="https://https://velocityclick.in/" />  {/*website link */}
         <meta property="og:title" content="velocity Click" />  {/*title shown in the actual shared post */}
         <meta property="og:description"
