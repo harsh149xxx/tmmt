@@ -4,6 +4,8 @@ import NavbarComp from '@/components/NavbarComp'
 import FooterComp from '@/components/FooterComp'
 import {Merriweather} from '@next/font/google'
 import Script from 'next/script'
+import { ToastContainer } from '@/components/nextToast';
+import "react-toastify/dist/ReactToastify.css";
 
 const meriaweather = Merriweather({
   weight: ["300","400","700","900"],
@@ -14,8 +16,11 @@ const meriaweather = Merriweather({
 
 
 export const metadata: Metadata = {
-  title: 'Velocity Click',
-  description: 'Velocity Click is one of the renowned & trusted platform for Performance Marketing. Our Mission is to help our clients achieve their marketing goals by delivering the peerless & result-driven solutions.',
+  title:{
+    default: "Velocity Click | Boost Your Brand's Online Presence with Velocity Click Ad Media Solutions",
+    template: "Velocity Click | %s "
+  } ,
+  description: "Connect with advertisers, customers, and affiliates with ease through our automated and integrated services. Enhance your brand's visibility and success with Velocity Click's advanced tracking, analytics, and anti-fraud mechanisms. Choose a partner known for safety, stability, and exceptional customer support. Trust Velocity Click Ad Media Solutions to elevate your brand's presence in multiple channels.",
 }
 
 export default function RootLayout({
@@ -49,7 +54,6 @@ export default function RootLayout({
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
 
-          <meta charSet="UTF-8"/>
 
             {/* <!-- SEO Meta Tags --> */}
             <meta name="author" content=""/>
@@ -65,7 +69,7 @@ export default function RootLayout({
         <meta property="og:image" content="logo.png" />    {/* image link, make sure it's jpg */}
         <meta property="og:url" content="https://velocityclick.in/" />  {/* where do you want your post to link to */}
         <meta property="og:type" content="website" />  {/* The type of content (in this case, "website") */}
-        <Script src={`https://www.googletagmanager.com/gtag/js?id=${process.env.GA_MEASUREMENT_ID}`} />
+        <Script src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}`} />
         <Script id="google-analytics">
           {`
           window.dataLayer = window.dataLayer || [];
@@ -78,6 +82,18 @@ export default function RootLayout({
       </head>
       <body >
         <main className={`${meriaweather.variable}`}>
+          <ToastContainer
+            position="top-right"
+            autoClose={2000}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+            theme="light"
+          />
         <NavbarComp />
         {children}
         <FooterComp />

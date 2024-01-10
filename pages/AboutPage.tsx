@@ -13,7 +13,7 @@ const AboutPage = () => {
     const data = [
         {
             title: "About team",
-            content: "XtremeAd Media SolutionsXtremeAd Media SolutionsXtremeAd Media SolutionsXtremeAd Media Solutions",
+            content: "Velocity Click Media SolutionsVelocity Click Media SolutionsVelocity Click Media SolutionsVelocity Click Media Solutions",
             imageurl: LoadingPana
         },
         {
@@ -68,7 +68,7 @@ const AboutPage = () => {
                 <div className="Right flex w-full flex-col gap-5 lg:w-1/2 lg:justify-center">
                     <h1 className="w-full text-center text-4xl font-semibold lg:w-10/12 lg:text-left">A Bunch of Enthusiastic & Creative Minds</h1>
                     <p className="w-full text-center text-xl text-gray-600 lg:text-left">
-                        XtremeAd Media Solutions is one of the renowned & trusted platforms for Performance Marketing. Our mission is to help our clients achieve their marketing goals by delivering peerless and result-driven solutions.
+                        Velocity Click Media Solutions is one of the renowned & trusted platforms for Performance Marketing. Our mission is to help our clients achieve their marketing goals by delivering peerless and result-driven solutions.
                     </p>
                 </div>
             </section>
