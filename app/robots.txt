@@ -7,3 +7,5 @@ Disallow:
 // # Allow all crawlers
 // User-agent: *
 // Allow: /
+
+Sitemap: https://velocityclick.in/sitemap.xml

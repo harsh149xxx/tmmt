@@ -18,25 +18,25 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: "https://velocityclick.in/services",
       lastModified: new Date(),
       changeFrequency: "weekly",
-      priority: 0.5,
+      priority: 0.7,
     },
     {
       url: "https://velocityclick.in/advertiser",
       lastModified: new Date(),
       changeFrequency: "weekly",
-      priority: 0.5,
+      priority: 0.6,
     },
     {
       url: "https://velocityclick.in/affiliate",
       lastModified: new Date(),
       changeFrequency: "weekly",
-      priority: 0.5,
+      priority: 0.6,
     },
     {
       url: "https://velocityclick.in/contact",
       lastModified: new Date(),
       changeFrequency: "weekly",
-      priority: 0.5,
+      priority: 0.9,
     },
   ];
 }
