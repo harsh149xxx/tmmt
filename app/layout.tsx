@@ -18,7 +18,7 @@ const meriaweather = Merriweather({
 export const metadata: Metadata = {
   title:{
     default: "Velocity Click | Boost Your Brand's Online Presence with Velocity Click Ad Media Solutions",
-    template: "Velocity Click | %s "
+    template: "%s | Velocity Click"
   } ,
   description: "Connect with advertisers, customers, and affiliates with ease through our automated and integrated services. Enhance your brand's visibility and success with Velocity Click's advanced tracking, analytics, and anti-fraud mechanisms. Choose a partner known for safety, stability, and exceptional customer support. Trust Velocity Click Ad Media Solutions to elevate your brand's presence in multiple channels.",
 }
@@ -61,7 +61,7 @@ export default function RootLayout({
         <meta name="robots" content="index, follow"/>
 
         {/* <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn --> */}
-        <meta property="og:site" content="https://https://velocityclick.in/" />  {/*website link */}
+        <meta property="og:site" content="https://velocityclick.in/" />  {/*website link */}
         <meta property="og:title" content="velocity Click" />  {/*title shown in the actual shared post */}
         <meta property="og:description"
           content="Velocity Click is one of the renowned & trusted platform for Performance Marketing. Our Mission is to help our clients achieve their marketing goals by delivering the peerless & result-driven solutions." />
