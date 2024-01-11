@@ -18,7 +18,7 @@ const meriaweather = Merriweather({
 export const metadata: Metadata = {
   title:{
     default: "Velocity Click | Boost Your Brand's Online Presence with Velocity Click Ad Media Solutions",
-    template: "Velocity Click | %s "
+    template: "%s | Velocity Click"
   } ,
   description: "Connect with advertisers, customers, and affiliates with ease through our automated and integrated services. Enhance your brand's visibility and success with Velocity Click's advanced tracking, analytics, and anti-fraud mechanisms. Choose a partner known for safety, stability, and exceptional customer support. Trust Velocity Click Ad Media Solutions to elevate your brand's presence in multiple channels.",
 }

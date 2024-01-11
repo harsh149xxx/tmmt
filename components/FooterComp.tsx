@@ -30,7 +30,7 @@ const FooterComp = () => {
                         <h1 className="text-2xl font-semibold">Contact Us</h1>
                         <span>177D, Picnic Garden Road,</span>
                         <span> West Bengal, Kolkata - 700039</span>
-                        <span>Email: <a href="mailto:mhvelocityclick@gmail.com" className="text-blue-700 underline">mhvelocityclick@gmail.com</a> </span>
+                        <span>Email: <a href="mailto:support@velocityclick.in" className="text-blue-700 underline">support@velocityclick.in</a> </span>
                     </div>
 
                     <div className="middle flex flex-col gap-2 md:order-2 md:pl-12 lg:order-3">
@@ -43,7 +43,7 @@ const FooterComp = () => {
                         ))}
                         <button
                             className={`w-fit font-semibold hover:text-col5`}
-                            onClick={() => { router.push("http://localhost:3000/sitemap.xml", { scroll: true }) }} >
+                            onClick={() => { router.push("http://www.velocityclick.in/sitemap.xml", { scroll: true }) }} >
                             SITEMAP
                         </button>
                     </div>
