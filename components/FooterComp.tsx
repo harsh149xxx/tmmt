@@ -2,7 +2,7 @@
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { menuItems } from "./NavbarComp";
 import { usePathname, useRouter } from "next/navigation";
-import Logo from "@/public/assets/logo.png"
+import logo from "@/public/logo.png"
 import Image from "next/image";
 import Link from "next/link";
 
@@ -21,13 +21,13 @@ const FooterComp = () => {
 
                     <div className="left flex flex-col gap-1 md:order-1 lg:order-1">
                         <div className="relative aspect-square w-1/4 md:w-1/2">
-                            <Image src={Logo} fill alt="company logo" />
+                            <Image src={logo} fill alt="company logo" />
                         </div>
                         <span className="text-4xl font-semibold">Velocity Click</span>
                     </div>
 
                     <div className="right flex flex-col gap-3 md:order-3 lg:order-2">
-                        <h1 className="text-2xl font-semibold">Contact Us</h1>
+                        <span className="text-2xl font-semibold">Contact Us</span>
                         <span>177D, Picnic Garden Road,</span>
                         <span> West Bengal, Kolkata - 700039</span>
                         <span>Email: <a href="mailto:support@velocityclick.in" className="text-blue-700 underline">support@velocityclick.in</a> </span>
@@ -49,7 +49,7 @@ const FooterComp = () => {
                     </div>
 
                     <div className="right flex flex-col gap-3 md:order-4 md:mt-5 md:w-full lg:order-4">
-                        <h1 className="text-2xl font-semibold">Follow Us</h1>
+                        <span className="text-2xl font-semibold">Follow Us</span>
                         <div className="socialIcon flex gap-5 text-3xl text-black">
                             <FaFacebook className="cursor-pointer hover:text-col5" onClick={() => { router.push("http://www.facebook.com", { scroll: true }) }} />
                             <FaTwitter className="cursor-pointer hover:text-col5" onClick={() => { router.push("http://www.twitter.com", { scroll: true }) }} />

@@ -219,7 +219,7 @@ export default function HomePage() {
 
       {/* --------------------------- OUR SERVICES START --------------------------- */}
       <section className="mx-2 my-8 rounded-xl bg-sectionBg p-5 md:mx-16 md:p-10 lg:mx-32">
-        <h1 className="sectionTitle"><span className='text-col5'>OUR</span> SERVICES</h1>
+        <span className="sectionTitle"><span className='text-col5'>OUR</span> SERVICES</span>
         <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3 lg:gap-12">
           {
             services.map((item, idx) => (
@@ -278,7 +278,7 @@ export default function HomePage() {
 
       {/* ------------------------------- SERVICES START ------------------------------ */}
       <section className="px-5 pb-12 md:px-16 lg:px-32">
-        <h1 className="sectionTitle"><span className='text-col5'>SER</span>VICES</h1>
+        <span className="sectionTitle"><span className='text-col5'>SER</span>VICES</span>
         <div className="">
           <div className="grid w-fit grid-cols-2 text-sm md:grid-cols-3 md:text-xl">
             <button className={`rounded-t-lg px-2 py-3 font-semibold md:px-5 ${openTab == 0 ? "bg-col3 text-col5" : "text-black"}`} onClick={(e) => { e.preventDefault(); setOpenTab(0) }}>INTEGRATION HELP</button>
@@ -304,7 +304,7 @@ export default function HomePage() {
 
       {/* ------------------------------- FAQS START ------------------------------ */}
       <section className="mx-2 my-8 rounded-xl bg-col3 p-3 md:mx-16 md:p-10 lg:mx-32">
-        <h1 className="sectionTitle text-col5">FAQS</h1>
+        <span className="sectionTitle text-col5">FAQS</span>
         <Accordion variant="splitted">
           {
             faqsData.map((item, idx) => (
@@ -321,7 +321,7 @@ export default function HomePage() {
 
       {/* ------------------------------- WHT TO CHOSE START ------------------------------ */}
       <section className="mx-2 my-8 flex flex-col items-center gap-5 rounded-xl bg-gray-100 p-5 md:mx-16 md:p-10 lg:mx-32">
-        <h1 className="text-center text-4xl font-semibold">Why it's worth to choose <span className='text-col5'>Velocity Click?</span></h1>
+        <span className="text-center text-4xl font-semibold">Why it's worth to choose <span className='text-col5'>Velocity Click?</span></span>
         <p className="w-[80%] text-center text-xl lg:w-1/2">With Velocity Click you will remain at a complete ease as we can take complete responsibility of your branding...</p>
         <div className="grid w-full grid-cols-1 gap-5 text-xl font-semibold md:grid-cols-2 md:text-2xl">
           <div className="flex w-full transform cursor-pointer justify-center rounded-xl bg-col4 py-8 text-black transition-transform duration-300 hover:scale-[1.05]">SAFETY</div>
@@ -335,7 +335,7 @@ export default function HomePage() {
 
       {/* -------------------------- REVEIW SECTION START -------------------------- */}
       <section className="mx-2 my-8 rounded-xl bg-col3 p-5 md:mx-16 md:p-10 lg:mx-32">
-        <h1 className="sectionTitle text-col5">What is everyone saying?</h1>
+        <span className="sectionTitle text-col5">What is everyone saying?</span>
         <div className="h-fit bg-transparent">
           <Swiper
             loop={true}
@@ -379,7 +379,7 @@ export default function HomePage() {
       {/* ------------------------------- STATISTICS START ------------------------------ */}
       <section className="mx-2 my-8 flex flex-col-reverse gap-10 rounded-xl bg-gray-100 p-5 md:mx-16 md:p-10 lg:mx-32 lg:flex-row lg:gap-10">
         <div className="left flex flex-col justify-center gap-5 lg:w-1/2">
-          <h1 className='sectionTitle'>Your <span className='text-col5'>Profitability</span> is what <span className='text-amber-500'>matters</span> to us</h1>
+          <span className='sectionTitle'>Your <span className='text-col5'>Profitability</span> is what <span className='text-amber-500'>matters</span> to us</span>
           <p className="text-lg">
             With Velocity Click you will remain at a complete ease as we can take complete responsibility of your branding. Nowadays, with an increased competition in the market, one needs to generate new ideas that could create long lasting impact on the customers.
           </p>
@@ -417,7 +417,7 @@ export default function HomePage() {
 
       {/* ------------------------------- OUR CLIENT START ------------------------------ */}
       <section className="mx-2 my-8 rounded-xl bg-sectionBg p-5 md:mx-16 md:p-10 lg:mx-32">
-        <h1 className="sectionTitle"><span className='text-col5'>OUR</span> CLIENTS</h1>
+        <span className="sectionTitle"><span className='text-col5'>OUR</span> CLIENTS</span>
         <div className="imageSlider">
           <Swiper
             navigation={true}

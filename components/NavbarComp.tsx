@@ -3,7 +3,7 @@
 import { Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button, NavbarMenu, NavbarMenuItem, NavbarMenuToggle } from "@nextui-org/react";
 import { usePathname, useRouter } from "next/navigation";
 import { useState } from "react";
-import Logo from "@/public/assets/logo.png"
+import logo from "@/public/logo.png"
 import Image from "next/image";
 export const menuItems = [
   {
@@ -49,7 +49,7 @@ const NavbarComp = () => {
       <NavbarContent>
         <NavbarBrand>
           <Link className="logoHolder relative aspect-square w-8 cursor-pointer md:w-12 lg:w-16" href="/">
-            <Image src={Logo} alt="company logo" fill />
+            <Image src={logo} alt="company logo" fill />
           </Link>
           <Link href="/" className="font-semobild font-Meriaweather text-xl text-black md:text-3xl lg:text-4xl">Velocity Click</Link>
         </NavbarBrand>

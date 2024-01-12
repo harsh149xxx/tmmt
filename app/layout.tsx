@@ -2,13 +2,13 @@ import type { Metadata } from 'next'
 import './globals.css'
 import NavbarComp from '@/components/NavbarComp'
 import FooterComp from '@/components/FooterComp'
-import {Merriweather} from '@next/font/google'
+import { Merriweather } from '@next/font/google'
 import Script from 'next/script'
 import { ToastContainer } from '@/components/nextToast';
 import "react-toastify/dist/ReactToastify.css";
 
 const meriaweather = Merriweather({
-  weight: ["300","400","700","900"],
+  weight: ["300", "400", "700", "900"],
   subsets: ['latin'],
   variable: '--font-meriaweather'
 })
@@ -16,10 +16,10 @@ const meriaweather = Merriweather({
 
 
 export const metadata: Metadata = {
-  title:{
+  title: {
     default: "Velocity Click",
     template: "%s | Velocity Click"
-  } ,
+  },
   description: "Connect with advertisers, customers, and affiliates with ease through our automated and integrated services. Enhance your brand's visibility and success with Velocity Click's advanced tracking, analytics, and anti-fraud mechanisms. Choose a partner known for safety, stability, and exceptional customer support. Trust Velocity Click Ad Media Solutions to elevate your brand's presence in multiple channels.",
 }
 
@@ -33,32 +33,32 @@ export default function RootLayout({
       <head>
 
         {/* <!-- Standard favicon --> */}
-        <link rel="icon" href="/image/favicon.ico" sizes="any" />
+        <link rel="icon" href="/favicon.ico" sizes="any" />
 
         {/* <!-- Apple Touch Icon (at least 200x200px) --> */}
-        <link rel="apple-touch-icon" sizes="120x120" href="/image/apple-touch-icon.png" />
+        <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon.png" />
 
         {/* <!-- Android Chrome Icon --> */}
-        <link rel="icon" type="image/png" sizes="192x192" href="/image/android-chrome-192x192.png" />
-        <link rel="icon" type="image/png" sizes="384x384" href="/image/android-chrome-384x384.png" />
+        <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png" />
+        <link rel="icon" type="image/png" sizes="384x384" href="/android-chrome-384x384.png" />
 
         {/* <!-- Recommended favicon size for general browser display --> */}
-        <link rel="icon" type="image/png" sizes="32x32" href="/image/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/image/favicon-16x16.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
 
         {/* <!-- The Web App Manifest --> */}
-        <link rel="manifest" href="/image/site.webmanifest" />
+        <link rel="manifest" href="/site.webmanifest" />
 
         {/* <!-- Safari Icon --> */}
-        <link rel="mask-icon" href="/image/safari-pinned-tab.svg" color="#5bbad5" />
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
 
 
-            {/* <!-- SEO Meta Tags --> */}
-            <meta name="author" content=""/>
+        {/* <!-- SEO Meta Tags --> */}
+        <meta name="author" content="" />
         {/* <!-- Meta Robots --> */}
-        <meta name="robots" content="index, follow"/>
+        <meta name="robots" content="index, follow" />
 
         {/* <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn --> */}
         <meta property="og:site_name" content="Velocity Click" /> {/*website name */}
@@ -70,6 +70,12 @@ export default function RootLayout({
         <meta property="og:image" content="logo.png" />    {/* image link, make sure it's jpg */}
         <meta property="og:url" content="https://velocityclick.in/" />  {/* where do you want your post to link to */}
         <meta property="og:type" content="website" />  {/* The type of content (in this case, "website") */}
+
+        {/* canonical tag */}
+        <link rel="canonical" href="https://www.velocityclick.com" />
+        <meta name="title" content="Velocity Click"/>
+
+
         <Script src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}`} />
         <Script id="google-analytics">
           {`
@@ -95,9 +101,9 @@ export default function RootLayout({
             pauseOnHover
             theme="light"
           />
-        <NavbarComp />
-        {children}
-        <FooterComp />
+          <NavbarComp />
+          {children}
+          <FooterComp />
         </main>
       </body>
     </html>

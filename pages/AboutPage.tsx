@@ -13,7 +13,7 @@ const AboutPage = () => {
     const data = [
         {
             title: "About team",
-            content: "Velocity Click Media SolutionsVelocity Click Media SolutionsVelocity Click Media SolutionsVelocity Click Media Solutions",
+            content: "Velocity Click",
             imageurl: LoadingPana
         },
         {
@@ -68,7 +68,7 @@ const AboutPage = () => {
                 <div className="Right flex w-full flex-col gap-5 lg:w-1/2 lg:justify-center">
                     <h1 className="w-full text-center text-4xl font-semibold lg:w-10/12 lg:text-left">A Bunch of Enthusiastic & Creative Minds</h1>
                     <p className="w-full text-center text-xl text-gray-600 lg:text-left">
-                        Velocity Click Media Solutions is one of the renowned & trusted platforms for Performance Marketing. Our mission is to help our clients achieve their marketing goals by delivering peerless and result-driven solutions.
+                        Velocity Click is one of the renowned & trusted platforms for Performance Marketing. Our mission is to help our clients achieve their marketing goals by delivering peerless and result-driven solutions.
                     </p>
                 </div>
             </section>
@@ -82,7 +82,7 @@ const AboutPage = () => {
             </section>
 
             <section className="mx-2 my-8 flex flex-col gap-5 rounded-xl bg-sectionBg p-5 md:mx-16 md:p-10 lg:mx-32">
-                <h1 className="text-center text-2xl lg:text-3xl">Affiliate marketing follows a simple step-by-step process:</h1>
+                <span className="text-center text-2xl lg:text-3xl">Affiliate marketing follows a simple step-by-step process:</span>
                 <div className="flex flex-col gap-5">
                     {
                         steps.map((step, index) => (
@@ -99,7 +99,7 @@ const AboutPage = () => {
                 </div>
 
 
-                <h1 className="text-lg font-medium text-col5 md:text-xl">Along with creating earning opportunities for affiliates, affiliate marketing also creates a win-win situation for both brands and consumers.</h1>
+                <span className="text-lg font-medium text-col5 md:text-xl">Along with creating earning opportunities for affiliates, affiliate marketing also creates a win-win situation for both brands and consumers.</span>
             </section>
 
         </section>
@@ -113,7 +113,7 @@ export const Card = ({ title, content, imageurl }: { title: string, content: str
             <div className="iamgeholder relative aspect-video w-[90%]" >
                 <Image src={imageurl} alt="icon " fill className="group-hover:scale-[1.2]" style={{ transitionDuration: "400ms", objectFit: 'cover' }} />
             </div>
-            <h1 className="translate text-2xl font-semibold transition-transform group-hover:scale-[1.05]" style={{ transitionDuration: "400ms" }}>{title}</h1>
+            <span className="translate text-2xl font-semibold transition-transform group-hover:scale-[1.05]" style={{ transitionDuration: "400ms" }}>{title}</span>
             <p className="translate transition-transform group-hover:scale-[1.05]" style={{ transitionDuration: "400ms" }}>{content}</p>
         </div>
     )
