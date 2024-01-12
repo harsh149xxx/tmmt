@@ -72,7 +72,7 @@ export default function RootLayout({
         <meta property="og:type" content="website" />  {/* The type of content (in this case, "website") */}
 
         {/* canonical tag */}
-        <link rel="canonical" href="https://www.velocityclick.com" />
+        <link rel="canonical" href="https://velocityclick.com" />
         <meta name="title" content="Velocity Click"/>
 
 
