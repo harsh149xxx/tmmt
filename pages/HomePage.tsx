@@ -42,11 +42,11 @@ export default function HomePage() {
       user: "Neha Sharma - Adsflourish"
     },
     {
-      review: "Velocity Click Ad Media Solutions is a good company to work for. They connect with me from time to time and the performance they give is upto the mark. Specialized in every category they work on various models like CPL, CPS, CPA, CPR, CPI. The major vertical for them is Casino & Betting. Working with them is a great value for your ROI. Good work team Velocity Click Ad Media Solutions Keep Rocking!",
+      review: "Velocity Click is a good company to work for. They connect with me from time to time and the performance they give is upto the mark. Specialized in every category they work on various models like CPL, CPS, CPA, CPR, CPI. The major vertical for them is Casino & Betting. Working with them is a great value for your ROI. Good work team Velocity Click Keep Rocking!",
       user: "Arpita - Mediaxpedia Technologies PVT. LTD."
     },
     {
-      review: "I've been working with Velocity Click Media Solutions for a few months now, as for me they're the best. Our account manager is available 24x7 and suggests us with best offers to help scale our earnings. And of course, they pay right on time. I highly recommend working with them.",
+      review: "I've been working with Velocity Click for a few months now, as for me they're the best. Our account manager is available 24x7 and suggests us with best offers to help scale our earnings. And of course, they pay right on time. I highly recommend working with them.",
       user: "Srinivas - CEO Of PrimeROI"
     },
     {
@@ -62,11 +62,11 @@ export default function HomePage() {
       user: "Neha Sharma - Adsflourish"
     },
     {
-      review: "Velocity Click Ad Media Solutions is a good company to work for. They connect with me from time to time and the performance they give is upto the mark. Specialized in every category they work on various models like CPL, CPS, CPA, CPR, CPI. The major vertical for them is Casino & Betting. Working with them is a great value for your ROI. Good work team Velocity Click Ad Media Solutions Keep Rocking!",
+      review: "Velocity Click is a good company to work for. They connect with me from time to time and the performance they give is upto the mark. Specialized in every category they work on various models like CPL, CPS, CPA, CPR, CPI. The major vertical for them is Casino & Betting. Working with them is a great value for your ROI. Good work team Velocity Click Keep Rocking!",
       user: "Arpita - Mediaxpedia Technologies PVT. LTD."
     },
     {
-      review: "I've been working with Velocity Click Media Solutions for a few months now, as for me they're the best. Our account manager is available 24x7 and suggests us with best offers to help scale our earnings. And of course, they pay right on time. I highly recommend working with them.",
+      review: "I've been working with Velocity Click for a few months now, as for me they're the best. Our account manager is available 24x7 and suggests us with best offers to help scale our earnings. And of course, they pay right on time. I highly recommend working with them.",
       user: "Srinivas - CEO Of PrimeROI"
     },
     {
@@ -148,8 +148,8 @@ export default function HomePage() {
 
   const faqsData = [
     {
-      question: "What Velocity Click Media Solutions do?",
-      answer: "Velocity Click Media Solutions is a highly regarded and reliable platform specializing in Performance Marketing. Our primary objective is to assist our clients in reaching their marketing objectives by providing unparalleled and outcome-focused solutions. Our mission is centered around delivering exceptional results and helping our clients succeed in their marketing endeavors."
+      question: "What Velocity Click do?",
+      answer: "Velocity Click is a highly regarded and reliable platform specializing in Performance Marketing. Our primary objective is to assist our clients in reaching their marketing objectives by providing unparalleled and outcome-focused solutions. Our mission is centered around delivering exceptional results and helping our clients succeed in their marketing endeavors."
     },
     {
       question: "What is an advertiser?",
@@ -322,7 +322,7 @@ export default function HomePage() {
       {/* ------------------------------- WHT TO CHOSE START ------------------------------ */}
       <section className="mx-2 my-8 flex flex-col items-center gap-5 rounded-xl bg-gray-100 p-5 md:mx-16 md:p-10 lg:mx-32">
         <h1 className="text-center text-4xl font-semibold">Why it's worth to choose <span className='text-col5'>Velocity Click?</span></h1>
-        <p className="w-[80%] text-center text-xl lg:w-1/2">With Velocity Click Media Solutions you will remain at a complete ease as we can take complete responsibility of your branding...</p>
+        <p className="w-[80%] text-center text-xl lg:w-1/2">With Velocity Click you will remain at a complete ease as we can take complete responsibility of your branding...</p>
         <div className="grid w-full grid-cols-1 gap-5 text-xl font-semibold md:grid-cols-2 md:text-2xl">
           <div className="flex w-full transform cursor-pointer justify-center rounded-xl bg-col4 py-8 text-black transition-transform duration-300 hover:scale-[1.05]">SAFETY</div>
           <div className="flex w-full transform cursor-pointer justify-center rounded-xl bg-col4 py-8 text-black transition-transform duration-300 hover:scale-[1.05]">STABILITY</div>
