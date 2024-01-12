@@ -1,11 +1,16 @@
 //robots.txt
 
-# Block all crawlers for /accounts
-User-agent: *
-Disallow: 
-
 // # Allow all crawlers
 // User-agent: *
 // Allow: /
+Allow: /about
+Allow: /services
+Allow: /advertiser
+Allow: /affiliate
+Allow: /contact
+
+# Block all crawlers for /accounts
+User-agent: *
+Disallow: 
 
 Sitemap: https://velocityclick.in/sitemap.xml
