@@ -28,7 +28,7 @@ const FooterComp = () => {
 
                     <div className="right flex flex-col gap-3 md:order-3 lg:order-2">
                         <span className="text-2xl font-semibold">Contact Us</span>
-                        <span>177D, Picnic Garden Road,</span>
+                        <span>MKS, Picnic Garden Road,</span>
                         <span> West Bengal, Kolkata - 700039</span>
                         <span>Email: <a href="mailto:support@velocityclick.in" className="text-blue-700 underline">support@velocityclick.in</a> </span>
                     </div>
