@@ -304,7 +304,7 @@ export default function HomePage() {
 
       {/* ------------------------------- FAQS START ------------------------------ */}
       <section className="mx-2 my-8 rounded-xl bg-col3 p-3 md:mx-16 md:p-10 lg:mx-32">
-        <span className="sectionTitle text-col5">FAQS</span>
+        <div className="sectionTitle text-col5">FAQS</div>
         <Accordion variant="splitted">
           {
             faqsData.map((item, idx) => (
