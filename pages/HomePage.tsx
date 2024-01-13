@@ -219,7 +219,7 @@ export default function HomePage() {
 
       {/* --------------------------- OUR SERVICES START --------------------------- */}
       <section className="mx-2 my-8 rounded-xl bg-sectionBg p-5 md:mx-16 md:p-10 lg:mx-32">
-        <span className="sectionTitle"><span className='text-col5'>OUR</span> SERVICES</span>
+        <div className="sectionTitle"><span className='text-col5'>OUR</span> SERVICES</div>
         <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3 lg:gap-12">
           {
             services.map((item, idx) => (
@@ -278,7 +278,7 @@ export default function HomePage() {
 
       {/* ------------------------------- SERVICES START ------------------------------ */}
       <section className="px-5 pb-12 md:px-16 lg:px-32">
-        <span className="sectionTitle"><span className='text-col5'>SER</span>VICES</span>
+        <div className="sectionTitle"><span className='text-col5'>SER</span>VICES</div>
         <div className="">
           <div className="grid w-fit grid-cols-2 text-sm md:grid-cols-3 md:text-xl">
             <button className={`rounded-t-lg px-2 py-3 font-semibold md:px-5 ${openTab == 0 ? "bg-col3 text-col5" : "text-black"}`} onClick={(e) => { e.preventDefault(); setOpenTab(0) }}>INTEGRATION HELP</button>
@@ -335,7 +335,7 @@ export default function HomePage() {
 
       {/* -------------------------- REVEIW SECTION START -------------------------- */}
       <section className="mx-2 my-8 rounded-xl bg-col3 p-5 md:mx-16 md:p-10 lg:mx-32">
-        <span className="sectionTitle text-col5">What is everyone saying?</span>
+        <div className="sectionTitle text-col5">What is everyone saying?</div>
         <div className="h-fit bg-transparent">
           <Swiper
             loop={true}
@@ -417,7 +417,7 @@ export default function HomePage() {
 
       {/* ------------------------------- OUR CLIENT START ------------------------------ */}
       <section className="mx-2 my-8 rounded-xl bg-sectionBg p-5 md:mx-16 md:p-10 lg:mx-32">
-        <span className="sectionTitle"><span className='text-col5'>OUR</span> CLIENTS</span>
+        <div className="sectionTitle"><span className='text-col5'>OUR</span> CLIENTS</div>
         <div className="imageSlider">
           <Swiper
             navigation={true}
