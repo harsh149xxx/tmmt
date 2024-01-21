@@ -32,7 +32,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
 
-        <!-- Clarity tracking code for https://velocityclick.in/ -->
+        {/* <!-- Clarity tracking code for https://velocityclick.in/ -->c*/}
           <script> 
             (function(c,l,a,r,i,t,y){        
             c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};        
