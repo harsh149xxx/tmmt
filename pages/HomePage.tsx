@@ -201,10 +201,10 @@ export default function HomePage() {
           >We Manage Your Brands in Multiple Channels</h1>
           <p className="titleColor text-center font-mono text-xl md:px-5">Our motto is to build a communication bridge between advertisers, customers, and affiliates.</p>
           <div className="flex flex-wrap justify-center gap-5">
-            <Link href={"https://xtreameadsmediasolutions10389562.offer18.com/m/signup_self_adv?r=&am="} className="btn-header">
+            <Link href={"https://velocityclick.in/signup"} className="btn-header">
               Advertiser
             </Link>
-            <Link href={"https://xtreameadsmediasolutions10389562.offer18.com/m/signup_self_aff?r=&am="} className="btn-header">
+            <Link href={"https://velocityclick.in/signup"} className="btn-header">
               Affiliate
             </Link>
           </div>
@@ -249,7 +249,7 @@ export default function HomePage() {
             It is often found that some of the websites hold a first position in Google due to attractive advertisements. Well, you might be thinking about the ways to invite advertisers on your webpage. Mediaxpedia have gain immense success in inciting the advertisers to visit a company's webpage. We can assure you that our proven formula will create significant effect on your website. You will find that advertisers are getting attracted to your website. We are quite efficient in establishing a platform for meeting our clients with their prospective advertisers by the following:
           </p>
 
-          <Link href={"https://xtreameadsmediasolutions10389562.offer18.com/m/signup_self_adv?r=&am="} className="btn-header">
+          <Link href={"https://velocityclick.in/signup"} className="btn-header">
             SIGNUP
           </Link>
         </div>
@@ -266,7 +266,7 @@ export default function HomePage() {
           <p className='text-gray-700'>
             Affiliates can be regarded as one of the main catalyst behind your marketing campaign. Your online performance is largely dependent upon the delivery of your services or products at right context, place and time. In the absence of a Affiliate you are never going to reach to your advertisers. Affiliates can open avenues for your website reach to the potential advertiser. It can well be discerned that Affiliate can both give a boost to your business and at the same time degrade it too.
           </p>
-          <Link href={"https://xtreameadsmediasolutions10389562.offer18.com/m/signup_self_aff?r=&am="} className="btn-header">
+          <Link href={"https://velocityclick.in/signup"} className="btn-header">
             SIGNUP
           </Link>
         </div>
@@ -384,10 +384,10 @@ export default function HomePage() {
             With Velocity Click you will remain at a complete ease as we can take complete responsibility of your branding. Nowadays, with an increased competition in the market, one needs to generate new ideas that could create long lasting impact on the customers.
           </p>
           <div className="buttonhandler flex flex-col justify-center gap-5 md:flex-row">
-            <Link href={"https://xtreameadsmediasolutions10389562.offer18.com/m/signup_self_aff?r=&am="} className="btn-header rounded-full px-12 py-3">
+            <Link href={"https://velocityclick.in/signup"} className="btn-header rounded-full px-12 py-3">
               Affiliate
             </Link>
-            <Link href={"https://xtreameadsmediasolutions10389562.offer18.com/m/signup_self_adv?r=&am="} className="btn-header rounded-full px-12 py-3">
+            <Link href={"https://velocityclick.in/signup"} className="btn-header rounded-full px-12 py-3">
               Advertiser
             </Link>
 
