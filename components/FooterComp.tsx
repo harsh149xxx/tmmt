@@ -57,8 +57,8 @@ const FooterComp = () => {
                             <FaLinkedin className="cursor-pointer hover:text-col5" onClick={() => { router.push("http://www.linkedin.com", { scroll: true }) }} />
                         </div>
                         <div className="bttn flex flex-wrap gap-5 py-5">
-                            <Link href="https://xtreameadsmediasolutions10389562.offer18.com/m/signup_self_adv?r=&am=" className="rounded-xl border-2 border-col5 bg-col5 px-8 py-2 text-base font-semibold text-black hover:bg-transparent md:text-xl">Signup</Link>
-                            <Link href="https://xtreameadsmediasolutions10389562.offer18.com/m/login" className="rounded-xl border-2 border-col5 px-8 py-2 text-base font-semibold hover:bg-col5 md:text-xl">Login</Link>
+                            <Link href="https://velocityclick.in/signup" className="rounded-xl border-2 border-col5 bg-col5 px-8 py-2 text-base font-semibold text-black hover:bg-transparent md:text-xl">Signup</Link>
+                            <Link href="https://velocityclick.in/signup" className="rounded-xl border-2 border-col5 px-8 py-2 text-base font-semibold hover:bg-col5 md:text-xl">Login</Link>
                         </div>
                     </div>
 
