@@ -139,7 +139,7 @@ export const BottomPart = ({ gridData }: { gridData: { title: string; icon: Stat
 
             <div className="flex flex-col items-center justify-between gap-5 rounded-t-xl border border-col5 bg-col5 px-7 py-5 md:px-16 lg:flex-row lg:gap-0 lg:px-32">
                 <span className="w-full text-4xl text-gray-200 md:text-5xl lg:w-10/12">Build your successful business with us. Want to know how to do this?</span>
-                <Link href="https://xtreameadsmediasolutions10389562.offer18.com/m/signup_self_adv?r=&am=" className="h-fit w-fit rounded-full bg-white px-5 py-2 font-semibold text-col5 hover:bg-gray-200">Sign Up</Link>
+                <Link href="https://velocityclick.in/signup" className="h-fit w-fit rounded-full bg-white px-5 py-2 font-semibold text-col5 hover:bg-gray-200">Sign Up</Link>
             </div>
         </>
     )
