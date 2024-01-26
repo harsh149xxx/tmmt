@@ -457,7 +457,7 @@ export default function HomePage() {
               disableOnInteraction: false,
             }}
             grid={{
-              rows: 2,
+              rows: 3,
             }}
             spaceBetween={10}
             pagination={{
