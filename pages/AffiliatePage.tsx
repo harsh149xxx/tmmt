@@ -7,7 +7,8 @@ import Target from '@/public/assets/advertiser/target.png'
 import Cover from '@/public/assets/advertiser/cover.png'
 import RTI from '@/public/assets/advertiser/rti.png'
 import Campaign from '@/public/assets/advertiser/campaign.png'
-import { BottomPart, BoxCard, Card } from "./AdvertiserPage"
+import {  BoxCard, Card } from "./AdvertiserPage"
+import Link from "next/link"
 
 const data = [
     {
@@ -79,7 +80,29 @@ const AffiliatePage = () => {
                 </div>
             </section>
 
-            <BottomPart gridData={gridData }/>
+            <section className="bg-white px-7 py-12 md:px-16 md:py-16 lg:px-32">
+                <div className="flex flex-col items-center gap-5">
+                    <span className="text-center text-4xl font-semibold text-col5">
+                        We Provide Additional Services That Will Grow Your Business
+                    </span>
+                    <p className="w-10/12 text-center text-lg text-gray-500">
+                        We maximize the potential customer reach to your Campaigns through Geo. targeting, Behavioral targeting, Contextual targeting, Campaign Optimization and Niche Verticals, based on classification and common channel sites. Through our precise Media planning and Direct Premium Affiliates on our network, we instantaneously enable you to maximize your reach across millions of audiences.
+                    </p>
+                    <span className="text-2xl font-semibold">Why <span className="text-col5">Velocity Click?</span></span>
+                </div>
+
+                <div className="cardHolder my-5 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+                    {
+                        gridData?.map((item, idx) => (
+                            <BoxCard title={item.title} icon={item.icon} />
+                        ))
+                    }
+                </div>
+            </section>
+            <div className="flex flex-col items-center justify-between gap-5 rounded-t-xl border border-col5 bg-col5 px-7 py-5 md:px-16 lg:flex-row lg:gap-0 lg:px-32">
+                <span className="w-full text-4xl text-gray-200 md:text-5xl lg:w-10/12">Build your successful business with us. Want to know how to do this?</span>
+                <Link href="https://velocityclick.in/signup" className="h-fit w-fit rounded-full bg-white px-5 py-2 font-semibold text-col5 hover:bg-gray-200">Sign Up</Link>
+            </div>
         </div>
     )
 }
