@@ -76,7 +76,7 @@ const FooterComp = () => {
 
                 </div>
 
-                <h6 className="pb-5 text-center">{copyrightSign} {currentYear} The Mad Mystery Team LLC. (TMMT) All rights reserved</h6>
+                <h6 className="pb-5 text-white text-center"><strong>{copyrightSign} {currentYear} The Mad Mystery Team LLC. (TMMT) All rights reserved</strong></h6>
             </footer>
         </div>
 
