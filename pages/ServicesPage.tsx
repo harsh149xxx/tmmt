@@ -1,3 +1,5 @@
+'use client';
+
 import HeaderBox from '@/components/HeaderBox'
 import React from 'react'
 import Marketing from '@/public/assets/services/marketing.jpg'
@@ -6,70 +8,215 @@ import Branding from '@/public/assets/services/branding.jpg'
 import Image from 'next/image'
 
 const ServicesPage = () => {
+    const handleScroll = (sectionId: string) => {
+        const section = document.getElementById(sectionId);
+        if (section) {
+            try {
+                const navbarHeight = document.querySelector('header')?.clientHeight || 0; // Adjust based on your navbar's height
+                const offsetPosition = section.offsetTop - navbarHeight + 20; // You can fine-tune the `+20` for extra padding
+
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth',
+                });
+            } catch (error) {
+                console.error('Scroll Error:', error);
+            }
+        } else {
+            console.warn(`Section with ID ${sectionId} not found.`);
+        }
+    };
+
     return (
         <div>
-            <HeaderBox title="Sevices" />
+            <HeaderBox title="Services" />
+            <div className="flex justify-center gap-6 mt-8">
+                <button
+                    className="btn-header rounded-full px-6 py-3 text-lg bg-red-500 shadow-lg hover:shadow-xl transition-all duration-200"
+                    onClick={() => handleScroll('section-1')} 
+                >
+                    PPC Ads
+                </button>
+                <button
+                    className="btn-header rounded-full px-6 py-3 text-lg bg-red-500 shadow-lg hover:shadow-xl transition-all duration-200"
+                    onClick={() => handleScroll('section-2')} 
+                >
+                    Meta Ads
+                </button>
+                <button
+                    className="btn-header rounded-full px-6 py-3 text-lg bg-red-500 shadow-lg hover:shadow-xl transition-all duration-200"
+                    onClick={() => handleScroll('section-3')} 
+                >
+                    Native Ads
+                </button>
+                <button
+                    className="btn-header rounded-full px-6 py-3 text-lg bg-red-500 shadow-lg hover:shadow-xl transition-all duration-200"
+                    onClick={() => handleScroll('section-4')} 
+                >
+                    Email Marketing
+                </button>
+                <button
+                    className="btn-header rounded-full px-6 py-3 text-lg bg-red-500 shadow-lg hover:shadow-xl transition-all duration-200"
+                    onClick={() => handleScroll('section-5')} 
+                >
+                    APP Marketing
+                </button>
+                <button
+                    className="btn-header rounded-full px-6 py-3 text-lg bg-red-500 shadow-lg hover:shadow-xl transition-all duration-200"
+                    onClick={() => handleScroll('section-6')} 
+                >
+                    Branding
+                </button>
+            </div>
 
-            <section className='mx-2 my-2 flex flex-col-reverse gap-12 rounded-xl bg-sectionBg p-5 md:mx-16 md:p-10 lg:mx-32 lg:flex-row'>
+            {/* Section 1 */}
+            <section id="section-1" className="mx-2 my-2 flex flex-col-reverse gap-12 rounded-xl bg-sectionBg p-5 md:mx-16 md:p-10 lg:mx-32 lg:flex-row">
                 <div className='w-full lg:w-1/2'>
-                    <span className='text-3xl font-semibold'>Mobile Marketing</span>
+                    <span className='text-3xl font-semibold block mb-4'>PPC Advertising</span>
                     <p className='text-justify text-xl'>
-                        With the rampant use of smartphones marketers are showing a preference towards mobile marketing. We at Velocity Click have understood the worth of mobile marketing for a company and so our mobile marketing services are able to reach to customers via apps, SMS or graphics. We aim at creating persona of the mobile users by knowing their preferences. We also find out the particular behaviours of mobile users. It has been found that almost 65% of the people open their email on mobile phones. Velocity Click search for key audiences who can be targeted via mobile marketing. Generating measurable as well as realistic KPI’s is one of the prime components of our mobile marketing strategy. Our writers post user friendly content which will take your SEO to new heights.
+                        PPC is one of the most effective ways to drive targeted traffic to your website. At TMMT, we create customized PPC campaigns designed to maximize ROI and drive conversions.
+                        </p>
+                        <ul className='list-decimal pl-5 text-xl mt-4 leading-8'>
+                            <li><b style={{ fontWeight: 600 }}>Increased Conversions:</b> Clients often see a 25-30% increase in conversions after campaign optimization.</li>
+                            <li><b style={{ fontWeight: 600 }}>Targeted Reach:</b> We focus on high-conversion keywords to attract the right audience.</li>
+                            <li><b style={{ fontWeight: 600 }}>Optimized Budget:</b> Through continuous A/B testing, we ensure maximum efficiency in ad spend.</li>
+                        </ul>
+                        <p className='text-justify text-xl mt-6'>
+                            With data-driven insights, we ensure your ads reach the right people at the right time for the best results.
+                        
                     </p>
                 </div>
+
                 <div className='flex w-full items-center justify-center lg:w-1/2'>
                     <div className="imageHolder relative aspect-video w-full">
-                        <Image src={Marketing} fill alt="branding iamge" style={{ objectFit: "cover" }} />
+                        <Image src={Marketing} fill alt="branding image" style={{ objectFit: "cover" }} />
                     </div>
                 </div>
             </section>
 
-            <section className='mx-2 my-8 flex flex-col-reverse gap-12 rounded-xl bg-gray-200 p-5 md:mx-16 md:p-10 lg:mx-32 lg:flex-row-reverse'>
+            {/* Section 2 (reverse layout) */}
+            <section id="section-2" className="mx-2 my-2 flex flex-col-reverse gap-12 rounded-xl bg-gray-200 p-5 md:mx-16 md:p-10 lg:mx-32 lg:flex-row-reverse">
                 <div className='w-full lg:w-1/2'>
-                    <span className='text-3xl font-semibold'>Lead Generation</span>
+                    <span className='text-3xl font-semibold block mb-4'>Meta (Facebook & Instagram) Advertising</span>
                     <p className='text-justify text-xl'>
-                        Lead generation is considered to be one of the most significant parts of a business. Building of a good communication network is what counts in your branding. Suppose you are on a social networking site but you hardly do any sort of activity then just get ready to lose your customers. But if you choose Velocity Click for your lead generation then you need not worry about it. We will post photos or attractive contents that are meant to describe your products or services. On behalf of your company we will post blogs that will make announcement regarding your newly launched products or make discussion regarding needs of your customers.
+                        Meta platforms offer unparalleled reach, and we specialize in creating effective ad campaigns on Facebook and Instagram to increase brand visibility and conversions.
+                        </p>
+                        <ul className='list-decimal pl-5 text-xl mt-4 leading-8'>
+                            <li><b style={{ fontWeight: 600 }}>Improved CTR:</b> We see up to a 20% increase in click-through rates through tailored creatives.</li>
+                            <li><b style={{ fontWeight: 600 }}>Engagement Growth:</b> Clients experience a 30% boost in engagement after campaign optimization.</li>
+                            <li><b style={{ fontWeight: 600 }}>Targeted Reach:</b> Using advanced targeting, we reach users most likely to convert.</li>
+                        </ul>
+                        <p className='text-justify text-xl mt-6'>
+                            We craft ads that drive measurable results while optimizing your budget for maximum impact.
+                        
                     </p>
+
                 </div>
                 <div className='flex w-full items-center justify-center lg:w-1/2'>
                     <div className="imageHolder relative aspect-video w-full">
-                        <Image src={Lead} fill alt="branding iamge" style={{ objectFit: "cover" }} />
+                        <Image src={Marketing} fill alt="branding image" style={{ objectFit: "cover" }} />
                     </div>
                 </div>
             </section>
 
-            <section className='mx-2 my-8 flex flex-col-reverse gap-12 rounded-xl bg-sectionBg p-5 md:mx-16 md:p-10 lg:mx-32 lg:flex-row'>
-                <div className='w-full lg:w-1/2 lg:pr-8'>
-                    <span className='text-3xl font-semibold'>Branding</span>
-                    <p className='text-justify text-xl'>
-                        A company that has a well defined branding strategy is able to taste the fruit of success. If you have a plan to grow your business then Velocity Click can help you out by: Conducting research: We will first conduct a research on the needs of your target customers and based upon their needs, we will devise a strategy. Considering your business goal: Our branding strategies will be completely based upon the goals that you have predetermined for your business. Positioning your brand: After gaining a complete knowledge about your target customer’s need and your business goals Velocity Click tries to position your brand by defining your unique features.
-                    </p>
-                </div>
-                <div className='flex w-full items-center justify-center lg:w-1/2'>
-                    <div className="imageHolder relative aspect-video w-full">
-                        <Image src={Branding} fill alt="branding iamge" style={{ objectFit: "cover" }} />
-                    </div>
-                </div>
-            </section>
-
-            <section className='mx-2 my-8 flex flex-col-reverse gap-12 rounded-xl bg-gray-200 p-5 md:mx-16 md:p-10 lg:mx-32 lg:flex-row-reverse'>
+            {/* Section 3 (same layout as Section 1) */}
+            <section id="section-3" className="mx-2 my-2 flex flex-col-reverse gap-12 rounded-xl bg-sectionBg p-5 md:mx-16 md:p-10 lg:mx-32 lg:flex-row">
                 <div className='w-full lg:w-1/2'>
-                    <span className='text-3xl font-semibold'>Affiliate Marketting</span>
+                    <span className='text-3xl font-semibold block mb-4'>Native Push Advertising</span>
                     <p className='text-justify text-xl'>
-                        From facts to figures, we now have the world in the palm of our hand. With promising technological advancements, transformations, and easy accessibility to the internet, businesses everywhere are growing more responsive, more agile, and more mobile. THE EVOLVING DIGITAL MARKETING LANDSCAPE has become the cradle of a multitude of avenues for entrepreneurial innovation. And of late, affiliate marketing has come out as one such lucrative innovation. Affiliate marketing follows a simple step-by-step process:
+                        Native push ads seamlessly integrate with content, delivering personalized messages to your audience. We specialize in creating native campaigns that improve engagement and conversion rates.
+                        </p>
+                        <ul className='list-decimal pl-5 text-xl mt-4 leading-8'>
+                            <li><b style={{ fontWeight: 600 }}>Higher Engagement:</b> Our campaigns typically see a 20-25% increase in user engagement.</li>
+                            <li><b style={{ fontWeight: 600 }}>Targeted Delivery:</b> We leverage behavioral data for precise ad targeting.</li>
+                            <li><b style={{ fontWeight: 600 }}>Cost-effective:</b> By optimizing delivery, we increase ROI while reducing ad spend by up to 30%.</li>
+                        </ul>
+                        <p className='text-justify text-xl mt-6'>
+                            Through effective targeting and captivating creatives, we drive results that resonate with your audience.
+                        
                     </p>
-                    <ol className='list-decimal pl-5 text-xl'>
-                        <li>An affiliate shows an ad for a product offered by a company on their website</li>
-                        <li>A user clicks on the ad</li>
-                        <li>The user is then redirected from the affiliate’s website to the company’s website</li>
-                    </ol>
+
+
                 </div>
                 <div className='flex w-full items-center justify-center lg:w-1/2'>
                     <div className="imageHolder relative aspect-video w-full">
-                        <Image src={Lead} fill alt="branding iamge" style={{ objectFit: "cover" }} />
+                        <Image src={Branding} fill alt="saas marketing image" style={{ objectFit: "cover" }} />
                     </div>
                 </div>
             </section>
+
+
+            {/* Section 4 (reverse layout) */}
+            <section id="section-4" className="mx-2 my-2 flex flex-col-reverse gap-12 rounded-xl bg-gray-200 p-5 md:mx-16 md:p-10 lg:mx-32 lg:flex-row-reverse">
+                <div className='w-full lg:w-1/2'>
+                    <span className='text-3xl font-semibold block mb-4'>Email Marketing</span>
+                    <p className='text-justify text-xl'>
+                        Email marketing remains one of the highest-converting channels. At TMMT, we create personalized email campaigns to nurture leads and drive customer retention.
+                        </p>
+                        <ul className='list-decimal pl-5 text-xl mt-4 leading-8'>
+                            <li><b style={{ fontWeight: 600 }}>Higher Open Rates:</b> Our clients experience a 15-25% increase in open rates.</li>
+                            <li><b style={{ fontWeight: 600 }}>Optimized Campaigns:</b> We A/B test subject lines, content, and CTAs to ensure maximum engagement.</li>
+                            <li><b style={{ fontWeight: 600 }}>Increased Retention:</b> Our campaigns boost customer retention rates by 20-30%.</li>
+                        </ul>
+                        <p className='text-justify text-xl mt-6'>
+                            By delivering targeted, engaging emails, we help nurture relationships and drive conversions.
+                        
+                    </p>
+                </div>
+                <div className='flex w-full items-center justify-center lg:w-1/2'>
+                    <div className="imageHolder relative aspect-video w-full">
+                        <Image src={Lead} fill alt="branding image" style={{ objectFit: "cover" }} />
+                    </div>
+                </div>
+            </section>
+            {/* Section 5 (same layout as Section 1) */}
+            <section id="section-5" className="mx-2 my-2 flex flex-col-reverse gap-12 rounded-xl bg-sectionBg p-5 md:mx-16 md:p-10 lg:mx-32 lg:flex-row">
+                <div className='w-full lg:w-1/2'>
+                    <span className='text-3xl font-semibold block mb-4'>App Marketing</span>
+                    <p className='text-justify text-xl'>
+                        We help businesses increase app downloads and user engagement with strategic marketing campaigns across various platforms.
+                        </p>
+                        <ul className='list-decimal pl-5 text-xl mt-4 leading-8'>
+                            <li><b style={{ fontWeight: 600 }}>Boosted Downloads:</b> Clients typically see a 35% increase in app downloads.</li>
+                            <li><b style={{ fontWeight: 600 }}>Enhanced Engagement:</b> Through personalized push notifications, we improve user retention by 30%.</li>
+                            <li><b style={{ fontWeight: 600 }}>Cost-Effective Campaigns:</b> We optimize ad spend to ensure high ROI on every campaign.</li>
+                        </ul>
+                        <p className='text-justify text-xl mt-6'>
+                            By targeting the right audience and leveraging industry-leading tools, we ensure your app stands out in a crowded market.
+                        
+                    </p>
+                </div>
+                <div className='flex w-full items-center justify-center lg:w-1/2'>
+                    <div className="imageHolder relative aspect-video w-full">
+                        <Image src={Branding} fill alt="saas marketing image" style={{ objectFit: "cover" }} />
+                    </div>
+                </div>
+            </section>
+            {/* Section 6 (reverse layout) */}
+            <section id="section-6" className="mx-2 my-2 flex flex-col-reverse gap-12 rounded-xl bg-gray-200 p-5 md:mx-16 md:p-10 lg:mx-32 lg:flex-row-reverse">
+                <div className='w-full lg:w-1/2'>
+                    <span className='text-3xl font-semibold block mb-4'>Branding</span>
+                    <p className='text-justify text-xl'>
+                        Effective branding is essential for standing out in today’s competitive market. At TMMT, we help businesses define their unique identity and communicate it consistently across all platforms.
+                        </p>
+                        <ul className='list-decimal pl-5 text-xl mt-4 leading-8'>
+                            <li><b style={{ fontWeight: 600 }}>Increased Brand Awareness:</b> Clients typically see up to a 40% rise in brand recognition.</li>
+                            <li><b style={{ fontWeight: 600 }}>Enhanced Customer Loyalty:</b> On average, businesses experience a 30% increase in customer loyalty.</li>
+                            <li><b style={{ fontWeight: 600 }}>Positioning:</b> We help position your brand as a leader in your industry through a clear and cohesive message.</li>
+                        </ul>
+                        <p className='text-justify text-xl mt-6'>
+                            Through research, creative development, and customer insights, we ensure your brand connects with the right audience and drives long-term success.
+                        
+                    </p>
+
+                </div>
+                <div className='flex w-full items-center justify-center lg:w-1/2'>
+                    <div className="imageHolder relative aspect-video w-full">
+                        <Image src={Lead} fill alt="branding image" style={{ objectFit: "cover" }} />
+                    </div>
+                </div>
+            </section>
+
         </div>
     )
 }

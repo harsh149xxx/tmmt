@@ -127,79 +127,76 @@ export default function HomePage() {
 
   const serviceDetails = [
     {
-      title: "Integration Help",
-      content: "New users don’t need to wait to understand the functionality of the dashboard to launch their first campaigns, the team helps them to on-board and integrate their advertisers, affiliates and campaigns on their system without caring about privacy.",
+      title: "Multichannel Marketing",
+      content: "At TMMT, we specialize in creating integrated, cohesive campaigns that span across multiple channels, including PPC, Native Push, Meta, and Email Marketing. By reaching your audience through diverse touchpoints, we ensure consistent messaging, greater engagement, and a broader reach, ultimately driving better results for your business across all platforms.",
       img: "https://images.unsplash.com/photo-1590650046871-92c887180603"
     },
     {
-      title: "Campaign Migration",
-      content: "The fundamental issue is offer migration, which serves as an excuse to put platform migration on hold. Fortunately, we provide an easy way to migrate campaigns directly from your existing platform.A well documented migration guide book and personal migration assistance is also available to make the migration process smooth and hectic free.Technical support team is always available to help you.",
+      title: "Integration Assistance",
+      content: "We offer seamless integration with your existing marketing platforms and tools such as CRMs, analytics, and email services. Our team ensures smooth data flow between your systems, enhancing workflow efficiency, campaign tracking, and lead management. This integration provides you with a more streamlined process and actionable insights for continued growth.",
       img: "https://images.unsplash.com/photo-1573164574472-797cdf4a583a"
     },
     {
-      title: "Multi Channel",
-      content: "At Velocity Click, we offer support services through multiple channels, ensuring that users can derive maximum benefit based on their convenience. We understand the importance of providing flexible options to our customers, allowing them to engage with us through various channels for assistance and support. A dedicated support team always remains available 24X7 to help you. Our support team first hears users' queries properly and then acts accordingly.",
+      title: "Scalable Solutions",
+      content: "Whether you’re a startup or a well-established brand, we offer scalable marketing solutions tailored to your business’s size and goals. Our flexible approach ensures that as your business grows, your marketing strategies evolve with it. From small-scale campaigns to large-scale initiatives, we provide the tools and expertise to keep your business on the path to success.",
+      img: "https://images.unsplash.com/photo-1665686308827-eb62e4f6604d"
+    },
+    {
+      title: "Cross-Device Optimize",
+      content: "We understand the importance of delivering a seamless user experience across all devices. That’s why we ensure your campaigns are optimized for mobile, desktop, and tablet devices. By creating responsive, user-friendly ads and landing pages, we enhance engagement, boost conversions, and ensure your audience has a consistent experience, no matter where they interact with your brand.",
       img: "https://images.unsplash.com/photo-1665686308827-eb62e4f6604d"
     },
   ]
 
-  const services = [
+  const services = [    
     {
-      title: "Automation",
-      content: "At Velocity Click, we understand the significance of automation and continuously strive to enhance our automated capabilities.By leveraging automation, we enable businesses to increase productivity while simultaneously reducing costs.We are committed to developing innovative automated solutions that drive efficiency and optimize operations.",
-      img: Automation
-    },
-    {
-      title: "Anti-Fraud Mechanism",
-      content: "At Velocity Click, our anti-fraud mechanism goes beyond merely detecting fraudulent traffic. We take proactive measures to prevent such traffic from affecting your campaigns. With our robust in-house fraud detection feature, we ensure that no malicious traffic goes unnoticed, providing you with a secure and trustworthy advertising environment.",
+      title: "PPC Advertising",
+      content: "Maximize ROI with data-driven PPC strategies. Our experts create targeted campaigns on Google, Bing, and more, ensuring your ads reach the right audience. Generate quality leads, boost sales, and scale your business with precise ad placements, budget optimization, and real-time analytics",
       img: Antifraud
     },
     {
-      title: "Tracking & Analytics",
-      content: "Take your tracking and analytics capabilities to the next level by expanding beyond geographical data. At Velocity Click, we enable you to delve deeper into vital metrics such as carriers, languages, and effectively delivering campaigns to the right audience.",
+      title: "Meta Advertising",
+      content: "Unlock the full potential of Meta platforms. Our tailored Facebook and Instagram ad strategies connect your brand with millions. Engage your audience through visually stunning ads, precise targeting, data-driven insights, and measurable results to grow your business effectively.",
       img: Analytics
     },
     {
-      title: "Instant Migration",
-      content: "Experience seamless and stress-free migration with Velocity Click, where you gain access to a wide array of tools and features. Our goal is to make the migration process effortless, ensuring a smooth transition for your business.",
+      title: "Native Push Marketing",
+      content: "Stand out with Native Push Advertising that captures attention. Deliver personalized, non-intrusive notifications to engage your audience, drive traffic, and increase conversions. Build brand loyalty, stay top-of-mind, and re-engage customers with tailored push campaigns.",
       img: Migration
     },
     {
-      title: "Integration",
-      content: "At Velocity Click, we foster continuous collaboration with new partners, prioritizing the development of integrations. By doing so, we actively contribute to the success of our mutual clients.",
+      title: "Email Marketing",
+      content: "Turn emails into profit with our targeted campaigns. We craft personalized email strategies that nurture leads, retain customers, and drive conversions. From welcome sequences to promotional blasts, we ensure your message resonates, builds trust, and delivers measurable results.",
       img: Integration
     },
     {
-      title: "Customer Support",
-      content: "Velocity Click has been widely acknowledged as a frontrunner in providing exceptional customer support services. Numerous organizations have consistently identified Velocity Click as a leading force in the realm of customer support.",
+      title: "App Marketing",
+      content: "Boost app installs and engagement with our tailored app marketing solutions. From App Store Optimization (ASO) to user acquisition campaigns, we help you connect with the right audience, enhance retention, and grow your app’s success story through proven marketing strategies.",
       img: Support
+    },
+    {
+      title: "Automation",
+      content: "At TMMT, we prioritize automation to transform business outcomes. By leveraging cutting-edge automated solutions, we help increase conversions, reduce costs, and streamline operations. Our commitment lies in driving innovation, optimizing lead generation, and enhancing overall efficiency for sustained growth.",
+      img: Automation
     }
   ]
 
   const faqsData = [
     {
-      question: "What Velocity Click do?",
-      answer: "Velocity Click is a highly regarded and reliable platform specializing in Performance Marketing. Our primary objective is to assist our clients in reaching their marketing objectives by providing unparalleled and outcome-focused solutions. Our mission is centered around delivering exceptional results and helping our clients succeed in their marketing endeavors."
+      question: "What services do TMMT offer?",
+      answer: "At TMMT, we offer a range of digital marketing services, including PPC advertising, Native Push campaigns, Meta (Facebook & Instagram) advertising, and Email marketing. Our goal is to help businesses maximize their online presence and drive conversions through tailored, data-driven strategies across multiple platforms."
     },
     {
-      question: "What is an advertiser?",
-      answer: "An advertiser is an individual, company, or organization that promotes or markets products, services, or ideas to a target audience. They typically create and execute advertising campaigns across various channels, such as television, radio, print media, online platforms, and social media. Advertisers often work with publishers to display their ads and reach their desired audience."
+      question: "How do TMMT determine the right channels for my business?",
+      answer: "We take a personalized approach to every client. By analyzing your target audience, goals, and industry trends, we determine the most effective marketing channels for your business. Whether it's PPC, Native Push, or Meta advertising, we select the channels that will best engage your audience and drive measurable results."
     },
     {
-      question: "What is a publisher?",
-      answer: "A publisher also known as affiliate is an entity that produces or distributes content, such as articles, books, videos, websites, or apps, for public consumption. Publishers can be individuals, companies, or organizations. They provide a platform or medium through which content is delivered to an audience. Publishers generate revenue through various means, including advertising. They often collaborate with advertisers to display ads on their platforms and monetize their content. Advertisers and publishers often collaborate to reach their respective goals. Advertisers want to promote their products or services to a specific target audience, while publishers seek to generate revenue by displaying ads on their platforms."
+      question: "How do TMMT ensure my ads reach the right audience?",
+      answer: "We use advanced targeting techniques to ensure your ads are shown to the right audience. This includes demographic targeting, interest-based targeting, and behavior analysis across platforms like Google Ads, Meta, and Native networks. Additionally, we continuously monitor and optimize campaigns for maximum engagement and conversion."
     },
     {
-      question: "How do publisher earn money?",
-      answer: "Affiliates earn money through commissions. When someone clicks on their affiliate link and makes a purchase or completes a desired action, such as signing up for a newsletter or filling out a form, the affiliate receives a percentage of the sale or a fixed commission."
-    },
-    {
-      question: "How do advertisers track affilate sales?",
-      answer: "Advertisers track affiliate sales by using tracking technologies and affiliate tracking platforms. Each affiliate is assigned a unique tracking link that contains a tracking code. This code helps the advertiser identify which affiliate generated the sale or lead, allowing accurate commission attribution."
-    },
-    {
-      question: "Can you be both an publisher and an advertiser?",
-      answer: "Yes, it is possible to be both an publisher and an advertiser. Many publisher who have built a successful platform and audience eventually create their own products or services to sell and become advertisers themselves. This allows them to leverage their existing networks and expand their revenue streams."
+      question: "Do TMMT provide custom-tailored marketing strategies?",
+      answer: "Yes, every strategy we create is unique to your business. We understand that each brand has its own needs, goals, and challenges. By analyzing your specific market, competition, and objectives, we develop personalized campaigns designed to drive results and help your business grow."
     },
   ]
 
@@ -229,15 +226,8 @@ export default function HomePage() {
           <h1 className="titleColor text-center font-serif text-6xl"
           // style={{ "textShadow": "0px 0px 5px #D9B29C" }}
           >We Manage Your Brands in Multiple Channels</h1>
-          <p className="titleColor text-center font-mono text-xl md:px-5">Our motto is to build a communication bridge between advertisers, customers, and affiliates.</p>
-          <div className="flex flex-wrap justify-center gap-5">
-            <Link href={"https://velocityclick.in/signup"} className="btn-header">
-              Advertiser
-            </Link>
-            <Link href={"https://velocityclick.in/signup"} className="btn-header">
-              Affiliate
-            </Link>
-          </div>
+          <p className="titleColor text-center font-mono text-xl md:px-5">Fueling Business Growth with Precision Marketing Strategies Across PPC, Native, Meta, and Beyond.</p>
+          
         </div>
         <div className='flex justify-center'>
           <div className="aspect-w-9 aspect-h-16 px-2 md:w-1/2 lg:px-16">
@@ -263,7 +253,7 @@ export default function HomePage() {
       {/* ------------------------------ OUR ADD START ----------------------------- */}
       <section className="mx-2 my-8 flex h-fit flex-col gap-12 rounded-xl bg-col3 p-5 md:mx-16 md:p-10 lg:mx-32 lg:flex-row lg:items-center lg:gap-0">
         <div className="text-center text-2xl text-black lg:w-[60%] lg:pr-5 lg:text-left">
-          We are pioneer at managing your brands in multiple channels. Our motto is to build a communication bridge between advertisers, customers and Affiliates. Branding is perhaps an USP of any business organisation and if you want to make your products popular amongst customers then just opt for our services.
+        We specialize in delivering tailored advertising solutions across multiple channels to elevate your brand’s presence and performance. At TMMT, we believe every business has a unique story, and our mission is to help you tell it effectively. Through data-driven strategies, creative campaigns, and cutting-edge technology, we connect businesses with their ideal audience. Whether it’s PPC, Native Push, Meta Advertising, or Email Marketing, our goal is to drive growth, boost engagement, and deliver measurable results. With a focus on innovation and precision, we ensure your brand stands out in today’s competitive digital landscape, paving the way for lasting success.
         </div>
         <div className="flex justify-center lg:w-[40%] lg:justify-end">
           <Image priority={false} src={Girl} alt="image of a girl" className="aspect-square w-[80%] lg:w-full" />
@@ -276,12 +266,16 @@ export default function HomePage() {
         <div className="flex flex-col justify-center gap-7 lg:w-[60%]">
           <h2 className="text-3xl font-semibold text-black">Advertiser</h2>
           <p className='text-gray-700'>
-            It is often found that some of the websites hold a first position in Google due to attractive advertisements. Well, you might be thinking about the ways to invite advertisers on your webpage. Mediaxpedia have gain immense success in inciting the advertisers to visit a company's webpage. We can assure you that our proven formula will create significant effect on your website. You will find that advertisers are getting attracted to your website. We are quite efficient in establishing a platform for meeting our clients with their prospective advertisers by the following:
+          It is often found that some of the websites hold a first position in Google due to attractive advertisements. Well, you might be thinking about the ways. At TMMT, we specialize in driving targeted traffic to your website through proven PPC, Native Push, Meta Advertising, and Email Marketing campaigns. Our strategies are designed to significantly increase your website's visibility, attract the right audience, and ultimately convert visitors into loyal customers. By leveraging cutting-edge technology and data-driven insights, we create tailored advertising solutions that resonate with your target market. With TMMT, you can trust that our approach will help bridge the gap between your business and potential customers, ensuring your brand stands out in today’s competitive digital world.
           </p>
-
-          <Link href={"https://velocityclick.in/signup"} className="btn-header">
-            SIGNUP
-          </Link>
+          <div className="buttonhandler flex flex-col gap-10 md:flex-row">
+            <Link href={"https://velocityclick.in/signup"} className="btn-header rounded-full px-24 py-3 text-lg shadow-lg hover:shadow-xl transition-all duration-200">
+            Advertiser
+            </Link>
+            <Link href={"https://velocityclick.in/contact"} className="btn-header rounded-full px-24 py-3 text-lg shadow-lg hover:shadow-xl transition-all duration-200">
+              Get in Touch
+            </Link>
+        </div>
         </div>
         <div className="left mx-auto flex w-full md:w-[60%] lg:w-[40%]">
           <Image priority={false} src={Advertiser} alt="affilate image" />
@@ -290,30 +284,17 @@ export default function HomePage() {
       {/* ------------------------------- ADVERTISER END ------------------------------ */}
 
       {/* ------------------------------- AFFILATE START ------------------------------ */}
-      <section className="mx-2 my-8 flex flex-col-reverse gap-5 rounded-xl bg-sectionBg p-5 md:mx-16 md:p-10 lg:mx-32 lg:flex-row">
-        <div className="left flex flex-col justify-center gap-7 lg:w-[60%]">
-          <h2 className="text-3xl font-semibold text-black">Affiliate</h2>
-          <p className='text-gray-700'>
-            Affiliates can be regarded as one of the main catalyst behind your marketing campaign. Your online performance is largely dependent upon the delivery of your services or products at right context, place and time. In the absence of a Affiliate you are never going to reach to your advertisers. Affiliates can open avenues for your website reach to the potential advertiser. It can well be discerned that Affiliate can both give a boost to your business and at the same time degrade it too.
-          </p>
-          <Link href={"https://velocityclick.in/signup"} className="btn-header">
-            SIGNUP
-          </Link>
-        </div>
-        <div className="mx-auto flex w-full md:w-[60%] lg:w-[40%]">
-          <Image priority={false} src={Affiliate} alt="affilate image" className="blend-image" />
-        </div>
-      </section>
       {/* ------------------------------- AFFILATE END ------------------------------ */}
 
       {/* ------------------------------- SERVICES START ------------------------------ */}
       <section className="px-5 pb-12 md:px-16 lg:px-32">
-        <div className="sectionTitle"><span className='text-col5'>SER</span>VICES</div>
+        <div className="sectionTitle">What More We <span className='text-col5'>Offer</span></div>
         <div className="">
-          <div className="grid w-fit grid-cols-2 text-sm md:grid-cols-3 md:text-xl">
-            <button className={`rounded-t-lg px-2 py-3 font-semibold md:px-5 ${openTab == 0 ? "bg-col3 text-col5" : "text-black"}`} onClick={(e) => { e.preventDefault(); setOpenTab(0) }}>INTEGRATION HELP</button>
-            <button className={`rounded-t-lg px-2 py-3 font-semibold md:px-5 ${openTab == 1 ? "bg-col3 text-col5" : "text-black"}`} onClick={(e) => { e.preventDefault(); setOpenTab(1) }}>CAMPAIGN MIGRATION</button>
-            <button className={`rounded-t-lg px-2 py-3 font-semibold md:px-5 ${openTab == 2 ? "bg-col3 text-col5" : "text-black"}`} onClick={(e) => { e.preventDefault(); setOpenTab(2) }}>MULTI CHANEL</button>
+          <div className="grid w-fit grid-cols-2 text-sm md:grid-cols-4 md:text-xl">
+            <button className={`rounded-t-lg px-2 py-3 font-semibold md:px-5 ${openTab == 0 ? "bg-col3 text-col5" : "text-black"}`} onClick={(e) => { e.preventDefault(); setOpenTab(0) }}>Multichannel Marketing</button>
+            <button className={`rounded-t-lg px-2 py-3 font-semibold md:px-5 ${openTab == 1 ? "bg-col3 text-col5" : "text-black"}`} onClick={(e) => { e.preventDefault(); setOpenTab(1) }}>Integration Assistance</button>
+            <button className={`rounded-t-lg px-2 py-3 font-semibold md:px-5 ${openTab == 2 ? "bg-col3 text-col5" : "text-black"}`} onClick={(e) => { e.preventDefault(); setOpenTab(2) }}>Scalable Solutions</button>
+            <button className={`rounded-t-lg px-2 py-3 font-semibold md:px-5 ${openTab == 3 ? "bg-col3 text-col5" : "text-black"}`} onClick={(e) => { e.preventDefault(); setOpenTab(3) }}>Cross-Device Optimization</button>
           </div>
           <div className="flex rounded-b-lg border-2 border-col3 bg-col3 lg:rounded-e-lg">
             {
@@ -332,7 +313,70 @@ export default function HomePage() {
       {/* ------------------------------- SERVICES END ------------------------------ */}
 
 
-      {/* ------------------------------- FAQS START ------------------------------ */}
+
+      {/* ------------------------------- WHT TO CHOSE START ------------------------------ */}
+      <section className="mx-2 my-8 flex flex-col items-center gap-5 rounded-xl bg-gray-100 p-5 md:mx-16 md:p-10 lg:mx-32">
+        <span className="text-center text-4xl font-semibold">Why it's worth to choose <span className='text-col5'>TMMT?</span></span>
+        <p className="w-[80%] text-center text-xl lg:w-1/2">With TMMT you will remain at a complete ease as we can take complete responsibility of your branding...</p>
+        <div className="grid w-full grid-cols-1 gap-5 text-xl font-semibold md:grid-cols-2 md:text-2xl">
+          <div className="flex w-full transform cursor-pointer justify-center rounded-xl bg-col4 py-8 text-black transition-transform duration-300 hover:scale-[1.05]">EXPERTISE</div>
+          <div className="flex w-full transform cursor-pointer justify-center rounded-xl bg-col4 py-8 text-black transition-transform duration-300 hover:scale-[1.05]">RESULTS-DRIVEN</div>
+          <div className="flex w-full transform cursor-pointer justify-center rounded-xl bg-col4 py-8 text-black transition-transform duration-300 hover:scale-[1.05]">INNOVATION</div>
+          <div className="flex w-full transform cursor-pointer justify-center rounded-xl bg-col4 py-8 text-black transition-transform duration-300 hover:scale-[1.05]">GROWTH</div>
+          <div className="flex w-full transform cursor-pointer justify-center rounded-xl bg-col4 py-8 text-black transition-transform duration-300 hover:scale-[1.05]">TRANSPARENCY</div>
+          <div className="flex w-full transform cursor-pointer justify-center rounded-xl bg-col4 py-8 text-black transition-transform duration-300 hover:scale-[1.05]">SAFETY</div>
+        </div>
+      </section>
+      {/* ------------------------------- WHT TO CHOSE END ------------------------------ */}
+
+
+      {/* -------------------------- REVEIW SECTION START -------------------------- */}
+      {/* -------------------------- REVEIW SECTION END -------------------------- */}
+
+
+      {/* ------------------------------- STATISTICS START ------------------------------ */}
+      <section className="mx-2 my-8 flex flex-col-reverse gap-10 rounded-xl bg-gray-100 p-5 md:mx-16 md:p-10 lg:mx-32 lg:flex-row lg:gap-10">
+        <div className="left flex flex-col justify-center gap-5 lg:w-1/2">
+          <span className='sectionTitle'>Your <span className='text-col5'>Profitability</span> is what <span className='text-amber-500'>matters</span> to us</span>
+          <p className="text-lg">
+            With TMMT you will remain at a complete ease as we can take complete responsibility of your branding. Nowadays, with an increased competition in the market, one needs to generate new ideas that could create long lasting impact on the customers.
+          </p>
+          <div className="buttonhandler flex flex-col justify-center gap-5 md:flex-row">
+            <Link href={"https://velocityclick.in/signup"} className="btn-header rounded-full px-12 py-3 text-lg shadow-lg hover:shadow-xl transition-all duration-200">
+            Advertiser
+            </Link>
+            <Link href={"https://velocityclick.in/contact"} className="btn-header rounded-full px-12 py-3 text-lg shadow-lg hover:shadow-xl transition-all duration-200">
+              Get in Touch
+            </Link>
+
+          </div>
+        </div>
+        <div className="right flex flex-col gap-10 lg:w-1/2">
+          <div className="cardhandler flex flex-col gap-5">
+            <div className="card flex cursor-pointer items-center justify-center gap-3 rounded-2xl border-2 border-white bg-white py-10 font-medium shadow-lg hover:border-gray-400 hover:bg-slate-100">
+              <span className="text-2xl font-semibold text-col5"> 150+</span>
+              <span className='text-center'>Clients</span>
+            </div>
+            <div className="card flex cursor-pointer items-center justify-center gap-3 rounded-2xl border-2 border-white bg-white py-10 font-medium shadow-lg hover:border-gray-400 hover:bg-slate-100">
+              <span className="text-2xl font-semibold text-col5">75,000+</span>
+              <span className='text-center'>Monthly Conversions</span>
+            </div>
+            <div className="card flex cursor-pointer items-center justify-center gap-3 rounded-2xl border-2 border-white bg-white py-10 font-medium shadow-lg hover:border-gray-400 hover:bg-slate-100">
+              <span className="text-2xl font-semibold text-col5">$6,00,000+</span>
+              <span className='text-center'>Monthly Advertising Spends</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+      {/* ------------------------------- STATISTICS END ------------------------------ */}
+
+
+
+      {/* ------------------------------- OUR CLIENT START ------------------------------ */}
+      {/* ------------------------------- OUR CLIENT END ------------------------------ */}
+
+{/* ------------------------------- FAQS START ------------------------------ */}
       <section className="mx-2 my-8 rounded-xl bg-col3 p-3 md:mx-16 md:p-10 lg:mx-32">
         <div className="sectionTitle text-col5">FAQS</div>
         <Accordion variant="splitted">
@@ -348,138 +392,6 @@ export default function HomePage() {
 
       </section >
       {/* ------------------------------- FAQS END ------------------------------ */}
-
-      {/* ------------------------------- WHT TO CHOSE START ------------------------------ */}
-      <section className="mx-2 my-8 flex flex-col items-center gap-5 rounded-xl bg-gray-100 p-5 md:mx-16 md:p-10 lg:mx-32">
-        <span className="text-center text-4xl font-semibold">Why it's worth to choose <span className='text-col5'>Velocity Click?</span></span>
-        <p className="w-[80%] text-center text-xl lg:w-1/2">With Velocity Click you will remain at a complete ease as we can take complete responsibility of your branding...</p>
-        <div className="grid w-full grid-cols-1 gap-5 text-xl font-semibold md:grid-cols-2 md:text-2xl">
-          <div className="flex w-full transform cursor-pointer justify-center rounded-xl bg-col4 py-8 text-black transition-transform duration-300 hover:scale-[1.05]">SAFETY</div>
-          <div className="flex w-full transform cursor-pointer justify-center rounded-xl bg-col4 py-8 text-black transition-transform duration-300 hover:scale-[1.05]">STABILITY</div>
-          <div className="flex w-full transform cursor-pointer justify-center rounded-xl bg-col4 py-8 text-black transition-transform duration-300 hover:scale-[1.05]">TECHNICAL SUPPORT</div>
-          <div className="flex w-full transform cursor-pointer justify-center rounded-xl bg-col4 py-8 text-black transition-transform duration-300 hover:scale-[1.05]">COMPLETE SOLUTIONS</div>
-        </div>
-      </section>
-      {/* ------------------------------- WHT TO CHOSE END ------------------------------ */}
-
-
-      {/* -------------------------- REVEIW SECTION START -------------------------- */}
-      <section className="mx-2 my-8 rounded-xl bg-col3 p-5 md:mx-16 md:p-10 lg:mx-32">
-        <div className="sectionTitle text-col5">What is everyone saying?</div>
-        <div className="h-fit bg-transparent">
-          <Swiper
-            loop={true}
-            slidesPerView={windowWidth < 641 ? 1 : (windowWidth < 770 ? 2 : 3)}
-            autoplay={{
-              delay: 1000,
-              disableOnInteraction: false,
-            }}
-            grid={{
-              rows: 1,
-            }}
-            spaceBetween={30}
-            pagination={{
-              clickable: true,
-            }}
-            modules={[Autoplay, Grid, Pagination]}
-            className="mySwiper"
-          >
-            {
-              userReview.map((item, idx) => (
-                <SwiperSlide className="reviewSlider rounded-lg border border-black" key={idx}>
-                  <div
-                    className="flex h-full flex-col gap-4 p-5"
-                  >
-                    <p>
-                      {item.review}
-                    </p>
-                    <span
-                      className="mt-auto font-semibold text-col5"
-                    >{item.user}</span>
-                  </div>
-                </SwiperSlide>
-              ))
-            }
-          </Swiper>
-        </div>
-      </section>
-      {/* -------------------------- REVEIW SECTION END -------------------------- */}
-
-
-      {/* ------------------------------- STATISTICS START ------------------------------ */}
-      <section className="mx-2 my-8 flex flex-col-reverse gap-10 rounded-xl bg-gray-100 p-5 md:mx-16 md:p-10 lg:mx-32 lg:flex-row lg:gap-10">
-        <div className="left flex flex-col justify-center gap-5 lg:w-1/2">
-          <span className='sectionTitle'>Your <span className='text-col5'>Profitability</span> is what <span className='text-amber-500'>matters</span> to us</span>
-          <p className="text-lg">
-            With Velocity Click you will remain at a complete ease as we can take complete responsibility of your branding. Nowadays, with an increased competition in the market, one needs to generate new ideas that could create long lasting impact on the customers.
-          </p>
-          <div className="buttonhandler flex flex-col justify-center gap-5 md:flex-row">
-            <Link href={"https://velocityclick.in/signup"} className="btn-header rounded-full px-12 py-3">
-              Affiliate
-            </Link>
-            <Link href={"https://velocityclick.in/signup"} className="btn-header rounded-full px-12 py-3">
-              Advertiser
-            </Link>
-
-          </div>
-        </div>
-        <div className="right flex flex-col gap-10 lg:w-1/2">
-          <div className="cardhandler flex flex-col gap-5">
-            <div className="card flex cursor-pointer items-center justify-center gap-3 rounded-2xl border-2 border-white bg-white py-10 font-medium shadow-lg hover:border-gray-400 hover:bg-slate-100">
-              <span className="text-2xl font-semibold text-col5"> 500+</span>
-              <span className='text-center'>Affiliates</span>
-            </div>
-            <div className="card flex cursor-pointer items-center justify-center gap-3 rounded-2xl border-2 border-white bg-white py-10 font-medium shadow-lg hover:border-gray-400 hover:bg-slate-100">
-              <span className="text-2xl font-semibold text-col5">150+</span>
-              <span className='text-center'>Clients</span>
-            </div>
-            <div className="card flex cursor-pointer items-center justify-center gap-3 rounded-2xl border-2 border-white bg-white py-10 font-medium shadow-lg hover:border-gray-400 hover:bg-slate-100">
-              <span className="text-2xl font-semibold text-col5">300000+</span>
-              <span className='text-center'>Monthly Conversion</span>
-            </div>
-          </div>
-
-        </div>
-      </section>
-      {/* ------------------------------- STATISTICS END ------------------------------ */}
-
-
-
-      {/* ------------------------------- OUR CLIENT START ------------------------------ */}
-      <section className="mx-2 my-8 rounded-xl bg-sectionBg p-5 md:mx-16 md:p-10 lg:mx-32">
-        <div className="sectionTitle"><span className='text-col5'>OUR</span> CLIENTS</div>
-        <div className="imageSlider">
-          <Swiper
-            navigation={true}
-            slidesPerView={windowWidth < 641 ? 2 : (windowWidth < 769 ? 3 : 5)}
-            autoplay={{
-              delay: 5000,
-              disableOnInteraction: false,
-            }}
-            grid={{
-              rows: 3,
-            }}
-            spaceBetween={10}
-            pagination={{
-              clickable: true,
-            }}
-            modules={[Autoplay, Grid, Pagination, Navigation]}
-            className="mySwiper"
-          >
-            {
-              clientImageFileNames.map((item, idx) => (
-                <SwiperSlide className="">
-                  <div className='relative h-full w-full border border-black'>
-                    <Image src={`/clients/${item}`} alt="clients company's log" fill={true} />
-                  </div>
-                </SwiperSlide>
-              ))
-            }
-          </Swiper>
-        </div>
-
-      </section>
-      {/* ------------------------------- OUR CLIENT END ------------------------------ */}
 
     </Fragment>
 
