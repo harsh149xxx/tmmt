@@ -319,12 +319,12 @@ export default function HomePage() {
         <span className="text-center text-4xl font-semibold">Why it's worth to choose <span className='text-col5'>TMMT?</span></span>
         <p className="w-[80%] text-center text-xl lg:w-1/2">With TMMT you will remain at a complete ease as we can take complete responsibility of your branding...</p>
         <div className="grid w-full grid-cols-1 gap-5 text-xl font-semibold md:grid-cols-2 md:text-2xl">
-          <div className="flex w-full transform cursor-pointer justify-center rounded-xl bg-col4 py-8 text-black transition-transform duration-300 hover:scale-[1.05]">EXPERTISE</div>
-          <div className="flex w-full transform cursor-pointer justify-center rounded-xl bg-col4 py-8 text-black transition-transform duration-300 hover:scale-[1.05]">RESULTS-DRIVEN</div>
-          <div className="flex w-full transform cursor-pointer justify-center rounded-xl bg-col4 py-8 text-black transition-transform duration-300 hover:scale-[1.05]">INNOVATION</div>
-          <div className="flex w-full transform cursor-pointer justify-center rounded-xl bg-col4 py-8 text-black transition-transform duration-300 hover:scale-[1.05]">GROWTH</div>
-          <div className="flex w-full transform cursor-pointer justify-center rounded-xl bg-col4 py-8 text-black transition-transform duration-300 hover:scale-[1.05]">TRANSPARENCY</div>
-          <div className="flex w-full transform cursor-pointer justify-center rounded-xl bg-col4 py-8 text-black transition-transform duration-300 hover:scale-[1.05]">SAFETY</div>
+          <div className="flex w-full transform cursor-pointer justify-center rounded-xl bg-[#4ABDAC] py-8 text-white transition-transform duration-300 hover:scale-[1.05]"style={{ textShadow: "0 0 1px red, 0 0 5px red" }}>EXPERTISE</div>
+          <div className="flex w-full transform cursor-pointer justify-center rounded-xl bg-[#4ABDAC] py-8 text-white transition-transform duration-300 hover:scale-[1.05]"style={{ textShadow: "0 0 1px red, 0 0 5px red" }}>RESULTS-DRIVEN</div>
+          <div className="flex w-full transform cursor-pointer justify-center rounded-xl bg-[#4ABDAC] py-8 text-white transition-transform duration-300 hover:scale-[1.05]"style={{ textShadow: "0 0 1px red, 0 0 5px red" }}>INNOVATION</div>
+          <div className="flex w-full transform cursor-pointer justify-center rounded-xl bg-[#4ABDAC] py-8 text-white transition-transform duration-300 hover:scale-[1.05]"style={{ textShadow: "0 0 1px red, 0 0 5px red" }}>GROWTH</div>
+          <div className="flex w-full transform cursor-pointer justify-center rounded-xl bg-[#4ABDAC] py-8 text-white transition-transform duration-300 hover:scale-[1.05]"style={{ textShadow: "0 0 1px red, 0 0 5px red" }}>TRANSPARENCY</div>
+          <div className="flex w-full transform cursor-pointer justify-center rounded-xl bg-[#4ABDAC] py-8 text-white transition-transform duration-300 hover:scale-[1.05]"style={{ textShadow: "0 0 1px red, 0 0 5px red" }}>SAFETY</div>
         </div>
       </section>
       {/* ------------------------------- WHT TO CHOSE END ------------------------------ */}
@@ -378,7 +378,7 @@ export default function HomePage() {
 
 {/* ------------------------------- FAQS START ------------------------------ */}
       <section className="mx-2 my-8 rounded-xl bg-[#4ABDAC] p-3 md:mx-16 md:p-10 lg:mx-32">
-        <div className="sectionTitle text-col5">FAQS</div>
+        <div className="sectionTitle text-white">FAQS</div>
         <Accordion variant="splitted">
           {
             faqsData.map((item, idx) => (
@@ -406,8 +406,8 @@ export const ServiceDetails: React.FC<{ title: string, content: string, img: str
         <Image sizes='100vw' priority={false} src={`${img}`} alt="corporate image" fill={true} />
       </div>
       <div className="right flex flex-col justify-center gap-5 p-3 lg:w-1/2 lg:p-5 lg:pl-16">
-        <span className="text-3xl font-semibold text-col5 md:text-5xl" >{title}</span>
-        <p className="text-lg text-col5">{content}</p>
+        <span className="text-3xl font-semibold text-white md:text-5xl" >{title}</span>
+        <p className="text-lg text-white">{content}</p>
       </div>
     </div>
   )
