@@ -30,7 +30,7 @@ const ServicesPage = () => {
     return (
         <div>
             <HeaderBox title="Services" />
-            <div className="flex justify-center gap-6 mt-8">
+            <div className="flex justify-center gap-6 mt-8 sticky top-0 bg-white z-10 mb-4">
                 <button
                     className="btn-header rounded-full px-6 py-3 text-lg bg-red-500 shadow-lg hover:shadow-xl transition-all duration-200"
                     onClick={() => handleScroll('section-1')} 

@@ -221,12 +221,12 @@ export default function HomePage() {
     <Fragment>
 
       {/* ------------------------ TOP SECTION HEADER START ------------------------ */}
-      <header className="mx-2 my-5 flex h-fit flex-col gap-16 rounded-xl bg-col3 p-10 md:mx-16 lg:mx-32">
+      <header className="mx-2 my-5 flex h-fit flex-col gap-16 rounded-xl bg-[#4ABDAC] p-10 md:mx-16 lg:mx-32">
         <div className="flex w-full flex-col items-center gap-8 text-white md:justify-center">
-          <h1 className="titleColor text-center font-serif text-6xl"
+        <h1 className="text-white text-center font-serif text-6xl"
           // style={{ "textShadow": "0px 0px 5px #D9B29C" }}
           >We Manage Your Brands in Multiple Channels</h1>
-          <p className="titleColor text-center font-mono text-xl md:px-5">Fueling Business Growth with Precision Marketing Strategies Across PPC, Native, Meta, and Beyond.</p>
+          <p className="text-white text-center font-mono text-xl md:px-5">Fueling Business Growth with Precision Marketing Strategies Across PPC, Native, Meta, and Beyond.</p>
           
         </div>
         <div className='flex justify-center'>
@@ -251,8 +251,8 @@ export default function HomePage() {
       {/* --------------------------- OUR SERVICES END --------------------------- */}
 
       {/* ------------------------------ OUR ADD START ----------------------------- */}
-      <section className="mx-2 my-8 flex h-fit flex-col gap-12 rounded-xl bg-col3 p-5 md:mx-16 md:p-10 lg:mx-32 lg:flex-row lg:items-center lg:gap-0">
-        <div className="text-center text-2xl text-black lg:w-[60%] lg:pr-5 lg:text-left">
+      <section className="mx-2 my-8 flex h-fit flex-col gap-12 rounded-xl bg-[#4ABDAC] p-5 md:mx-16 md:p-10 lg:mx-32 lg:flex-row lg:items-center lg:gap-0">
+        <div className="text-center text-base text-white lg:w-[60%] lg:pr-5 lg:text-left md:text-2xl">
         We specialize in delivering tailored advertising solutions across multiple channels to elevate your brand’s presence and performance. At TMMT, we believe every business has a unique story, and our mission is to help you tell it effectively. Through data-driven strategies, creative campaigns, and cutting-edge technology, we connect businesses with their ideal audience. Whether it’s PPC, Native Push, Meta Advertising, or Email Marketing, our goal is to drive growth, boost engagement, and deliver measurable results. With a focus on innovation and precision, we ensure your brand stands out in today’s competitive digital landscape, paving the way for lasting success.
         </div>
         <div className="flex justify-center lg:w-[40%] lg:justify-end">
@@ -265,7 +265,7 @@ export default function HomePage() {
       <section className="mx-2 my-8 flex flex-col-reverse gap-5 rounded-xl bg-sectionBg p-5 md:mx-16 md:gap-0 md:p-10 lg:mx-32 lg:flex-row-reverse">
         <div className="flex flex-col justify-center gap-7 lg:w-[60%]">
           <h2 className="text-3xl font-semibold text-black">Advertiser</h2>
-          <p className='text-gray-700'>
+          <p className='text-gray-800'>
           It is often found that some of the websites hold a first position in Google due to attractive advertisements. Well, you might be thinking about the ways. At TMMT, we specialize in driving targeted traffic to your website through proven PPC, Native Push, Meta Advertising, and Email Marketing campaigns. Our strategies are designed to significantly increase your website's visibility, attract the right audience, and ultimately convert visitors into loyal customers. By leveraging cutting-edge technology and data-driven insights, we create tailored advertising solutions that resonate with your target market. With TMMT, you can trust that our approach will help bridge the gap between your business and potential customers, ensuring your brand stands out in today’s competitive digital world.
           </p>
           <div className="buttonhandler flex flex-col gap-10 md:flex-row">
@@ -291,12 +291,12 @@ export default function HomePage() {
         <div className="sectionTitle">What More We <span className='text-col5'>Offer</span></div>
         <div className="">
           <div className="grid w-fit grid-cols-2 text-sm md:grid-cols-4 md:text-xl">
-            <button className={`rounded-t-lg px-2 py-3 font-semibold md:px-5 ${openTab == 0 ? "bg-col3 text-col5" : "text-black"}`} onClick={(e) => { e.preventDefault(); setOpenTab(0) }}>Multichannel Marketing</button>
-            <button className={`rounded-t-lg px-2 py-3 font-semibold md:px-5 ${openTab == 1 ? "bg-col3 text-col5" : "text-black"}`} onClick={(e) => { e.preventDefault(); setOpenTab(1) }}>Integration Assistance</button>
-            <button className={`rounded-t-lg px-2 py-3 font-semibold md:px-5 ${openTab == 2 ? "bg-col3 text-col5" : "text-black"}`} onClick={(e) => { e.preventDefault(); setOpenTab(2) }}>Scalable Solutions</button>
-            <button className={`rounded-t-lg px-2 py-3 font-semibold md:px-5 ${openTab == 3 ? "bg-col3 text-col5" : "text-black"}`} onClick={(e) => { e.preventDefault(); setOpenTab(3) }}>Cross-Device Optimization</button>
+            <button className={`rounded-t-lg px-2 py-3 font-semibold md:px-5 ${openTab == 0 ? "bg-[#4ABDAC] text-white" : "text-black"}`} onClick={(e) => { e.preventDefault(); setOpenTab(0) }}>Multichannel Marketing</button>
+            <button className={`rounded-t-lg px-2 py-3 font-semibold md:px-5 ${openTab == 1 ? "bg-[#4ABDAC] text-white" : "text-black"}`} onClick={(e) => { e.preventDefault(); setOpenTab(1) }}>Integration Assistance</button>
+            <button className={`rounded-t-lg px-2 py-3 font-semibold md:px-5 ${openTab == 2 ? "bg-[#4ABDAC] text-white" : "text-black"}`} onClick={(e) => { e.preventDefault(); setOpenTab(2) }}>Scalable Solutions</button>
+            <button className={`rounded-t-lg px-2 py-3 font-semibold md:px-5 ${openTab == 3 ? "bg-[#4ABDAC] text-white" : "text-black"}`} onClick={(e) => { e.preventDefault(); setOpenTab(3) }}>Cross-Device Optimization</button>
           </div>
-          <div className="flex rounded-b-lg border-2 border-col3 bg-col3 lg:rounded-e-lg">
+          <div className="flex rounded-b-lg border-2 border-col5 bg-[#4ABDAC] lg:rounded-e-lg">
             {
               serviceDetails.map((item, index) => (
                 <React.Fragment key={index}>
@@ -377,7 +377,7 @@ export default function HomePage() {
       {/* ------------------------------- OUR CLIENT END ------------------------------ */}
 
 {/* ------------------------------- FAQS START ------------------------------ */}
-      <section className="mx-2 my-8 rounded-xl bg-col3 p-3 md:mx-16 md:p-10 lg:mx-32">
+      <section className="mx-2 my-8 rounded-xl bg-[#4ABDAC] p-3 md:mx-16 md:p-10 lg:mx-32">
         <div className="sectionTitle text-col5">FAQS</div>
         <Accordion variant="splitted">
           {
