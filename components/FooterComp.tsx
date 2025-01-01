@@ -52,26 +52,31 @@ const FooterComp = () => {
                     <div className="right flex flex-col gap-3 md:order-4 md:mt-5 md:w-full lg:order-4  items-center">
 
                         <div className="bttn flex flex-wrap gap-5 py-5">
-                            <Link href="https://velocityclick.in/signup" className="rounded-xl border-2 border-col5 bg-col5 px-8 py-2 text-base font-semibold text-white hover:bg-transparent md:text-xl">Signup</Link>
-                            <Link href="https://velocityclick.in/signup" className="rounded-xl border-2 border-col5 bg-col5 px-8 py-2 text-base font-semibold  hover:bg-transparent md:text-xl">Login</Link>
+                            <Link href="https://themadmysteryteam.com/contact" className="rounded-xl border-2 border-col5 bg-col5 px-8 py-2 text-base font-semibold text-white hover:bg-transparent md:text-xl">Get in Touch</Link>
                         </div>
                         {/* bottom part of footer */}
                         
-                            <div className="flex flex-wrap px-5 pb-4 gap-2">
-                                <Link
-                                    href="/privacy-policy"
-                                    className="border-r h-fit border-white text-lg hover:text-col5 pr-2"
-                                >
-                                    Privacy Policy
-                                </Link>
-                                <Link
-                                    href="/cookie-policy"
-                                    className=" text-lg hover:text-col5 pr-2"
-                                >
-                                    Cookie Policy
-                                </Link>
-                            
-                        </div>
+                        <div className="px-5 pb-4">
+    <Link
+        href="/about-us"
+        className="block border-b border-white text-lg hover:text-col5 pb-2"
+    >
+        About Us
+    </Link>
+    <Link
+        href="/privacy-policy"
+        className="block border-b border-white text-lg hover:text-col5 pb-2"
+    >
+        Privacy Policy
+    </Link>
+    <Link
+        href="/cookie-policy"
+        className="block text-lg hover:text-col5"
+    >
+        Cookie Policy
+    </Link>
+</div>
+
                     </div>
 
                 </div>

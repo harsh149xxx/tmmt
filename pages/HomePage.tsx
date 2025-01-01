@@ -32,49 +32,6 @@ export default function HomePage() {
   const [openTab, setOpenTab] = useState(0)
 
 
-  const userReview = [
-    {
-      review: "They have been very impressive, they are a good team, they respond to questions promptly, and they respect your time. The ideas they provide are very practical and they provide good ideas. Consequently, they provide you with valuable insights and suggestions that you may not have otherwise considered.",
-      user: "Shekh Aman - Founder & Ceo Affilienet Digital Media Private Limited"
-    },
-    {
-      review: "Hi Team, Here is my experience so far working with you. They have been Great partner in terms of Handling the delivery. They are well aware of the campaigns requirements and ROI that every client looks up to. Treating every campaign with utmost transparency and regular hygiene check ups are number one priority for them and this quality always makes you incline towards working with them month on month. My Best wishes to the team.",
-      user: "Neha Sharma - Adsflourish"
-    },
-    {
-      review: "Velocity Click is a good company to work for. They connect with me from time to time and the performance they give is upto the mark. Specialized in every category they work on various models like CPL, CPS, CPA, CPR, CPI. The major vertical for them is Casino & Betting. Working with them is a great value for your ROI. Good work team Velocity Click Keep Rocking!",
-      user: "Arpita - Mediaxpedia Technologies PVT. LTD."
-    },
-    {
-      review: "I've been working with Velocity Click for a few months now, as for me they're the best. Our account manager is available 24x7 and suggests us with best offers to help scale our earnings. And of course, they pay right on time. I highly recommend working with them.",
-      user: "Srinivas - CEO Of PrimeROI"
-    },
-    {
-      review: "Highly recommend our affiliate for their outstanding performance in our casino campaign. Their expertise led to a remarkable 30% conversion rate, and an impressive 60% of customers made repeat deposits. Their dedication and results have been instrumental in our success.",
-      user: "Navya - Head of affilates indibe"
-    },
-    {
-      review: "They have been very impressive, they are a good team, they respond to questions promptly, and they respect your time. The ideas they provide are very practical and they provide good ideas. Consequently, they provide you with valuable insights and suggestions that you may not have otherwise considered.",
-      user: "Shekh Aman - Founder & Ceo Affilienet Digital Media Private Limited"
-    },
-    {
-      review: "Hi Team, Here is my experience so far working with you. They have been Great partner in terms of Handling the delivery. They are well aware of the campaigns requirements and ROI that every client looks up to. Treating every campaign with utmost transparency and regular hygiene check ups are number one priority for them and this quality always makes you incline towards working with them month on month. My Best wishes to the team.",
-      user: "Neha Sharma - Adsflourish"
-    },
-    {
-      review: "Velocity Click is a good company to work for. They connect with me from time to time and the performance they give is upto the mark. Specialized in every category they work on various models like CPL, CPS, CPA, CPR, CPI. The major vertical for them is Casino & Betting. Working with them is a great value for your ROI. Good work team Velocity Click Keep Rocking!",
-      user: "Arpita - Mediaxpedia Technologies PVT. LTD."
-    },
-    {
-      review: "I've been working with Velocity Click for a few months now, as for me they're the best. Our account manager is available 24x7 and suggests us with best offers to help scale our earnings. And of course, they pay right on time. I highly recommend working with them.",
-      user: "Srinivas - CEO Of PrimeROI"
-    },
-    {
-      review: "Highly recommend our affiliate for their outstanding performance in our casino campaign. Their expertise led to a remarkable 30% conversion rate, and an impressive 60% of customers made repeat deposits. Their dedication and results have been instrumental in our success.",
-      user: "Navya - Head of affilates indibe"
-    },
-
-  ]
 
   const clientImageFileNames = [
     'client1.png',
@@ -269,10 +226,10 @@ export default function HomePage() {
           It is often found that some of the websites hold a first position in Google due to attractive advertisements. Well, you might be thinking about the ways. At TMMT, we specialize in driving targeted traffic to your website through proven PPC, Native Push, Meta Advertising, and Email Marketing campaigns. Our strategies are designed to significantly increase your website's visibility, attract the right audience, and ultimately convert visitors into loyal customers. By leveraging cutting-edge technology and data-driven insights, we create tailored advertising solutions that resonate with your target market. With TMMT, you can trust that our approach will help bridge the gap between your business and potential customers, ensuring your brand stands out in today’s competitive digital world.
           </p>
           <div className="buttonhandler flex flex-col gap-10 md:flex-row">
-            <Link href={"https://velocityclick.in/signup"} className="btn-header rounded-full px-24 py-3 text-lg shadow-lg hover:shadow-xl transition-all duration-200">
+            <Link href={"https://themadmysteryteam.com/advertiser"} className="btn-header rounded-full px-24 py-3 text-lg shadow-lg hover:shadow-xl transition-all duration-200">
             Advertiser
             </Link>
-            <Link href={"https://velocityclick.in/contact"} className="btn-header rounded-full px-24 py-3 text-lg shadow-lg hover:shadow-xl transition-all duration-200">
+            <Link href={"https://themadmysteryteam.com/contact"} className="btn-header rounded-full px-24 py-3 text-lg shadow-lg hover:shadow-xl transition-all duration-200">
               Get in Touch
             </Link>
         </div>
@@ -342,10 +299,10 @@ export default function HomePage() {
             With TMMT you will remain at a complete ease as we can take complete responsibility of your branding. Nowadays, with an increased competition in the market, one needs to generate new ideas that could create long lasting impact on the customers.
           </p>
           <div className="buttonhandler flex flex-col justify-center gap-5 md:flex-row">
-            <Link href={"https://velocityclick.in/signup"} className="btn-header rounded-full px-12 py-3 text-lg shadow-lg hover:shadow-xl transition-all duration-200">
+            <Link href={"https://themadmysteryteam.com/advertiser"} className="btn-header rounded-full px-12 py-3 text-lg shadow-lg hover:shadow-xl transition-all duration-200">
             Advertiser
             </Link>
-            <Link href={"https://velocityclick.in/contact"} className="btn-header rounded-full px-12 py-3 text-lg shadow-lg hover:shadow-xl transition-all duration-200">
+            <Link href={"https://themadmysteryteam.com/contact"} className="btn-header rounded-full px-12 py-3 text-lg shadow-lg hover:shadow-xl transition-all duration-200">
               Get in Touch
             </Link>
 

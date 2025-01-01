@@ -13,7 +13,7 @@ const AboutPage = () => {
     const data = [
         {
             title: "About team",
-            content: "Velocity Click",
+            content: "The Mad Mystery Team LLC",
             imageurl: LoadingPana
         },
         {
@@ -28,7 +28,7 @@ const AboutPage = () => {
         },
         {
             title: "The Numbers",
-            content: "1,000+ active publishers and over 100+ ad campaigns running through our network.",
+            content: "150+ Clients, 1,000+ active Ads, 75,000+ Monthly Conversion and over $6,00,000+ Monthly Ad Spends, running through our network.",
             imageurl: Dashboard
         },
         {
@@ -68,12 +68,12 @@ const AboutPage = () => {
                 <div className="Right flex w-full flex-col gap-5 lg:w-1/2 lg:justify-center">
                     <h1 className="w-full text-center text-4xl font-semibold lg:w-10/12 lg:text-left">A Bunch of Enthusiastic & Creative Minds</h1>
                     <p className="w-full text-center text-xl text-gray-600 lg:text-left">
-                        Velocity Click is one of the renowned & trusted platforms for Performance Marketing. Our mission is to help our clients achieve their marketing goals by delivering peerless and result-driven solutions.
+                        TMMT is one of the renowned & trusted platforms for Performance Marketing. Our mission is to help our clients achieve their marketing goals by delivering peerless and result-driven solutions.
                     </p>
                 </div>
             </section>
 
-            <section className="mx-2 my-8 grid grid-cols-1 gap-5 rounded-xl bg-col3 p-5 md:mx-16 md:grid-cols-2 md:p-10 lg:mx-32 lg:grid-cols-3">
+            <section className="mx-2 my-8 grid grid-cols-1 gap-5 rounded-xl bg-[#4ABDAC] p-5 md:mx-16 md:grid-cols-2 md:p-10 lg:mx-32 lg:grid-cols-3">
                 {
                     data?.map((item, index) => (
                         <Card title={item.title} content={item.content} imageurl={item.imageurl} key={index} />
@@ -86,11 +86,11 @@ const AboutPage = () => {
                 <div className="flex flex-col gap-5">
                     {
                         steps.map((step, index) => (
-                            <div className="flex cursor-pointer items-center gap-5 rounded-lg bg-col3 p-2 hover:bg-[#d8ba4b] md:p-4 lg:p-6" >
-                                <div className="flex aspect-square min-w-8 items-center justify-center rounded-full bg-col5 text-lg font-semibold text-white md:min-w-12 md:text-2xl">
+                            <div className="flex cursor-pointer items-center gap-5 rounded-lg bg-[#4ABDAC] p-2 hover:bg-[#238373] md:p-4 lg:p-6" >
+                                <div className="flex aspect-square min-w-8 items-center justify-center rounded-full bg-white text-lg font-semibold text-[#4ABDAC] md:min-w-12 md:text-2xl">
                                     {index + 1}
                                 </div>
-                                <span className="text-lg font-semibold text-col5 md:text-xl">
+                                <span className="text-lg font-semibold text-white md:text-xl">
                                     {step.data}
                                 </span>
                             </div>
