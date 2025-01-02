@@ -27,7 +27,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.6,
     },
     {
-      url: "https://themadmysteryteam.com/industries",
+      url: "https://themadmysteryteam.com/industry",
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.6,
