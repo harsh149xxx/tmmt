@@ -17,8 +17,8 @@ const meriaweather = Merriweather({
 
 export const metadata: Metadata = {
   title: {
-    default: "The Mad Mystery Team LLC (TMMT)",
-    template: "%s | The Mad Mystery Team"
+    default: "TMMT - The Mad Mystery Team LLC",
+    template: "%s | TMMT"
   },
   description: "TMMT is a dynamic digital marketing agency specializing in PPC, native push ads, social media marketing, and more. We help businesses boost online visibility, generate quality leads, and achieve measurable results through data-driven strategies. Let's take your brand to the next level!",
 }
@@ -63,9 +63,9 @@ export default function RootLayout({
         {/* <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn --> */}
         <meta property="og:site_name" content="TMMT" /> {/*website name */}
         <meta property="og:site" content="https://themadmysteryteam.com/" />  {/*website link */}
-        <meta property="og:title" content="The Mad Mystery Team (TMMT)" />  {/*title shown in the actual shared post */}
+        <meta property="og:title" content="TMMT - The Mad Mystery Team " />  {/*title shown in the actual shared post */}
         <meta property="og:description"
-          content="The Mad Mystery Team (TMMT) is one of the renowned & trusted platform for Performance Marketing. Our Mission is to help our clients achieve their marketing goals by delivering the peerless & result-driven solutions." />
+          content="TMMT - The Mad Mystery Team  is one of the renowned & trusted platform for Performance Marketing. Our Mission is to help our clients achieve their marketing goals by delivering the peerless & result-driven solutions." />
         {/* <!-- description shown in the actual shared post --> */}
         <meta property="og:image" content="logo.png" />    {/* image link, make sure it's jpg */}
         <meta property="og:url" content="https://themadmysteryteam.com/" />  {/* where do you want your post to link to */}

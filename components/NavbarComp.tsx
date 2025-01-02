@@ -2,7 +2,7 @@
 import { Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button, NavbarMenu, NavbarMenuItem, NavbarMenuToggle } from "@nextui-org/react";
 import { usePathname, useRouter } from "next/navigation";
 import { useState } from "react";
-import logo from "@/public/logo.png"
+import logo from "@/public/logo.svg"
 import Image from "next/image";
 
 export const menuItems = [
@@ -23,7 +23,7 @@ const NavbarComp = () => {
     <Navbar
       isMenuOpen={isMenuOpen}
       onMenuOpenChange={setIsMenuOpen}
-      className={pathname === "/services" || pathname === "/industry" ? "static" : "sticky top-0"}
+      className={pathname === "/services" || pathname === "/industry" ? "static" : "sticky top-0 bg-white shadow-2xl"}
     >
       {/* Brand Information */}
       <NavbarContent>
@@ -31,7 +31,7 @@ const NavbarComp = () => {
           <Link className="logoHolder relative aspect-square w-8 cursor-pointer md:w-12 lg:w-16" href="/">
             <Image src={logo} alt="company logo" fill />
           </Link>
-          <Link href="/" className="font-semobild font-Meriaweather text-xl text-black md:text-3xl lg:text-4xl">TMMT</Link>
+          <Link href="/" className="font-semobild font-Meriaweather text-xl text-black md:text-3xl lg:text-4xl ml-4">TMMT</Link>
         </NavbarBrand>
         <NavbarMenuToggle aria-label={isMenuOpen ? "Close menu" : "Open menu"} className="lg:hidden" />
       </NavbarContent>
