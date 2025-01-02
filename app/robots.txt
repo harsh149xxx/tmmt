@@ -8,4 +8,4 @@ Allow: /contact
 
 Disallow: /accounts
 
-Sitemap: https://velocityclick.in/sitemap.xml
+Sitemap: https://themadmysteryteam.com/sitemap.xml

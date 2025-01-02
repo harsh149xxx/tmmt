@@ -6,27 +6,35 @@ import Marketing from '@/public/assets/services/marketing.jpg'
 import Lead from '@/public/assets/services/lead.jpg'
 import Branding from '@/public/assets/services/branding.jpg'
 import Image from 'next/image'
+import Link from "next/link"
 
 const ServicesPage = () => {
     const handleScroll = (sectionId: string) => {
-        const section = document.getElementById(sectionId);
-        if (section) {
-            const navbarHeight = document.querySelector('header')?.clientHeight || 0; // Adjust based on your navbar's height
-            const offsetPosition = section.offsetTop - navbarHeight + 20; // You can fine-tune the `+20` for extra padding
+    const section = document.getElementById(sectionId);
+    if (section) {
+        const navbarHeight = document.querySelector('header')?.clientHeight || 0; // Adjust based on your navbar's height
+        const buttonContainerHeight = document.querySelector('.btn-header')?.clientHeight || 0; // Adjust based on button container height
 
-            window.scrollTo({
-                top: offsetPosition,
-                behavior: 'smooth',
-            });
-        }
-    };
+        // If it's mobile, consider the height of the fixed button container
+        const mobileOffset = window.innerWidth <= 768 ? buttonContainerHeight : 0; 
 
+        // Adjust the scroll position to account for the navbar and buttons
+        const offsetPosition = section.offsetTop - navbarHeight - mobileOffset;
+
+        window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth',
+        });
+    }
+};
+
+    
     return (
         <div>
             <HeaderBox title="Industries" />
 
             {/* Buttons Below HeaderBox */}
-            <div className="flex flex-wrap justify-center gap-4 mt-8 sticky top-0 bg-white z-10 mb-4 px-4">
+            <div className="flex flex-wrap justify-center gap-4 mt-8 sticky top-0 bg-white z-10 mb-8 px-4 py-4">
                 <button
                     className="btn-header rounded-full px-4 py-2 text-sm md:px-6 md:py-3 md:text-lg bg-red-500 shadow-lg hover:shadow-xl transition-all duration-200"
                     onClick={() => handleScroll('section-1')} // Scroll to Section 1
@@ -52,6 +60,7 @@ const ServicesPage = () => {
                     Crypto Currency
                 </button>
             </div>
+               
 
             {/* Section 1 */}
             <section id="section-1" className="mx-2 my-2 flex flex-col-reverse gap-12 rounded-xl bg-sectionBg p-5 md:mx-16 md:p-10 lg:mx-32 lg:flex-row">
@@ -156,6 +165,10 @@ const ServicesPage = () => {
                     </div>
                 </div>
             </section>
+            <div className="flex flex-col items-center justify-between gap-5 rounded-t-xl border border-col5 bg-col5 px-5 py-5 md:px-16 lg:flex-row lg:gap-0 lg:px-32">
+                <span className="w-full text-2xl text-gray-200 md:text-3xl lg:w-10/12">Take your business to the next level. Let's show you how.</span>
+                <Link href="https://themadmysteryteam.com/contact" className="h-fit w-fit rounded-full bg-white px-8 py-3 font-semibold text-col5 shadow-lg hover:shadow-xl transition-all duration-200 hover:bg-gray-200">Get in Touch</Link>
+            </div>
         </div>
     )
 }

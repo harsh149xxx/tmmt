@@ -4,7 +4,7 @@ import { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: 'Contact Us for Result-Driven Performance Marketing Solutions | Velocity Click',
+  description: 'Contact Us for Result-Driven Performance Marketing Solutions | The Mad Mystery Team (TMMT)',
 }
 
 const Contact = () => {

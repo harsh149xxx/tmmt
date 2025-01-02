@@ -17,10 +17,10 @@ const meriaweather = Merriweather({
 
 export const metadata: Metadata = {
   title: {
-    default: "Velocity Click",
-    template: "%s | Velocity Click"
+    default: "The Mad Mystery Team LLC (TMMT)",
+    template: "%s | The Mad Mystery Team"
   },
-  description: "Connect with advertisers, customers, and affiliates with ease through our automated and integrated services. Enhance your brand's visibility and success with Velocity Click's advanced tracking, analytics, and anti-fraud mechanisms. Choose a partner known for safety, stability, and exceptional customer support. Trust Velocity Click Ad Media Solutions to elevate your brand's presence in multiple channels.",
+  description: "TMMT is a dynamic digital marketing agency specializing in PPC, native push ads, social media marketing, and more. We help businesses boost online visibility, generate quality leads, and achieve measurable results through data-driven strategies. Let's take your brand to the next level!",
 }
 
 export default function RootLayout({
@@ -61,19 +61,19 @@ export default function RootLayout({
         <meta name="robots" content="index, follow" />
 
         {/* <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn --> */}
-        <meta property="og:site_name" content="Velocity Click" /> {/*website name */}
-        <meta property="og:site" content="https://https://velocityclick.in/" />  {/*website link */}
-        <meta property="og:title" content="velocity Click" />  {/*title shown in the actual shared post */}
+        <meta property="og:site_name" content="TMMT" /> {/*website name */}
+        <meta property="og:site" content="https://themadmysteryteam.com/" />  {/*website link */}
+        <meta property="og:title" content="The Mad Mystery Team (TMMT)" />  {/*title shown in the actual shared post */}
         <meta property="og:description"
-          content="Velocity Click is one of the renowned & trusted platform for Performance Marketing. Our Mission is to help our clients achieve their marketing goals by delivering the peerless & result-driven solutions." />
+          content="The Mad Mystery Team (TMMT) is one of the renowned & trusted platform for Performance Marketing. Our Mission is to help our clients achieve their marketing goals by delivering the peerless & result-driven solutions." />
         {/* <!-- description shown in the actual shared post --> */}
         <meta property="og:image" content="logo.png" />    {/* image link, make sure it's jpg */}
-        <meta property="og:url" content="https://velocityclick.in/" />  {/* where do you want your post to link to */}
+        <meta property="og:url" content="https://themadmysteryteam.com/" />  {/* where do you want your post to link to */}
         <meta property="og:type" content="website" />  {/* The type of content (in this case, "website") */}
 
         {/* canonical tag */}
-        <link rel="canonical" href="https://velocityclick.com" />
-        <meta name="title" content="Velocity Click"/>
+        <link rel="canonical" href="https://themadmysteryteam.com" />
+        <meta name="title" content="The Mad Mystery Team LLC (TMMT)"/>
 
 
         <Script src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}`} />
@@ -105,18 +105,6 @@ export default function RootLayout({
           {children}
           <FooterComp />
         </main>
-        {/* Clarity tracking code for https://velocityclick.in/ */}
-        <Script
-          dangerouslySetInnerHTML={{
-            __html: `
-              (function(c,l,a,r,i,t,y){
-                  c[a]=c[a]function(){(c[a].q=c[a].q[]).push(arguments)};
-                  t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-                  y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-              })(window, document, "clarity", "script", "kpfgqlkq68");
-            `,
-          }}
-        />
       </body>
     </html>
   )

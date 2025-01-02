@@ -31,7 +31,7 @@ const FooterComp = () => {
                         <span>The Mad Mystery Team LLC,</span>
                         <span> 30 N Gould ST STE R</span>
                         <span>Sheridan, WY 82801</span>
-                        <span>Email: <a href="mailto:support@velocityclick.in" className="text-blue-700 "style={{ textShadow: "0px 0px 2px white" }}><strong>support@K.in</strong></a> </span>
+                        <span>Email: <a href="mailto:support@themadmysteryteam.com" className="text-blue-700 "style={{ textShadow: "0px 0px 2px white" }}><strong>support@themadmysteryteam.com</strong></a> </span>
                     </div>
 
                     <div className="middle flex flex-col gap-2 md:order-2 md:pl-12 lg:order-3  items-center">
@@ -44,7 +44,7 @@ const FooterComp = () => {
                         ))}
                         <button
                             className={`w-fit hover:text-col5`}
-                            onClick={() => { router.push("http://www.velocityclick.in/sitemap.xml", { scroll: true }) }} >
+                            onClick={() => { router.push("https://themadmysteryteam.com/sitemap.xml", { scroll: true }) }} >
                             SITEMAP
                         </button>
                     </div>
@@ -70,7 +70,7 @@ const FooterComp = () => {
         Privacy Policy
     </Link>
     <Link
-        href="/cookie-policy"
+        href="/privacy-policy"
         className="block text-lg hover:text-col5"
     >
         Cookie Policy

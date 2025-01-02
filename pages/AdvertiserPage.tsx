@@ -105,7 +105,7 @@ We maximize your campaign's reach through precise Geo-targeting, Behavioral targ
             </section>
 
             <div className="flex flex-col items-center justify-between gap-5 rounded-t-xl border border-col5 bg-col5 px-5 py-5 md:px-16 lg:flex-row lg:gap-0 lg:px-32">
-                <span className="w-full text-4xl text-gray-200 md:text-3xl lg:w-10/12">Take your business to the next level. Let's show you how.</span>
+                <span className="w-full text-2xl text-gray-200 md:text-3xl lg:w-10/12">Take your business to the next level. Let's show you how.</span>
                 <Link href="https://themadmysteryteam.com/contact" className="h-fit w-fit rounded-full bg-white px-8 py-3 font-semibold text-col5 shadow-lg hover:shadow-xl transition-all duration-200 hover:bg-gray-200">Get in Touch</Link>
             </div>
 
