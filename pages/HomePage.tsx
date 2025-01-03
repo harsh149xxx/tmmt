@@ -247,11 +247,11 @@ export default function HomePage() {
       <section className="px-5 pb-12 md:px-16 lg:px-32">
         <div className="sectionTitle">What More We <span className='text-col5'>Offer</span></div>
         <div className="">
-          <div className="grid w-fit grid-cols-2 text-sm md:grid-cols-4 md:text-xl">
-            <button className={`rounded-t-lg px-2 py-3 font-semibold md:px-5 ${openTab == 0 ? "bg-[#4ABDAC] text-white" : "text-black"}`} onClick={(e) => { e.preventDefault(); setOpenTab(0) }}>Multichannel Marketing</button>
-            <button className={`rounded-t-lg px-2 py-3 font-semibold md:px-5 ${openTab == 1 ? "bg-[#4ABDAC] text-white" : "text-black"}`} onClick={(e) => { e.preventDefault(); setOpenTab(1) }}>Integration Assistance</button>
-            <button className={`rounded-t-lg px-2 py-3 font-semibold md:px-5 ${openTab == 2 ? "bg-[#4ABDAC] text-white" : "text-black"}`} onClick={(e) => { e.preventDefault(); setOpenTab(2) }}>Scalable Solutions</button>
-            <button className={`rounded-t-lg px-2 py-3 font-semibold md:px-5 ${openTab == 3 ? "bg-[#4ABDAC] text-white" : "text-black"}`} onClick={(e) => { e.preventDefault(); setOpenTab(3) }}>Cross-Device Optimization</button>
+        <div className="flex space-x-4 text-sm md:text-xl w-full justify-between">
+            <button className={`rounded-t-lg border-2 border-col5 px-2 py-3 font-semibold md:px-5 ${openTab == 0 ? "bg-[#4ABDAC] text-white" : "text-black"}`} onClick={(e) => { e.preventDefault(); setOpenTab(0) }}>Multichannel Marketing</button>
+            <button className={`rounded-t-lg border-2 border-col5 px-2 py-3 font-semibold md:px-5 ${openTab == 1 ? "bg-[#4ABDAC] text-white" : "text-black"}`} onClick={(e) => { e.preventDefault(); setOpenTab(1) }}>Integration Assistance</button>
+            <button className={`rounded-t-lg border-2 border-col5 px-2 py-3 font-semibold md:px-5 ${openTab == 2 ? "bg-[#4ABDAC] text-white" : "text-black"}`} onClick={(e) => { e.preventDefault(); setOpenTab(2) }}>Scalable Solutions</button>
+            <button className={`rounded-t-lg border-2 border-col5 px-2 py-3 font-semibold md:px-5 ${openTab == 3 ? "bg-[#4ABDAC] text-white" : "text-black"}`} onClick={(e) => { e.preventDefault(); setOpenTab(3) }}>Cross-Device Optimization</button>
           </div>
           <div className="flex rounded-b-lg border-2 border-col5 bg-[#4ABDAC] lg:rounded-e-lg">
             {

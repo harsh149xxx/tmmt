@@ -1,10 +1,12 @@
 User-agent: *
 
-Allow: /about
+Allow: /
+Allow: /about-us
 Allow: /services
 Allow: /advertiser
-Allow: /affiliate
+Allow: /industry
 Allow: /contact
+Allow:/privacy-policy
 
 Disallow: /accounts
 

@@ -92,14 +92,19 @@ const ContactPage = () => {
       <h1 className="text-3xl font-bold mb-8 mt-12">Don’t like filling out forms?</h1>
       <h2 className="text-xl font-semibold mb-4">Here are other ways to connect with us:</h2>
       <p className="flex items-center mb-2">
-        <span className="mr-2">📞</span> +91 6291925441
+        <span className="mr-2">📞</span> support@themadmysteryteam.com
       </p>
       <p className="flex items-center mb-2">
-        <span className="mr-2">📧</span> mhvpnguide@gmail.com
+        <span className="mr-2">📧</span> support@themadmysteryteam.com
       </p>
-      <p className="flex items-center mb-2">
-        <span className="mr-2">📍</span> Kolkata, West Bengal, India
-      </p>
+      <p className="flex flex-col items-start mb-2">
+  <span className="flex items-center">
+    <span className="mr-2">📍</span>The Mad Mystery Team LLC,
+  </span>
+  <span className="pl-8">30 N Gould ST STE R</span>
+  <span className="pl-8 mb-4">Sheridan, WY 82801</span>
+</p>
+
       <p className="mt-6 italic font-bold">
         TMMT is the website of The Mad Mystery Team LLC
       </p>

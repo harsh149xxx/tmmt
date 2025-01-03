@@ -16,22 +16,23 @@ const FooterComp = () => {
 
     return (
         <div className={` ${(pathname == '/advertiser' || pathname == '/affiliate') ? "bg-col5" : "bg-white"}`}>
-            <footer className={`rounded-t-3xl bg-[#35b3a0]`}>
-                <div className="grid grid-cols-1 gap-3 px-7 py-12 text-white md:grid-cols-3 md:flex-row md:gap-0 md:px-16 lg:grid-cols-4 lg:px-32">
+            <footer className={` bg-[#35b3a0]`}>
+                <div className="grid grid-cols-1 gap-3 px-7 py-12 text-white md:grid-cols-3 md:flex-row md:gap-0 md:px-16 lg:grid-cols-4 lg:px-20">
 
-                    <div className="left flex flex-col gap-1 md:order-1 lg:order-1 justify-center items-center">
+                    <div className="left flex flex-col gap-1 md:order-1 lg:order-1 items-center ">
                         <div className="relative aspect-square w-1/4 md:w-1/2">
                             <Image src={logo} fill alt="company logo" />
                         </div>
-                        <span className="text-2xl">The Mad Mystery Team LLC</span>
+                        <span className="text-xl">The Mad Mystery Team LLC</span>
                     </div>
 
-                    <div className="right flex flex-col gap-1 md:order-3 lg:order-2  items-center">
+                    <div className="right flex flex-col gap-1 md:order-3 lg:order-2  items-center pl-8">
                         <span className="text-2xl font-semibold mb-4">Contact Us</span>
                         <span>The Mad Mystery Team LLC,</span>
                         <span> 30 N Gould ST STE R</span>
-                        <span className="mb-4">Sheridan, WY 82801</span>
-                        <span>Email: <a href="mailto:support@themadmysteryteam.com" className="text-white "style={{ textShadow: "0px 0px 2px blue" }}><strong>support@themadmysteryteam.com</strong></a> </span>
+                        <span className="mb-6">Sheridan, WY 82801</span>
+                        <span className="text-2xl font-semibold">Email</span>
+                        <span><a href="mailto:support@themadmysteryteam.com" className="text-white " style={{ textShadow: "0px 0px 2px blue" }}><strong>support@themadmysteryteam.com</strong></a> </span>
                     </div>
 
                     <div className="middle flex flex-col gap-2 md:order-2 md:pl-12 lg:order-3  items-center">
@@ -49,33 +50,33 @@ const FooterComp = () => {
                         </button>
                     </div>
 
-                    <div className="right flex flex-col gap-3 md:order-4 md:mt-5 md:w-full lg:order-4  items-center">
+                    <div className="right flex flex-col gap-3 md:order-4 md:w-full lg:order-4  items-center">
 
                         <div className="bttn flex flex-wrap gap-5 py-5">
                             <Link href="https://themadmysteryteam.com/contact" className="rounded-xl border-2 border-col5 bg-col5 px-8 py-2 text-base font-semibold text-white hover:bg-transparent md:text-xl">Get in Touch</Link>
                         </div>
                         {/* bottom part of footer */}
-                        
+
                         <div className="px-5 pb-4">
-    <Link
-        href="/about-us"
-        className="block border-b border-white text-lg hover:text-col5 pb-2"
-    >
-        About Us
-    </Link>
-    <Link
-        href="/privacy-policy"
-        className="block border-b border-white text-lg hover:text-col5 pb-2"
-    >
-        Privacy Policy
-    </Link>
-    <Link
-        href="/privacy-policy"
-        className="block text-lg hover:text-col5"
-    >
-        Cookie Policy
-    </Link>
-</div>
+                            <Link
+                                href="/about-us"
+                                className="block border-b border-white text-lg hover:text-col5 pb-2"
+                            >
+                                About Us
+                            </Link>
+                            <Link
+                                href="/privacy-policy"
+                                className="block border-b border-white text-lg hover:text-col5 pb-2"
+                            >
+                                Privacy Policy
+                            </Link>
+                            <Link
+                                href="/privacy-policy"
+                                className="block text-lg hover:text-col5"
+                            >
+                                Cookie Policy
+                            </Link>
+                        </div>
 
                     </div>
 
