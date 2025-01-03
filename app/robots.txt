@@ -6,7 +6,7 @@ Allow: /services
 Allow: /advertiser
 Allow: /industry
 Allow: /contact
-Allow:/privacy-policy
+Allow: /privacy-policy
 
 Disallow: /accounts
 

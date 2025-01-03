@@ -16,7 +16,7 @@ const FooterComp = () => {
 
     return (
         <div className={` ${(pathname == '/advertiser' || pathname == '/affiliate') ? "bg-col5" : "bg-white"}`}>
-            <footer className={` bg-[#35b3a0]`}>
+            <footer className={`bg-[#35b3a0]`}>
                 <div className="grid grid-cols-1 gap-3 px-7 py-12 text-white md:grid-cols-3 md:flex-row md:gap-0 md:px-16 lg:grid-cols-4 lg:px-20">
 
                     <div className="left flex flex-col gap-1 md:order-1 lg:order-1 items-center ">
@@ -26,7 +26,7 @@ const FooterComp = () => {
                         <span className="text-xl">The Mad Mystery Team LLC</span>
                     </div>
 
-                    <div className="right flex flex-col gap-1 md:order-3 lg:order-2  items-center pl-8">
+                    <div className="right flex flex-col gap-1 md:order-3 lg:order-2  items-center md:pl-8">
                         <span className="text-2xl font-semibold mb-4">Contact Us</span>
                         <span>The Mad Mystery Team LLC,</span>
                         <span> 30 N Gould ST STE R</span>

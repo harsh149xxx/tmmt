@@ -27,7 +27,7 @@ import Slider from "react-slick";
 
 export default function HomePage() {
 
-  
+
   const [windowWidth, setWindowWidth] = useState<number>(typeof window !== 'undefined' ? window.innerWidth : 0);
   const [openTab, setOpenTab] = useState(0)
 
@@ -105,7 +105,7 @@ export default function HomePage() {
     },
   ]
 
-  const services = [    
+  const services = [
     {
       title: "PPC Advertising",
       content: "Maximize ROI with data-driven PPC strategies. Our experts create targeted campaigns on Google, Bing, and more, ensuring your ads reach the right audience. Generate quality leads, boost sales, and scale your business with precise ad placements, budget optimization, and real-time analytics",
@@ -180,11 +180,11 @@ export default function HomePage() {
       {/* ------------------------ TOP SECTION HEADER START ------------------------ */}
       <header className="mx-2 my-5 flex h-fit flex-col gap-16 rounded-xl bg-[#4ABDAC] p-10 md:mx-16 lg:mx-32">
         <div className="flex w-full flex-col items-center gap-8 text-white md:justify-center">
-        <h1 className="text-white text-center font-serif text-6xl"
+          <h1 className="text-white text-center font-serif text-6xl"
           // style={{ "textShadow": "0px 0px 5px #D9B29C" }}
           >We Manage Your Brands in Multiple Channels</h1>
           <p className="text-white text-center font-mono text-xl md:px-5">Fueling Business Growth with Precision Marketing Strategies Across PPC, Native, Meta, and Beyond.</p>
-          
+
         </div>
         <div className='flex justify-center'>
           <div className="aspect-w-9 aspect-h-16 px-2 md:w-1/2 lg:px-16">
@@ -210,7 +210,7 @@ export default function HomePage() {
       {/* ------------------------------ OUR ADD START ----------------------------- */}
       <section className="mx-2 my-8 flex h-fit flex-col gap-12 rounded-xl bg-[#4ABDAC] p-5 md:mx-16 md:p-10 lg:mx-32 lg:flex-row lg:items-center lg:gap-0">
         <div className="text-center text-base text-white lg:w-[60%] lg:pr-5 lg:text-left md:text-2xl">
-        We specialize in delivering tailored advertising solutions across multiple channels to elevate your brand’s presence and performance. At TMMT, we believe every business has a unique story, and our mission is to help you tell it effectively. Through data-driven strategies, creative campaigns, and cutting-edge technology, we connect businesses with their ideal audience. Whether it’s PPC, Native Push, Meta Advertising, or Email Marketing, our goal is to drive growth, boost engagement, and deliver measurable results. With a focus on innovation and precision, we ensure your brand stands out in today’s competitive digital landscape, paving the way for lasting success.
+          We specialize in delivering tailored advertising solutions across multiple channels to elevate your brand’s presence and performance. At TMMT, we believe every business has a unique story, and our mission is to help you tell it effectively. Through data-driven strategies, creative campaigns, and cutting-edge technology, we connect businesses with their ideal audience. Whether it’s PPC, Native Push, Meta Advertising, or Email Marketing, our goal is to drive growth, boost engagement, and deliver measurable results. With a focus on innovation and precision, we ensure your brand stands out in today’s competitive digital landscape, paving the way for lasting success.
         </div>
         <div className="flex justify-center lg:w-[40%] lg:justify-end">
           <Image priority={false} src={Girl} alt="image of a girl" className="aspect-square w-[80%] lg:w-full" />
@@ -223,16 +223,16 @@ export default function HomePage() {
         <div className="flex flex-col justify-center gap-7 lg:w-[60%]">
           <h2 className="text-3xl font-semibold text-black">Advertiser</h2>
           <p className='text-gray-800'>
-          It is often found that some of the websites hold a first position in Google due to attractive advertisements. Well, you might be thinking about the ways. At TMMT, we specialize in driving targeted traffic to your website through proven PPC, Native Push, Meta Advertising, and Email Marketing campaigns. Our strategies are designed to significantly increase your website's visibility, attract the right audience, and ultimately convert visitors into loyal customers.
+            It is often found that some of the websites hold a first position in Google due to attractive advertisements. Well, you might be thinking about the ways. At TMMT, we specialize in driving targeted traffic to your website through proven PPC, Native Push, Meta Advertising, and Email Marketing campaigns. Our strategies are designed to significantly increase your website's visibility, attract the right audience, and ultimately convert visitors into loyal customers.
           </p>
           <div className="buttonhandler flex flex-col gap-10 md:flex-row">
             <Link href={"https://themadmysteryteam.com/advertiser"} className="btn-header rounded-full px-24 py-3 text-lg shadow-lg hover:shadow-xl transition-all duration-200">
-            Advertiser
+              Advertiser
             </Link>
             <Link href={"https://themadmysteryteam.com/contact"} className="btn-header rounded-full px-24 py-3 text-lg shadow-lg hover:shadow-xl transition-all duration-200">
               Get in Touch
             </Link>
-        </div>
+          </div>
         </div>
         <div className="left mx-auto flex w-full md:w-[60%] lg:w-[40%]">
           <Image priority={false} src={Advertiser} alt="affilate image" />
@@ -247,12 +247,27 @@ export default function HomePage() {
       <section className="px-5 pb-12 md:px-16 lg:px-32">
         <div className="sectionTitle">What More We <span className='text-col5'>Offer</span></div>
         <div className="">
-        <div className="flex space-x-4 text-sm md:text-xl w-full justify-between">
-            <button className={`rounded-t-lg border-2 border-col5 px-2 py-3 font-semibold md:px-5 ${openTab == 0 ? "bg-[#4ABDAC] text-white" : "text-black"}`} onClick={(e) => { e.preventDefault(); setOpenTab(0) }}>Multichannel Marketing</button>
-            <button className={`rounded-t-lg border-2 border-col5 px-2 py-3 font-semibold md:px-5 ${openTab == 1 ? "bg-[#4ABDAC] text-white" : "text-black"}`} onClick={(e) => { e.preventDefault(); setOpenTab(1) }}>Integration Assistance</button>
-            <button className={`rounded-t-lg border-2 border-col5 px-2 py-3 font-semibold md:px-5 ${openTab == 2 ? "bg-[#4ABDAC] text-white" : "text-black"}`} onClick={(e) => { e.preventDefault(); setOpenTab(2) }}>Scalable Solutions</button>
-            <button className={`rounded-t-lg border-2 border-col5 px-2 py-3 font-semibold md:px-5 ${openTab == 3 ? "bg-[#4ABDAC] text-white" : "text-black"}`} onClick={(e) => { e.preventDefault(); setOpenTab(3) }}>Cross-Device Optimization</button>
+          <div className="flex space-x-4 text-sm md:text-xl w-full justify-between">
+            <button
+              className={`flex-1 rounded-t-lg border-2 border-col5 px-2 py-3 font-semibold md:px-5 ${openTab == 0 ? "bg-[#4ABDAC] text-white" : "text-black"}`}
+              onClick={(e) => { e.preventDefault(); setOpenTab(0); }}
+            >
+              Multichannel Marketing
+            </button>
+            <button
+              className={`flex-1 rounded-t-lg border-2 border-col5 px-2 py-3 font-semibold md:px-5 ${openTab == 2 ? "bg-[#4ABDAC] text-white" : "text-black"}`}
+              onClick={(e) => { e.preventDefault(); setOpenTab(2); }}
+            >
+              Scalable Solutions
+            </button>
+            <button
+              className={`flex-1 rounded-t-lg border-2 border-col5 px-2 py-3 font-semibold md:px-5 ${openTab == 3 ? "bg-[#4ABDAC] text-white" : "text-black"}`}
+              onClick={(e) => { e.preventDefault(); setOpenTab(3); }}
+            >
+              Cross-Device Optimization
+            </button>
           </div>
+
           <div className="flex rounded-b-lg border-2 border-col5 bg-[#4ABDAC] lg:rounded-e-lg">
             {
               serviceDetails.map((item, index) => (
@@ -276,12 +291,12 @@ export default function HomePage() {
         <span className="text-center text-4xl font-semibold">Why it's worth to choose <span className='text-col5'>TMMT?</span></span>
         <p className="w-[80%] text-center text-xl lg:w-1/2">With TMMT you will remain at a complete ease as we can take complete responsibility of your branding...</p>
         <div className="grid w-full grid-cols-1 gap-5 text-xl font-semibold md:grid-cols-2 md:text-2xl">
-          <div className="flex w-full transform cursor-pointer justify-center rounded-xl bg-[#4ABDAC] py-8 text-white transition-transform duration-300 hover:scale-[1.05]"style={{ textShadow: "0 0 1px red, 0 0 5px red" }}>EXPERTISE</div>
-          <div className="flex w-full transform cursor-pointer justify-center rounded-xl bg-[#4ABDAC] py-8 text-white transition-transform duration-300 hover:scale-[1.05]"style={{ textShadow: "0 0 1px red, 0 0 5px red" }}>RESULTS-DRIVEN</div>
-          <div className="flex w-full transform cursor-pointer justify-center rounded-xl bg-[#4ABDAC] py-8 text-white transition-transform duration-300 hover:scale-[1.05]"style={{ textShadow: "0 0 1px red, 0 0 5px red" }}>INNOVATION</div>
-          <div className="flex w-full transform cursor-pointer justify-center rounded-xl bg-[#4ABDAC] py-8 text-white transition-transform duration-300 hover:scale-[1.05]"style={{ textShadow: "0 0 1px red, 0 0 5px red" }}>GROWTH</div>
-          <div className="flex w-full transform cursor-pointer justify-center rounded-xl bg-[#4ABDAC] py-8 text-white transition-transform duration-300 hover:scale-[1.05]"style={{ textShadow: "0 0 1px red, 0 0 5px red" }}>TRANSPARENCY</div>
-          <div className="flex w-full transform cursor-pointer justify-center rounded-xl bg-[#4ABDAC] py-8 text-white transition-transform duration-300 hover:scale-[1.05]"style={{ textShadow: "0 0 1px red, 0 0 5px red" }}>SAFETY</div>
+          <div className="flex w-full transform cursor-pointer justify-center rounded-xl bg-[#4ABDAC] py-8 text-white transition-transform duration-300 hover:scale-[1.05]" style={{ textShadow: "0 0 1px red, 0 0 5px red" }}>EXPERTISE</div>
+          <div className="flex w-full transform cursor-pointer justify-center rounded-xl bg-[#4ABDAC] py-8 text-white transition-transform duration-300 hover:scale-[1.05]" style={{ textShadow: "0 0 1px red, 0 0 5px red" }}>RESULTS-DRIVEN</div>
+          <div className="flex w-full transform cursor-pointer justify-center rounded-xl bg-[#4ABDAC] py-8 text-white transition-transform duration-300 hover:scale-[1.05]" style={{ textShadow: "0 0 1px red, 0 0 5px red" }}>INNOVATION</div>
+          <div className="flex w-full transform cursor-pointer justify-center rounded-xl bg-[#4ABDAC] py-8 text-white transition-transform duration-300 hover:scale-[1.05]" style={{ textShadow: "0 0 1px red, 0 0 5px red" }}>GROWTH</div>
+          <div className="flex w-full transform cursor-pointer justify-center rounded-xl bg-[#4ABDAC] py-8 text-white transition-transform duration-300 hover:scale-[1.05]" style={{ textShadow: "0 0 1px red, 0 0 5px red" }}>TRANSPARENCY</div>
+          <div className="flex w-full transform cursor-pointer justify-center rounded-xl bg-[#4ABDAC] py-8 text-white transition-transform duration-300 hover:scale-[1.05]" style={{ textShadow: "0 0 1px red, 0 0 5px red" }}>SAFETY</div>
         </div>
       </section>
       {/* ------------------------------- WHT TO CHOSE END ------------------------------ */}
@@ -300,7 +315,7 @@ export default function HomePage() {
           </p>
           <div className="buttonhandler flex flex-col justify-center gap-5 md:flex-row">
             <Link href={"https://themadmysteryteam.com/advertiser"} className="btn-header rounded-full px-12 py-3 text-lg shadow-lg hover:shadow-xl transition-all duration-200">
-            Advertiser
+              Advertiser
             </Link>
             <Link href={"https://themadmysteryteam.com/contact"} className="btn-header rounded-full px-12 py-3 text-lg shadow-lg hover:shadow-xl transition-all duration-200">
               Get in Touch
@@ -333,7 +348,7 @@ export default function HomePage() {
       {/* ------------------------------- OUR CLIENT START ------------------------------ */}
       {/* ------------------------------- OUR CLIENT END ------------------------------ */}
 
-{/* ------------------------------- FAQS START ------------------------------ */}
+      {/* ------------------------------- FAQS START ------------------------------ */}
       <section className="mx-2 my-8 rounded-xl bg-[#4ABDAC] p-3 md:mx-16 md:p-10 lg:mx-32">
         <div className="sectionTitle text-white">FAQS</div>
         <Accordion variant="splitted">
