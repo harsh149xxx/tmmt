@@ -27,11 +27,11 @@ const FooterComp = () => {
                     </div>
 
                     <div className="right flex flex-col gap-1 md:order-3 lg:order-2  items-center">
-                        <span className="text-2xl font-semibold">Contact Us</span>
+                        <span className="text-2xl font-semibold mb-4">Contact Us</span>
                         <span>The Mad Mystery Team LLC,</span>
                         <span> 30 N Gould ST STE R</span>
-                        <span>Sheridan, WY 82801</span>
-                        <span>Email: <a href="mailto:support@themadmysteryteam.com" className="text-blue-700 "style={{ textShadow: "0px 0px 2px white" }}><strong>support@themadmysteryteam.com</strong></a> </span>
+                        <span className="mb-4">Sheridan, WY 82801</span>
+                        <span>Email: <a href="mailto:support@themadmysteryteam.com" className="text-white "style={{ textShadow: "0px 0px 2px blue" }}><strong>support@themadmysteryteam.com</strong></a> </span>
                     </div>
 
                     <div className="middle flex flex-col gap-2 md:order-2 md:pl-12 lg:order-3  items-center">
