@@ -79,7 +79,7 @@ export default function RootLayout({
           {`{
             "@context": "https://schema.org",
             "@type": "WebSite",
-            "name": "The Mad Mystery Team",
+            "name": "TMMT - The Mad Mystery Team",
             "url": "https://themadmysteryteam.com/"
           }`}
         </script>
