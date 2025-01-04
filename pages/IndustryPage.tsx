@@ -2,9 +2,10 @@
 
 import HeaderBox from '@/components/HeaderBox'
 import React from 'react'
-import Marketing from '@/public/assets/services/marketing.jpg'
-import Lead from '@/public/assets/services/lead.jpg'
-import Branding from '@/public/assets/services/branding.jpg'
+import Crypto from '@/public/assets/industry/Crypto Currency Industry.jpg'
+import Casino from '@/public/assets/industry/Online Casinos with Abstract Background.jpg'
+import Saas from '@/public/assets/industry/SAAS Industry.jpg'
+import Health from '@/public/assets/industry/Health & Wellness Industry.jpg'
 import Image from 'next/image'
 import Link from "next/link"
 
@@ -82,7 +83,7 @@ const ServicesPage = () => {
                 </div>
                 <div className='flex w-full items-center justify-center lg:w-2/5'>
                     <div className="imageHolder relative aspect-video w-full">
-                        <Image src={Marketing} fill alt="branding image" style={{ objectFit: "cover" }} />
+                        <Image src={Health} fill alt="Health & Wellness image" style={{ objectFit: "cover" }} />
                     </div>
                 </div>
             </section>
@@ -107,7 +108,7 @@ const ServicesPage = () => {
                 </div>
                 <div className='flex w-full items-center justify-center lg:w-2/5'>
                     <div className="imageHolder relative aspect-video w-full">
-                        <Image src={Marketing} fill alt="branding image" style={{ objectFit: "cover" }} />
+                        <Image src={Saas} fill alt="SAAS image" style={{ objectFit: "cover" }} />
                     </div>
                 </div>
             </section>
@@ -133,7 +134,7 @@ const ServicesPage = () => {
                 </div>
                 <div className='flex w-full items-center justify-center lg:w-2/5'>
                     <div className="imageHolder relative aspect-video w-full">
-                        <Image src={Branding} fill alt="saas marketing image" style={{ objectFit: "cover" }} />
+                        <Image src={Casino} fill alt="Casinos & Betting image" style={{ objectFit: "cover" }} />
                     </div>
                 </div>
             </section>
@@ -161,7 +162,7 @@ const ServicesPage = () => {
                 </div>
                 <div className='flex w-full items-center justify-center lg:w-2/5'>
                     <div className="imageHolder relative aspect-video w-full">
-                        <Image src={Lead} fill alt="branding image" style={{ objectFit: "cover" }} />
+                        <Image src={Crypto} fill alt="Crypto Currency image" style={{ objectFit: "cover" }} />
                     </div>
                 </div>
             </section>

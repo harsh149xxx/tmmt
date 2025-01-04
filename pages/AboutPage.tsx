@@ -29,12 +29,12 @@ const AboutPage = () => {
         {
             title: "The Numbers",
             content: "150+ Clients, 1,000+ active Ads, 75,000+ Monthly Conversion and over $6,00,000+ Monthly Ad Spends, running through our network.",
-            imageurl: Dashboard
+            imageurl: Information
         },
         {
             title: "Valuable Information",
             content: "We pass on valuable information with all required parameters to our clients in a rapidly growing industry.",
-            imageurl: Information
+            imageurl: Dashboard
         },
         {
             title: "Focused Solutions",

@@ -16,13 +16,12 @@ import Migration from '@/public/assets/home/migration.png'
 import Integration from '@/public/assets/home/integration.png'
 import Support from '@/public/assets/home/support.png'
 import Girl from '@/public/assets/home/girl.png'
-import AnalyticsHeader from '@/public/assets/home/header_analytics.png'
-import Affiliate from '@/public/assets/home/affiliate.jpg'
+import Cross from '@/public/assets/home/Cross-Device Optimize.png';
+import AnalyticsHeader from '@/public/assets/home/header_analytics.png';
 import Advertiser from '@/public/assets/home/advertiser.png'
 import { Fragment, useEffect, useState } from "react";
 import React from "react";
 import { Accordion, AccordionItem } from "@nextui-org/react";
-import Slider from "react-slick";
 
 
 export default function HomePage() {
@@ -101,7 +100,7 @@ export default function HomePage() {
     {
       title: "Cross-Device Optimize",
       content: "We understand the importance of delivering a seamless user experience across all devices. That’s why we ensure your campaigns are optimized for mobile, desktop, and tablet devices. By creating responsive, user-friendly ads and landing pages, we enhance engagement, boost conversions, and ensure your audience has a consistent experience, no matter where they interact with your brand.",
-      img: "https://images.unsplash.com/photo-1665686308827-eb62e4f6604d"
+      img: "https://images.unsplash.com/photo-1536246026435-0cbb2a92952a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
   ]
 

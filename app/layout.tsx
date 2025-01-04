@@ -75,14 +75,17 @@ export default function RootLayout({
         <link rel="canonical" href="https://themadmysteryteam.com" />
         <meta name="title" content="The Mad Mystery Team LLC (TMMT)" />
         {/* JSON-LD Structured Data */}
-        <script type="application/ld+json">
-          {`{
-            "@context": "https://schema.org",
-            "@type": "WebSite",
-            "name": "TMMT - The Mad Mystery Team",
-            "url": "https://themadmysteryteam.com/"
-          }`}
-        </script>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              "name": "TMMT - The Mad Mystery Team",
+              "url": "https://themadmysteryteam.com/",
+            }),
+          }}
+        />
 
         <Script src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}`} />
         <Script id="google-analytics">
