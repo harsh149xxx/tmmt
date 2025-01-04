@@ -1,1 +1,40 @@
-{"name":"","short_name":"","icons":[{"src":"/android-chrome-192x192.png","sizes":"192x192","type":"image/png"},{"src":"/android-chrome-512x512.png","sizes":"512x512","type":"image/png"}],"theme_color":"#ffffff","background_color":"#ffffff","display":"standalone"}
+{
+    "name": "TMMT - The Mad Mystery Team",
+    "short_name": "TMMT",
+    "description": "TMMT is a dynamic digital marketing agency specializing in PPC, native push ads, social media marketing, and more.",
+    "start_url": "/",
+    "scope": "/",
+    "display": "standalone",
+    "orientation": "portrait",
+    "background_color": "#ffffff",
+    "theme_color": "#000000",
+    "icons": [
+      {
+        "src": "/android-chrome-48x48.png",
+        "type": "image/png",
+        "sizes": "48x48"
+      },
+      {
+        "src": "/android-chrome-72x72.png",
+        "type": "image/png",
+        "sizes": "72x72"
+      },
+      {
+        "src": "/android-chrome-96x96.png",
+        "type": "image/png",
+        "sizes": "96x96"
+      },
+      {
+        "src": "/android-chrome-192x192.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "/android-chrome-512x512.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ],
+    "author": "The Mad Mystery Team LLC"
+  }
+  

@@ -39,6 +39,8 @@ export default function RootLayout({
         <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon.png" />
 
         {/* <!-- Android Chrome Icon --> */}
+        <link rel="icon" type="image/png" sizes="48x48" href="/android-chrome-48x48.png" />
+        <link rel="icon" type="image/png" sizes="96x96" href="/android-chrome-96x96.png" />
         <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png" />
         <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png" />
 
@@ -54,7 +56,7 @@ export default function RootLayout({
 
 
         {/* <!-- SEO Meta Tags --> */}
-        <meta name="author" content="" />
+        <meta name="author" content="The Mad Mystery Team LLC" />
         {/* <!-- Meta Robots --> */}
         <meta name="robots" content="index, follow" />
 
@@ -71,8 +73,16 @@ export default function RootLayout({
 
         {/* canonical tag */}
         <link rel="canonical" href="https://themadmysteryteam.com" />
-        <meta name="title" content="The Mad Mystery Team LLC (TMMT)"/>
-
+        <meta name="title" content="The Mad Mystery Team LLC (TMMT)" />
+        {/* JSON-LD Structured Data */}
+        <script type="application/ld+json">
+          {`{
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "The Mad Mystery Team",
+            "url": "https://themadmysteryteam.com/"
+          }`}
+        </script>
 
         <Script src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}`} />
         <Script id="google-analytics">

@@ -45,6 +45,11 @@ const FooterComp = () => {
                         ))}
                         <button
                             className={`w-fit hover:text-col5`}
+                            onClick={() => { router.push("https://themadmysteryteam.com/join-us", { scroll: true }) }} >
+                            JOIN US
+                        </button>
+                        <button
+                            className={`w-fit hover:text-col5`}
                             onClick={() => { router.push("https://themadmysteryteam.com/sitemap.xml", { scroll: true }) }} >
                             SITEMAP
                         </button>
